@@ -1,0 +1,321 @@
+{
+  "main": {
+    "id": "545241e6968297e6",
+    "type": "split",
+    "children": [
+      {
+        "id": "4f4d3740ea44585f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c88b8032836d43f3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "전자 등기(electronic registration).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "전자 등기(electronic registration)"
+            }
+          },
+          {
+            "id": "94b96aa56ae0393c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Packages.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Packages"
+            }
+          },
+          {
+            "id": "b35c1c4204ba8d41",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "기능 정리.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "기능 정리"
+            }
+          },
+          {
+            "id": "6618165dd7cb7860",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "sr mock data.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "sr mock data"
+            }
+          },
+          {
+            "id": "7a8a8dc5c7cf46e7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "sr api.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "sr api"
+            }
+          },
+          {
+            "id": "37478839975f8bab",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "20250219-0220.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "20250219-0220"
+            }
+          },
+          {
+            "id": "e2c045f08e24eda3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SR 실 데이터.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "SR 실 데이터"
+            }
+          },
+          {
+            "id": "24cfa7d562e62f66",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "테스트 여신번호.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "테스트 여신번호"
+            }
+          },
+          {
+            "id": "061b1ebec1b7e165",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "개선 필요 목록_20250228.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "개선 필요 목록_20250228"
+            }
+          },
+          {
+            "id": "e29100a9a194ff09",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "20250304.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "20250304"
+            }
+          }
+        ],
+        "currentTab": 9
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8d840c67474e5548",
+    "type": "split",
+    "children": [
+      {
+        "id": "8690fc5c80f09cc8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3c0733e655af7d8a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
+            }
+          },
+          {
+            "id": "89247f27c325a9c4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "검색"
+            }
+          },
+          {
+            "id": "c5e2e636ca9a2af5",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "8fba69dae2753eae",
+    "type": "split",
+    "children": [
+      {
+        "id": "7768c35a498a6942",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fee3150caa6ff4e7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "20250124.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "20250124의 백링크"
+            }
+          },
+          {
+            "id": "6cb77324c0e89cae",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "나가는 링크"
+            }
+          },
+          {
+            "id": "80a60a5df1aa9180",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "daafad8112c548df",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {},
+              "icon": "lucide-list",
+              "title": "개요"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:빠른 전환기 열기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "e29100a9a194ff09",
+  "lastOpenFiles": [
+    "20250228.md",
+    "20250225-0227.md",
+    "20250224.md",
+    "20250220-0221.md",
+    "20250304.md",
+    "개선 필요 목록_20250228.md",
+    "테스트 여신번호.md",
+    "코스 가상 은행서버 사용 가이드.md",
+    "SR 실 데이터.md",
+    "무제 11.md",
+    "무제 10.md",
+    "무제 9.md",
+    "무제 8.md",
+    "프론트엔드 개발 공통 가이드 및 코딩 컨벤션.md",
+    "무제 7.md",
+    "무제 6.md",
+    "20250219-0220.md",
+    "무제 5.md",
+    "무제 4.md",
+    "무제 3.md",
+    "sr api.md",
+    "statCd.md",
+    "sr mock data.md",
+    "기능 정리.md",
+    "SR - React 정리_0203.md",
+    "Packages.md",
+    ".md"
+  ]
+}

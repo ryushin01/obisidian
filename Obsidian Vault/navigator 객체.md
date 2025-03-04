@@ -1,0 +1,24 @@
+- android navigator.permissions.query: https://so-so.dev/web/about-navigator/
+	- android 13 버전 호환 불가: https://developer.mozilla.org/en-US/docs/Web/API/Navigator/permissions
+	- https://www.google.com/search?q=permissions+api+navigator+android+13&oq=permissions+api+navigator+android+13&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIKCAEQABiABBiiBDIKCAIQABiABBiiBDIKCAMQABiABBiiBDIKCAQQABiABBiiBDIKCAUQABiABBiiBNIBCTk1NDkyajBqN6gCALACAA&sourceid=chrome&ie=UTF-8
+	- https://developer.android.com/about/versions/13/behavior-changes-13?hl=ko
+	- https://github.com/Baseflow/flutter-permission-handler/issues/859
+	- https://developer.android.com/training/permissions/explaining-access?hl=ko#indicators
+	- https://developer.android.com/training/permissions/requesting?hl=ko
+	- https://www.google.com/search?q=%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C+%EC%9B%B9%EB%B7%B0+%EC%9C%84%EC%B9%98+%EA%B6%8C%ED%95%9C&oq=%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C+%EC%9B%B9%EB%B7%B0+%EC%9C%84%EC%B9%98+%EA%B6%8C%ED%95%9C&gs_lcrp=EgZjaHJvbWUyCggAEEUYDRgeGDkyCggBEAAYgAQYogQyCggCEAAYgAQYogQyCggDEAAYgAQYogQyCggEEAAYgAQYogQyCggFEAAYgAQYogTSAQg4NDY1ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8
+	- https://deemmun.tistory.com/78
+	- https://www.google.com/search?q=flutter+%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C+%EC%9B%B9%EB%B7%B0+%EC%9C%84%EC%B9%98+%EA%B6%8C%ED%95%9C&sca_esv=0ba5b4315e0bd468&ei=9wkWZ8rcJOiA1e8Pv9LL0AU&ved=0ahUKEwiKtNnMgJ-JAxVoQPUHHT_pEloQ4dUDCA8&uact=5&oq=flutter+%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C+%EC%9B%B9%EB%B7%B0+%EC%9C%84%EC%B9%98+%EA%B6%8C%ED%95%9C&gs_lp=Egxnd3Mtd2l6LXNlcnAiLGZsdXR0ZXIg7JWI65Oc66Gc7J2065OcIOybueu3sCDsnITsuZgg6raM7ZWcMggQIRigARjDBEj6IVDAAVjnIHAIeAGQAQCYAbcBoAHUD6oBBDAuMTK4AQPIAQD4AQGYAg-gAq8JwgIKEAAYsAMY1gQYR8ICBhAAGA0YHsICCBAAGIAEGKIEwgIMECEYoAEYwwQYChgqwgIKECEYoAEYwwQYCpgDAIgGAZAGCpIHAzguN6AHkyg&sclient=gws-wiz-serp
+	- https://raphaelh.tistory.com/39
+	- https://velog.io/@hyuckkk/Flutter-WebView
+	- https://gold-k.tistory.com/116
+	- https://www.google.com/search?q=%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C12+navigator+permisson&sca_esv=0ba5b4315e0bd468&ei=OAgWZ-G3NK3Y1e8P2e6tsAg&oq=%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C12+navigator+per&gs_lp=Egxnd3Mtd2l6LXNlcnAiH-yViOuTnOuhnOydtOuTnDEyIG5hdmlnYXRvciBwZXIqAggCMgUQIRigATIFECEYoAEyBRAhGKABSIuqAlDWrwFY0JwCcAx4AJABApgB6QGgAfEoqgEGMC4yOS4yuAEDyAEA-AEBmAIhoALbHKgCCcICChAAGLADGNYEGEfCAgoQABiABBhDGIoFwgILEAAYgAQYsQMYgwHCAg0QLhiABBjRAxjHARgKwgIIEAAYgAQYsQPCAhEQLhiABBixAxjRAxiDARjHAcICChAuGIAEGEMYigXCAggQLhiABBixA8ICBxAAGIAEGArCAhMQLhiABBixAxjRAxiDARjHARgKwgIdEAAYgAQYtAIY1AMY5QIYtwMYigUY6gIYigPYAQHCAhoQABiABBi0AhjlAhi3AxiKBRjqAhiKA9gBAcICBBAAGAPCAgUQLhiABMICBRAAGIAEwgIEEC4YA8ICCxAuGIAEGLEDGIMBmAMCiAYBkAYKugYECAEYB5IHBzEyLjE5LjKgB_C3Ag&sclient=gws-wiz-serp
+	- https://developer.android.com/privacy-and-security/minimize-permission-requests?hl=ko
+	- https://codedaeng.tistory.com/28
+	- https://developer.android.com/develop/sensors-and-location/location/permissions?hl=ko
+	- https://jiyumi00.tistory.com/40
+	- https://developer.mozilla.org/ko/docs/Web/API/Permissions_API
+	- https://github.com/chrisdavidmills/location-finder-permissions-api/blob/gh-pages/scripts/geoMap.js
+	- https://developer.mozilla.org/en-US/docs/Web/API/Navigator/geolocation
+	- https://bacassf.tistory.com/149
+	- https://velog.io/@jaeyunn_15/Android-Android-%EC%9C%84%EC%B9%98-%EA%B6%8C%ED%95%9C-%EB%B3%80%EA%B2%BD-%EC%82%AC%ED%95%AD
+- 

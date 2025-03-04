@@ -1,0 +1,6 @@
+- https://velog.io/@deli-ght/Next.js%EC%97%90%EC%84%9C-document.referrer%EA%B0%80-%EC%9E%91%EB%8F%99%ED%95%98%EC%A7%80-%EC%95%8A%EB%8A%94-%EC%9D%B4%EC%9C%A0
+- https://yunjeoming.dev/blog/detect-page-navigation-in-next14
+- https://hanaindec.tistory.com/entry/react-%EC%9D%B4%EC%A0%84-%ED%8E%98%EC%9D%B4%EC%A7%80-%ED%99%95%EC%9D%B8-%EC%96%B4%EB%96%A4-%ED%8E%98%EC%9D%B4%EC%A7%80%EC%97%90%EC%84%9C-%EC%A7%84%EC%9E%85%ED%95%98%EB%8A%94%EC%A7%80
+- https://velog.io/@eogus4658/React-%EC%9D%B4%EC%A0%84-%ED%8E%98%EC%9D%B4%EC%A7%80-URL%EB%A1%9C-%EC%9D%B4%EB%8F%99%ED%95%98%EA%B8%B0
+- https://jeewonscript.tistory.com/27
+- https://www.grouparoo.com/blog/getting-previous-path-nextjs

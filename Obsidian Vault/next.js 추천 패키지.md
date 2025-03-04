@@ -1,0 +1,16 @@
+- https://wolhyong.tistory.com/entry/Nextjs-14-%EA%B0%95%EC%9D%98-3%EA%B0%95-%ED%95%84%EC%88%98-%ED%8C%A8%ED%82%A4%EC%A7%80-%EC%84%A4%EC%B9%98-%EB%B0%8F-%EA%B8%B0%EB%B3%B8-%EC%84%A4%EC%A0%95
+- https://velog.io/@shinhw371/CSS-why-Nextjs-recommand-Tailwind
+- https://x2bee.tistory.com/m/category/Next.js%20%EA%B0%9C%EB%B0%9C%20%EA%B0%80%EC%9D%B4%EB%93%9C/02.%20%EC%BD%94%EB%94%A9%20%EA%B0%80%EC%9D%B4%EB%93%9C%20%EB%B0%8F%20%ED%95%84%EC%88%98%20%ED%8C%A8%ED%82%A4%EC%A7%80
+- https://www.heropy.dev/p/n7JHmI
+- https://joshua1988.github.io/web-development/learning-nextjs/
+- https://developer.chrome.com/blog/next-third-parties?hl=ko
+- https://velog.io/@suji5358/Next.js-TypeScript%EC%97%90-ESLint-airbnb-Prettier-Husky-%EC%85%8B%ED%8C%85%ED%95%98%EA%B8%B0
+- https://www.hanbit.co.kr/channel/category/category_view.html?cms_code=CMS7641364152
+- https://devloo.tistory.com/entry/React-%EC%A0%84%EB%AC%B8%EA%B0%80%EB%93%A4%EC%9D%B4-%EC%B6%94%EC%B2%9C%ED%95%98%EB%8A%94-15%EA%B0%80%EC%A7%80-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC
+- https://velog.io/@warmwhiten/Top-10-React-Component-LibrariesFrameworks-for-2022-%EB%B2%88%EC%97%AD
+- https://uxdev.org/entry/React-UI-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%B6%94%EC%B2%9C-2024
+- https://ykss.netlify.app/translation/react_libraries_for_2024/
+- https://it.worldnews-one.com/entry/%EC%B5%9C%EC%8B%A0-React-UI-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%A0%95%EB%A6%AC-%EC%B6%94%EC%B2%9C%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0-%EC%8B%9C%ED%96%89%EC%B0%A9%EC%98%A4-%EC%A4%84%EC%9D%B4%EA%B8%B0
+- https://velog.io/@juh518/React-Chart-Library-%EB%B9%84%EA%B5%90
+- https://sillimmouse.tistory.com/85
+- https://oneoneone.kr/content/585186f6

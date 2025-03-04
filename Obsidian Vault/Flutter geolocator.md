@@ -1,0 +1,21 @@
+- 안드로이드 웹뷰에서 위치 정보 권한 획득을 위해 사용
+- Geolocator.checkPermission()
+	- denied(aos/ios): 초기 상태(권한 거부 및 GPS 서비스 비활성화)
+	- deniedForever(ios): 권한 거부 및 GPS 서비스 비활성화
+	- whileInUse(aos/ios): 앱 사용 중 권한 허용
+	- always(aos/ios): 항상 허용(백그라운드 사용 가능)
+- 참고
+	- https://pub.dev/packages/geolocator
+	- https://luvris2.tistory.com/797
+	- https://77kkang.tistory.com/29
+	- https://kanoos-stu.tistory.com/64
+	- https://velog.io/@namtaehyun/Flutter-Geolocator-permission
+	- https://velog.io/@ghenmaru/Flutter-google-map-API-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-%ED%98%84%EC%9E%AC-%EC%9C%84%EC%B9%98%EB%A1%9C-%EC%9D%B4%EB%8F%99%ED%95%98%EA%B8%B0
+	- https://tkayyoo.tistory.com/100
+	- https://devhooney.tistory.com/326
+	- https://www.google.com/search?q=flutter+react+%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C+%EC%9C%84%EC%B9%98+%EA%B6%8C%ED%95%9C&oq=flutter+react+%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C+%EC%9C%84%EC%B9%98+%EA%B6%8C%ED%95%9C&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCTIwNTAwajBqN6gCALACAA&sourceid=chrome&ie=UTF-8
+	- https://deemmun.tistory.com/78
+	- https://velog.io/@hanyeonhee/Flutter-%EB%84%A4%EC%9D%B4%ED%8B%B0%EB%B8%8C-%ED%8C%A8%ED%82%A4%EC%A7%80-%EC%9D%B4%EC%9A%A9%ED%95%98%EA%B8%B001
+	- https://velog.io/@hyeon9782/%EC%9D%B8%ED%94%84%EC%BD%98-2023-%EC%9B%B9%EB%B7%B0%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%B4-%EC%9B%B9-%EC%84%9C%EB%B9%84%EC%8A%A4%EB%A5%BC-%EC%95%B1%EC%9C%BC%EB%A1%9C-%EB%B9%A0%EB%A5%B4%EA%B2%8C-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0
+	- https://developer.android.com/training/permissions/requesting?hl=ko
+	- https://developer.mozilla.org/en-US/docs/Web/API/Navigator/geolocation

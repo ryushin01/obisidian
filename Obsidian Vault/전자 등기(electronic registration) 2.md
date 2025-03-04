@@ -1,0 +1,57 @@
+- 일정
+	- 기존 1월 중순 > 1월 13일 ~ 1월 24일까지 화면 완료
+	- 디자인 완료: 1월 10일
+- 프론트엔드: 반응형 웹(PC - Mobile)
+- 프론트엔드 기술 스택
+	- 프레임워크: Next.js
+	- 프로그래밍: Typescript
+	- 데이터 페칭: React Query
+	- 전역 상태 관리: Jotai
+	- 스타일링: Sass(Scss)
+	- 정적 코드 분석 툴: ESLint
+	- 코드 포맷터: Prettier
+	- 기타 패키지
+		- 숫자 천단위 콤마 처리: react-currency-format > ==다른 패키지 검색 필요==
+			- [x] better-thousand-separator
+			- [ ] [react-number-format(v4.5.0)](https://www.npmjs.com/package/react-number-format/v/4.5.0)
+		- 모바일 이미지 촬영 및 갤러리 미저장: [react-webcam(v7.2.0)](https://www.npmjs.com/package/react-webcam)
+		- 데이트픽커: [react-datepicker(v7.5.0)](https://reactdatepicker.com/)
+			- [한글화](https://steady-learner.tistory.com/entry/React-react-datepicker-%EC%96%B8%EC%96%B4-%EB%B0%94%EA%BE%B8%EA%B8%B0-%ED%95%9C%EA%B5%AD%EC%96%B4%EB%A1%9C-%EB%B3%80%EA%B2%BD%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95)
+		- 앱 렌더링 오류 대응: [react-error-boundary(v5.0.0)](https://www.npmjs.com/package/react-error-boundary)
+	- npm / yarn / pnpm?
+- [ ] 컴포넌트 파악
+	- [ ] 버튼
+		- [ ] 외형
+			- [ ] 모양
+			- [ ] 색깔
+			- [ ] 아이콘
+			- [ ] 보더
+			- [ ] 간격
+		- [ ] 텍스트
+		- [ ] 기능
+- [ ] ==기능 명세==
+	- [ ] 공통 함수(데이터 페칭 포함) 개발 필요
+	- [ ] 로그인
+		- [ ] 아이디 저장
+	- [ ] 홈
+		- [ ] 의뢰번호 검색
+		- [ ] 로그아웃 
+		- [ ] 데이터 리페칭
+		- [ ] 더보기?
+	- [ ] 의뢰목록
+		- [ ] 탭별 데이터 페칭
+		- [ ] (PC) 파일 드래그 앤 드롭
+		- [ ] (Mobile) 이미지 촬영 및 갤러리 미저장
+		- [ ] 이미지 업로드
+		- [ ] 데이트피커
+	- [ ] 현황조회
+		- [ ] 조회(필터 검색)
+		- [ ] 데이트피커
+		- [ ] 조회 초기화
+
+- [ ] 확인 필요 목록
+	- [ ] Next.js 배포: docker? vercel? etc?
+- [ ] 주석: jsdoc
+- [ ] 네이밍 컨벤션: 함수, 컴포넌트, 변수명 등
+
+

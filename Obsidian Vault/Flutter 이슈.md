@@ -1,0 +1,6 @@
+- 어드민 파일 업로드 이슈
+	- 내용: 파일 첨부 + 공지사항 등록 시 payload에 데이터가 담기지 않아 500에러가 뜨는 것으로 추측
+	- 공지관리 폴더명 : serv
+	- 공지관리 파일명 : serv_noti_01_page(공지 리스트 페이지) / serv_noti_02_page(공지 디테일 페이지)
+	- 공지관리 컨트롤러 : serv_noti_01_ctrl
+	- 공지관리 레포 : repo > admin_server > serv_repo

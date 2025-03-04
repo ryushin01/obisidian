@@ -1,0 +1,129 @@
+- 일정
+	- 기존 1월 중순 > 1월 13일 ~ 1월 24일까지 화면 완료
+	- 디자인 완료: 1월 10일
+- ==프로젝트명: kosdr(korea + escrow + digital + registration )==
+- 프론트엔드: 반응형 웹(PC - Mobile)
+- 프론트엔드 기술 스택
+	- 프레임워크: Next.js
+	- 프로그래밍: Typescript
+	- 데이터 페칭: React Query
+	- 전역 상태 관리: Jotai
+	- 스타일링: Sass(Scss)
+	- 정적 코드 분석 툴: ESLint
+	- 코드 포맷터: Prettier
+	- 기타 패키지
+		- 숫자 천단위 콤마 처리: [react-number-format(v4.5.0)](https://www.npmjs.com/package/react-number-format/v/4.5.0)
+		- 모바일 이미지 촬영 및 갤러리 미저장: [react-webcam(v7.2.0)](https://www.npmjs.com/package/react-webcam)
+		- 데이트픽커: [react-datepicker(v7.5.0)](https://reactdatepicker.com/)
+			- [한글화](https://steady-learner.tistory.com/entry/React-react-datepicker-%EC%96%B8%EC%96%B4-%EB%B0%94%EA%BE%B8%EA%B8%B0-%ED%95%9C%EA%B5%AD%EC%96%B4%EB%A1%9C-%EB%B3%80%EA%B2%BD%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95)
+		- 앱 렌더링 오류 대응: [react-error-boundary(v5.0.0)](https://www.npmjs.com/package/react-error-boundary)
+	- npm / yarn / pnpm?
+- [ ] ==컴포넌트 파악==
+	- [ ] 버튼
+		- [ ] 외형
+			- [ ] 모양
+			- [ ] 색깔
+			- [ ] 아이콘
+			- [ ] 보더
+			- [ ] 간격
+		- [ ] 텍스트
+		- [ ] 기능
+	- [ ] 버튼 그룹
+	- [x] 라디오(일반형 / 버튼형-기간 단위)
+	- [x] 타이포그래피
+	- [x] 테마 컬러
+	- [x] 아이코노그래피
+	- [x] 인풋 텍스트
+	- [x] 체크박스
+	- [x] gnb
+	- [x] 인풋 서치
+	- [ ] 로고
+	- [ ] 뱃지
+	- [x] 표
+	- [ ] 아이콘 버튼
+	- [ ] 토글 버튼
+	- [ ] 카드(배정 현황)
+	- [ ] 탭
+	- [ ] 팝업
+	- [x] 모달
+	- [ ] 업로드 섹션 
+	- [ ] 업로드 목록
+	- [x] 데이트피커 
+	- [ ] 셀렉트
+	- [x] 헤더
+	- [x] 푸터 
+	- [x] 아코디언
+	- [x] 페이지네이션
+	- [x] 셀렉트 vs. 뱃지
+- [ ] ==기능 명세==
+	- [ ] 공통 함수(데이터 페칭 포함) 개발 필요
+		- [x] 데이터 페칭: axios interceptors > ==axios 모듈화==
+	- [x] 레이아웃 개발 > const pathname = usePathname();
+		- [x] 최상위 공통 레이아웃: header / main
+		- [x] 로그인 제외: nav(gnb) / footer
+	- [ ] 로그인 및 비밀번호 변경
+		- [ ] 아이디 저장    
+		- [x] 유효성 검증
+	- [ ] 홈(대시보드)
+		- [ ] 의뢰번호 검색
+		- [ ] 로그아웃
+		- [ ] 비밀번호 변경 팝업
+		- [ ] 새로고침(데이터 리페칭)
+		- [ ] 더보기? 
+		- [ ] 배정 현황 카드?
+	- [ ] 의뢰목록
+		- [ ] 탭별 데이터 페칭
+		- [ ] 팝업 여닫기
+		- [ ] (PC) 파일 드래그 앤 드롭
+		- [ ] (Mobile) 이미지 촬영 및 갤러리 미저장
+		- [ ] 이미지 업로드
+		- [ ] 이미지 개별 삭제
+		- [x] 데이트피커 
+	- [ ] 현황조회
+		- [ ] 조회(필터 검색)
+		- [x] 데이트피커
+		- [ ] 조회 초기화
+		- [ ] 팝업 - 실행일 기준 버튼 노출 / 미노출 처리
+
+- [ ] 페이지 구조화
+	- [ ] 클라이언트 컴포넌트
+	- [ ] 서버 컴포넌트
+- [ ] 확인 필요 목록
+	- [ ] Next.js 배포: docker? vercel? etc?
+- [x] 주석: jsdoc
+- [x] 네이밍 컨벤션: 함수, 컴포넌트, 변수명 등
+- [x] 원격 저장소 이름 후보군
+	- [ ] kosdr-react-web
+	- [ ] kosdr-next
+	- [ ] kosdr-standard
+	- [ ] eRegistry
+	- [ ] SmartDeed
+	- [ ] EasyRegistry
+	- [ ] RegiMate
+	- [ ] TitleTrack
+	- [ ] kosdr-web-mate
+	- [ ] kosdr-forest
+
+
+- ==모바일==
+	- 전자등기 의뢰(Page A)
+		- 사진 촬영하기 버튼 터치 시 같은 페이지 내에서 사진 촬영 컴포넌트 렌더링
+	- 사진 촬영(Page A)
+		- 형제 컴포넌트 노출 / 미노출 처리
+	- 사진 업로드(Popup)
+
+- 차세대 KOS 프로젝트에서 가져올 모듈 및 훅 선별 목록
+	- [ ] hooks
+		- [ ] useCheckbox
+		- [x] useDatePicker
+		- [ ] useDisclosure
+		- [ ] useMovescroll
+	- [ ] utils
+		- [x] dateUtil
+		- [ ] formatDate
+		- [ ] formatNumber
+		- [ ] hypenNumber
+		- [ ] scrollToInput
+		- [ ] stringUtil
+
+
