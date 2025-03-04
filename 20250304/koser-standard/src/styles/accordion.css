@@ -1,0 +1,15 @@
+._accordion {
+    @apply flex flex-col;
+
+    ._accordion-trigger {
+        @apply flex justify-between;
+    }
+
+    ._accordion-content {
+        @apply overflow-hidden h-0 px-6 transition-all;
+
+        &.open {
+            @apply h-auto py-3;
+        }
+    }
+}

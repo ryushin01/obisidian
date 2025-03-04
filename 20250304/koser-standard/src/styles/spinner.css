@@ -1,0 +1,7 @@
+._spinner-backdrop {
+    @apply _flex-center fixed inset-0 z-10000 bg-black/70;
+
+    ._spinner {
+        @apply animate-spin;
+    }
+}

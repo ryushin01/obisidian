@@ -1,0 +1,7 @@
+._frame {
+    @apply relative border border-koser-grayscale-50;
+
+    img {
+        @apply absolute left-1/2 -translate-x-1/2 h-full object-contain;
+    }
+}
