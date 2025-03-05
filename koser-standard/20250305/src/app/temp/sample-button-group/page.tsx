@@ -1,9 +1,9 @@
 "use client";
 
-import {useState} from "react";
-import {PERIOD_LIST} from "@constants/period";
-import {ButtonGroup} from "@components/button";
-import {getFakeData} from "@services/main";
+import { useState } from "react";
+import { PERIOD_LIST } from "@constants/period";
+import { ButtonGroup } from "@components/button";
+import { getFakeData } from "@services/main";
 import ChildComponent from "./component/ChildComponent";
 
 export default function SampleButtonGroup() {
@@ -11,9 +11,9 @@ export default function SampleButtonGroup() {
   const [filteredData, setFilteredData] = useState({
     userId: null,
     id: null,
-    title: '',
+    title: "",
     completed: false,
-  })
+  });
 
   /**
    * 버튼 그룹 내 index를 받아 선택 유무를 배열로 저장하고 index에 따라 다른 파라미터로 데이터 페칭하는 함수
@@ -45,7 +45,7 @@ export default function SampleButtonGroup() {
         handleButtonGroup={handleButtonGroup}
       />
 
-      <ChildComponent filteredData={filteredData}/>
+      <ChildComponent filteredData={filteredData} />
     </>
   );
 }
