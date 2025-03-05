@@ -1,0 +1,23 @@
+._drawer-backdrop {
+    @apply fixed inset-0 z-10 bg-black/70;
+}
+
+._drawer-container {
+    @apply fixed inset-y-0 right-0 z-100 w-3/4 bg-white;
+
+    ._drawer-container-wrap {
+        @apply flex flex-col h-full;
+    }
+
+    ._drawer-header {
+        @apply flex justify-end;
+    }
+
+    ._drawer-content {
+        @apply flex items-center flex-col gap-2 flex-1 overflow-y-auto;
+    }
+
+    ._drawer-footer {
+        @apply _flex-center flex-col w-full;
+    }
+}

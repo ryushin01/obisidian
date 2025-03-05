@@ -1,0 +1,11 @@
+._radio {
+    @apply flex;
+
+    &._disabled {
+        @apply opacity-30 cursor-not-allowed;
+    }
+
+    input {
+        @apply hidden;
+    }
+}
