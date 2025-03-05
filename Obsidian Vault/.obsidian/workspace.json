@@ -139,12 +139,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "20250304.md",
+                "file": "20250304-0305.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "20250304"
+              "title": "20250304-0305"
             }
           }
         ],
@@ -290,11 +290,12 @@
   },
   "active": "e29100a9a194ff09",
   "lastOpenFiles": [
+    "무제 12.md",
+    "20250304-0305.md",
     "20250228.md",
     "20250225-0227.md",
     "20250224.md",
     "20250220-0221.md",
-    "20250304.md",
     "개선 필요 목록_20250228.md",
     "테스트 여신번호.md",
     "코스 가상 은행서버 사용 가이드.md",
@@ -315,7 +316,6 @@
     "sr mock data.md",
     "기능 정리.md",
     "SR - React 정리_0203.md",
-    "Packages.md",
     ".md"
   ]
 }

@@ -1,0 +1,44 @@
+/* input */
+._text-input {
+  @apply flex p-2 border outline-none text-[15px] min-w-48;
+
+  &:focus {
+    @apply border-koser-primary-80;
+  }
+
+  &._disable {
+    @apply opacity-90 cursor-not-allowed;
+  }
+}
+
+._with-icon-label {
+  @apply flex items-center justify-between border border-koser-grayscale-40 outline-none rounded-lg bg-koser-grayscale-0 min-w-56 max-w-64 h-[40px];
+
+  &:focus-within {
+    @apply border-koser-primary-80;
+  }
+
+  ._text-input {
+    @apply px-0 bg-transparent border-none outline-none max-w-48;
+  }
+}
+
+._input-message {
+  @apply text-[12px] opacity-0 transition-opacity duration-200;
+
+  /* isError가 true일 때 inputMessage가 보이도록 추가 */
+
+  &.is-error {
+    @apply opacity-100 text-koser-secondary-red-50;
+  }
+}
+
+/* label focus될 때는 표시 */
+._with-icon-label:focus-within + ._input-message {
+  @apply opacity-100 block;
+}
+
+/* input focus될 때 inputMessage 보이게 */
+._text-input:focus + ._input-message {
+  @apply opacity-100 text-koser-primary-80;
+}
