@@ -1,0 +1,54 @@
+{
+  "code": "00",
+  "msg": "성공",
+  "data": {
+    "pageData": {
+      "currPageNum": 1,
+      "totalPageNum": 1,
+      "pageSize": 10,
+      "totalElements": 1,
+      "last": true
+    },
+    "resInfo": {
+      "resData": true,
+      "title": null,
+      "body": "Success"
+    },
+    "fillInfo": {
+      "startDate": "",
+      "endDate": "20250212",
+      "bfAvail": true,
+      "esAvail": true,
+      "erAvail": true
+    },
+    "progCntrInfo": {
+      "cntrCount": 1,
+      "newPopup": false,
+      "todayNew": false,
+      "cntrList": [
+        {
+          "date": "20250212",
+          "cntrDataList": [
+            {
+              "date": "20250212",
+              "rgstrGbCd": "02",
+              "statCd": "40",
+              "statNm": "설정서류",
+              "dbtrNm": "함양쑤",
+              "loanNo": "22494762023",
+              "lndThngAddr": "충청북도 제천시 강제동  844-0번지 844-0번지 제천강저롯데캐슬프리미어 103동 202호",
+              "newCntrYn": "N",
+              "lndHndgSlfDsc": "2"
+            }
+          ]
+        }
+      ]
+    },
+    "doneCntrInfo": {
+      "cntrCount": 21,
+      "newPopup": false,
+      "todayNew": false,
+      "cntrList": []
+    }
+  }
+}

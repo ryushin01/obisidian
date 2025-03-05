@@ -1,0 +1,53 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "forceConsistentCasingInFileNames": false,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "public": ["./public/"],
+      "@/fonts": ["./public/fonts"],
+      "@icons": ["public/icon"],
+      "@app/*": ["src/app/*"],
+      "@constants": ["src/app/Constants"],
+      "@constants/*": ["src/constants/*"],
+      "@components": ["src/app/_components"],
+      "@components/*": ["src/app/_components/*"],
+      "@hooks": ["src/hooks"],
+      "@hooks/*": ["src/hooks/*"],
+      "@utils": ["src/utils"],
+      "@utils/*": ["src/utils/*"],
+      "@libs": ["src/app/_lib"],
+      "@stores": ["src/app/_store"],
+      "@stores/*": ["src/app/_store/*"],
+      /* TODO : 하단 data 부분 제거 (SR 목업데이터 임시 생성) */
+      "@data": ["src/data"],
+      "@data/*": ["src/data/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/app/api/config.js"
+  ],
+  "exclude": ["node_modules"]
+}

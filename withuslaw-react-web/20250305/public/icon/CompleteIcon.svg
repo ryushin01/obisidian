@@ -1,0 +1,31 @@
+<svg width="191" height="118" viewBox="0 0 191 118" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="finish">
+<circle id="Ellipse 59" cx="88.5" cy="68" r="45" fill="#FFF8EE"/>
+<g id="Vector">
+<path d="M63.3333 65L47.5 109.583L92.0833 93.7917" fill="#FF9900"/>
+<path d="M63.3333 65L47.5 109.583L92.0833 93.7917C88.7222 87.0556 78.2665 71.8668 63.3333 65Z" stroke="#FF9900" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="Mask group">
+<mask id="mask0_864_1704" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="44" y="61" width="52" height="53">
+<g id="Vector_2">
+<path d="M63.3333 65L47.5 109.583L92.0833 93.7917" fill="#FF9900"/>
+<path d="M63.3333 65L47.5 109.583L92.0833 93.7917C88.7222 87.0556 78.2665 71.8668 63.3333 65Z" stroke="#FF9900" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</mask>
+<g mask="url(#mask0_864_1704)">
+<path id="Vector_3" opacity="0.2" d="M48.1997 91.4885L51.7967 92.2799C55.5547 93.1309 57.589 97.2448 56.0011 100.752C54.7003 103.396 55.6117 106.642 58.0547 108.31L60.7041 110.119" stroke="#FFF8EE" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" opacity="0.5" d="M53.1997 67.4885L56.7967 68.2799C60.5547 69.1309 62.589 73.2448 61.0011 76.7519C59.7003 79.3955 60.6117 82.6416 63.0547 84.3101L65.7041 86.1195" stroke="#FFF8EE" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_5" opacity="0.4" d="M78.1997 83.4885L81.7967 84.2799C85.5547 85.1309 87.589 89.2448 86.0011 92.7519C84.7003 95.3955 85.6117 98.6416 88.0547 100.31L90.7041 102.119" stroke="#FFF8EE" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<path id="Vector_6" d="M131.493 72.52L128.379 70.5529C125.109 68.5148 120.769 70.0086 119.432 73.6185C118.456 76.4052 115.566 78.0794 112.656 77.5472L109.5 76.9702" stroke="#FFDB6B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_7" d="M128.833 29.9998L119.5 33.1248C116.843 34.0098 114.576 35.79 113.087 38.1612C111.597 40.5324 110.977 43.3473 111.333 46.1248C111.75 49.7082 108.958 52.9165 105.292 52.9165H103.708C100.125 52.9165 97.0417 55.4165 96.375 58.9165L95.5 63.3332" stroke="#FFE8E5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_8" d="M82.8333 26L84.2083 29.4167C85.625 33 83.375 37 79.5833 37.6667C76.6667 38.0833 74.5 40.6667 74.5 43.625V46.8333" stroke="#FF9900" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle id="Ellipse 53" cx="159" cy="50.5" r="3.5" stroke="#74A4ED" stroke-width="2"/>
+<circle id="Ellipse 58" opacity="0.33" cx="186" cy="65.5" r="3.5" stroke="#8BE56C" stroke-width="2"/>
+<circle id="Ellipse 54" cx="55" cy="30.5" r="4.5" fill="#4CCB1F"/>
+<circle id="Ellipse 57" cx="5" cy="98.5" r="3.5" stroke="#FABE00" stroke-width="2"/>
+<circle id="Ellipse 55" cx="130" cy="101.5" r="4.5" fill="#FFDB6B"/>
+<circle id="Ellipse 56" cx="105" cy="4.5" r="4.5" fill="#EC7F70"/>
+</g>
+</svg>
