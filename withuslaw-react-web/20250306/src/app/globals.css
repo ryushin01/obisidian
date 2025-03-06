@@ -1,0 +1,119 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --foreground-rgb: 255, 255, 255;
+        --background-start-rgb: 0, 0, 0;
+        --background-end-rgb: 0, 0, 0;
+    }
+}
+
+/* 초기화 레이어 */
+@layer base {
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    input:focus,
+    textarea:focus {
+        outline: none;
+    }
+
+    input[disabled] {
+        opacity: 1;
+    }
+
+    html {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    body {
+        @apply bg-kos-white;
+    }
+
+    html,
+    body,
+    body > div:first-child:not(.self) {
+        min-height: 100vh;
+        padding-bottom: constant(safe-area-inset-bottom);
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+}
+
+/* 컴포넌트 레이어 */
+@layer components {
+    /* mixin */
+    ._flex-center {
+        @apply flex items-center justify-center;
+    }
+
+    ._header-next-sticky-area {
+        @apply sticky top-[60px] z-30;
+    }
+}
+
+/* 유틸리티 레이어 */
+@layer utilities {
+    ._scroll-area {
+        height: calc(100vh - 60px);
+        overflow-y: auto;
+    }
+}
+
+/* bottom sheet 커스텀 */
+.react-modal-sheet-container {
+    border-radius: 32px 32px 0 0 !important;
+}
+
+.react-modal-sheet-header {
+    height: auto !important;
+    align-items: flex-start !important;
+    padding: 13px 0 16px !important;
+}
+
+.react-modal-sheet-drag-indicator {
+    width: 22px !important;
+    height: 5px !important;
+    background: rgba(234, 234, 234, 0.8) !important;
+}
+
+/* 잔금시간 커스텀 */
+.css-z3c6am-MuiFormControl-root-MuiTextField-root {
+    width: 100%;
+}
+
+.css-1g7nc1s-MuiPickersLayout-root {
+    width: calc(100vw - 100px);
+}
+
+.schdlSwiper {
+    .swiper-slide-active {
+        .schdlText {
+            color: #000;
+        }
+    }
+}
+
+.caseSwiper {
+    .swiper-button-next {
+        width: 30px;
+        height: 30px;
+        background-color: #f00;
+    }
+}
+
+.transform-style-flat {
+    transform-style: flat;
+}
+
+.ios-break-word {
+    overflow-wrap: break-word;
+}

@@ -1,0 +1,16 @@
+{
+  "code": "00",
+  "msg": "성공",
+  "data": {
+    "loanNo": "12345678901",
+    "totalAmount": 1000000,
+    "execDt": "20250218",
+    "adminReqStatCd": "00",
+    "repayBankInfoList": [
+      {
+        "bankNm": "기타",
+        "receiptStatCd": "00"
+      }
+    ]
+  }
+}

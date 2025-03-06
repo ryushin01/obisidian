@@ -1,0 +1,32 @@
+{
+  "loanNo": "22371471478",
+  "kndCd": "1",
+  "statCd": "20",
+  "regoNm": "서울지방법원 등기과",
+  "uptUnqNo": "1101007011111",
+  "ersuClsMsg": "해당없음",
+  "rgstrGbCd": "01",
+  "rgstrAcptDtm": "2025-02-11T07:35:27.275Z",
+  "rgstrInfoList": [
+    {
+      "seq": 22371471478,
+      "acptGbCd": "01",
+      "rgstrNo": "471478",
+      "byrNm": "박매수",
+      "byrBirthDt": "910415"
+    }
+  ],
+  "buyerInfoList": [
+    {
+      "id": 1,
+      "procGb": "1",
+      "buyGbCd": "1",
+      "buyerNo": 1,
+      "buyerBirthDt": "870819",
+      "buyerName": "류창선",
+      "buyerNum": 1,
+      "buyerDenum": 1,
+      "buyerTransAprvNo": "123"
+    }
+  ]
+}

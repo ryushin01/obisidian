@@ -1,0 +1,119 @@
+{
+  "code": "00",
+  "msg": "성공",
+  "data": {
+    "statCd": "10",
+    "regType": "02",
+    "statNm": "대출실행",
+    "dbtrNm": "변새뿌",
+    "dbtrHpno": "01099274288",
+    "dbtrBirthDt": "7602282000000",
+    "loanNo": "22483283844",
+    "lndThngAddr": "경기도 여주시 월송동  127-9번지 127-9번지 월송마을한성 101동 1401호",
+    "execDt": "20250108",
+    "execAmt": 96000000,
+    "bnkBranchCd": "999999",
+    "bnkBranchNm": "여주지점",
+    "bnkBrnchPhno": "0318847154",
+    "orgBrnchNm": null,
+    "lndPrdtNm": "주택도시기금 내집마련디딤돌대출(이차보전)",
+    "slPrc": 120000000,
+    "kndCd": "1",
+    "kndNm": "매매",
+    "elregBizNo": "",
+    "elregReptOfficeNm": null,
+    "elregOfficeTelNo": null,
+    "rgstrGbCd": "02",
+    "resRfdRegd": {
+      "resData": true,
+      "title": null,
+      "body": null
+    },
+    "resDateRfdRegd": {
+      "resData": false,
+      "title": null,
+      "body": null
+    },
+    "resEltnSecurd": {
+      "resData": false,
+      "title": null,
+      "body": null
+    },
+    "resExecAmtChngd": {
+      "resData": false,
+      "title": null,
+      "body": null
+    },
+    "resEstmRegd": {
+      "resData": false,
+      "title": null,
+      "body": null
+    },
+    "resRgstrRegd": {
+      "resData": false,
+      "title": null,
+      "body": null
+    },
+    "resPayRegd": {
+      "resData": false,
+      "title": null,
+      "body": null
+    },
+    "resEstmCnfm": {
+      "resData": false,
+      "title": null,
+      "body": null
+    },
+    "resLndAmtPay": {
+      "resData": false,
+      "title": null,
+      "body": null
+    },
+    "resRevisionCheck": {
+      "resData": false,
+      "title": null,
+      "body": null
+    },
+    "resEstbsCntrFn": {
+      "resData": false,
+      "title": null,
+      "body": null
+    },
+    "resExecDateCheck": {
+      "resData": false,
+      "title": null,
+      "body": null
+    },
+    "progGbInfo": {
+      "currProgCd": "04",
+      "currProgNum": "1",
+      "currProgNm": "1. 대출금 요청",
+      "currProgDesc": "거래 당사자 계좌로 지급되는 대출금을 요청해주세요.",
+      "nextProgCd": "00",
+      "nextProgNum": "1",
+      "nextProgNm": "2. 대출실행 대기중",
+      "nextProgDesc": "정보 등록을 완료해주세요.",
+      "prevProgList": []
+    },
+    "clsBtnYn": "N",
+    "crtDtm": "",
+    "lndHndgSlfDsc": "2",
+    "docAmt": 300000,
+    "debtDcAmt": 300000,
+    "etcAmt": 300000,
+    "slmnLndProc": "03",
+    "slmnLndProcNm": "소유권이전 & 후순위설정",
+    "slmnCmpyNm": "뱅크클리어3",
+    "slmnNm": "홍길동3",
+    "slmnPhno": "01095890086",
+    "sellerNm1": "메도인 1",
+    "sellerBirthDt1": "870819",
+    "sellerNm2": "",
+    "sellerBirthDt2": "",
+    "trstNm": "창선신탁주식회사",
+    "cnsgnNm": "이은희 선배님",
+    "bnfrNm": "주식회사 다인은행",
+    "owshDocStatCd": "02",
+    "owshDocStatNm": "지급 완료"
+  }
+}

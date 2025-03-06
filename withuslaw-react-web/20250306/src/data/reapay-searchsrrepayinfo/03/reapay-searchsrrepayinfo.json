@@ -1,0 +1,24 @@
+{
+  "code": "00",
+  "msg": "성공",
+  "data": {
+    "loanNo": "12345678901",
+    "totalAmount": 100000,
+    "execDt": "20250220",
+    "adminReqStatCd": "03",
+    "repayBankInfoList": [
+      {
+        "bankNm": "우리은행",
+        "receiptStatCd": "01"
+      },
+      {
+        "bankNm": "국민은행",
+        "receiptStatCd": "01"
+      },
+      {
+        "bankNm": "기타",
+        "receiptStatCd": "00"
+      }
+    ]
+  }
+}

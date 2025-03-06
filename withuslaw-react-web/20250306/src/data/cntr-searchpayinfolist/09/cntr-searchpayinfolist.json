@@ -1,0 +1,38 @@
+{
+  "code": "00",
+  "msg": null,
+  "data": {
+    "loanNo": "22494762023",
+    "srCvo": {
+      "slmnLndProc": "09",
+      "sellerNm1": "홍길동1",
+      "sellerBirthDt1": "980512",
+      "sellerNm2": "홍길동2",
+      "sellerBirthDt2": "870512",
+      "trstNm": "홍길동3",
+      "cnsgnNm": "홍길동4",
+      "bnfrNm": "홍길동5",
+      "pwpsNm": "홍길동6",
+      "pwpsBirthDt": "940512",
+      "bnkGbCd": "020",
+      "bankNm": "우리은행",
+      "execAmt": 100000000
+    },
+    "payList": [
+      {
+        "no": 1,
+        "payCd": "01",
+        "bankCd": "020",
+        "payAmt": 0,
+        "bankNm": "우리은행"
+      },
+      {
+        "no": 2,
+        "payCd": "02",
+        "bankCd": "020",
+        "payAmt": 228000000,
+        "bankNm": "우리은행"
+      }
+    ]
+  }
+}
