@@ -1,0 +1,34 @@
+._responsive-swiper {
+    width: 100%;
+
+    /* TODO: 임시값 삭제 */
+    height: 500px;
+
+    .swiper-slide {
+        /* TODO: 임시값 삭제 */
+        width: 90%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    ._btn-prev,
+    ._btn-next {
+        /* TODO: 임시값 삭제 */
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 100;
+        width: 100px;
+        height: 100px;
+        background-color: rgba(0, 0, 0, 1);
+        color: rgba(255, 255, 255, 1);
+
+        &[disabled] {
+            opacity: 0.5;
+        }
+    }
+
+    ._btn-next {
+        /* TODO: 임시값 삭제 */
+        right: 0;
+    }
+}

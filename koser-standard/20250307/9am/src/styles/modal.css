@@ -1,0 +1,16 @@
+/* modal */
+._modal-backdrop {
+    @apply fixed inset-0 z-10 bg-black/70;
+}
+
+._modal-container {
+    @apply fixed inset-20 z-100 rounded-3xl bg-white;
+
+    ._modal-container-wrap {
+        @apply flex flex-col h-full;
+    }
+
+    ._modal-content {
+        @apply flex-1 overflow-y-auto;
+    }
+}

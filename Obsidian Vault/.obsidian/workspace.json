@@ -4,165 +4,208 @@
     "type": "split",
     "children": [
       {
-        "id": "4f4d3740ea44585f",
-        "type": "tabs",
+        "id": "09b9a625bc817640",
+        "type": "split",
         "children": [
           {
-            "id": "c88b8032836d43f3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "전자 등기(electronic registration).md",
-                "mode": "source",
-                "source": false
+            "id": "4f4d3740ea44585f",
+            "type": "tabs",
+            "dimension": 74.14772727272727,
+            "children": [
+              {
+                "id": "c88b8032836d43f3",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "전자 등기(electronic registration).md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "전자 등기(electronic registration)"
+                }
               },
-              "icon": "lucide-file",
-              "title": "전자 등기(electronic registration)"
-            }
+              {
+                "id": "94b96aa56ae0393c",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Packages.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Packages"
+                }
+              },
+              {
+                "id": "b35c1c4204ba8d41",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "기능 정리.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "기능 정리"
+                }
+              },
+              {
+                "id": "6618165dd7cb7860",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "sr mock data.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "sr mock data"
+                }
+              },
+              {
+                "id": "7a8a8dc5c7cf46e7",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "sr api.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "sr api"
+                }
+              },
+              {
+                "id": "37478839975f8bab",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "20250219-0220.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "20250219-0220"
+                }
+              },
+              {
+                "id": "e2c045f08e24eda3",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "SR 실 데이터.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "SR 실 데이터"
+                }
+              },
+              {
+                "id": "24cfa7d562e62f66",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "테스트 여신번호.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "테스트 여신번호"
+                }
+              },
+              {
+                "id": "061b1ebec1b7e165",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "개선 필요 목록_20250228.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "개선 필요 목록_20250228"
+                }
+              },
+              {
+                "id": "e29100a9a194ff09",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "20250304-0305.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "20250304-0305"
+                }
+              },
+              {
+                "id": "98369b107e054f15",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "20250306.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "20250306"
+                }
+              },
+              {
+                "id": "52cebed9abecc735",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "20250307.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "20250307"
+                }
+              }
+            ],
+            "currentTab": 11
           },
           {
-            "id": "94b96aa56ae0393c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Packages.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Packages"
-            }
-          },
-          {
-            "id": "b35c1c4204ba8d41",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "기능 정리.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "기능 정리"
-            }
-          },
-          {
-            "id": "6618165dd7cb7860",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "sr mock data.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "sr mock data"
-            }
-          },
-          {
-            "id": "7a8a8dc5c7cf46e7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "sr api.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "sr api"
-            }
-          },
-          {
-            "id": "37478839975f8bab",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "20250219-0220.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "20250219-0220"
-            }
-          },
-          {
-            "id": "e2c045f08e24eda3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SR 실 데이터.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "SR 실 데이터"
-            }
-          },
-          {
-            "id": "24cfa7d562e62f66",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "테스트 여신번호.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "테스트 여신번호"
-            }
-          },
-          {
-            "id": "061b1ebec1b7e165",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "개선 필요 목록_20250228.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "개선 필요 목록_20250228"
-            }
-          },
-          {
-            "id": "e29100a9a194ff09",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "20250304-0305.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "20250304-0305"
-            }
-          },
-          {
-            "id": "98369b107e054f15",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "20250306.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "20250306"
-            }
+            "id": "7aab9d5cd1e9c44f",
+            "type": "tabs",
+            "dimension": 25.85227272727273,
+            "children": [
+              {
+                "id": "ed9b7e9c59f11aa8",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "전자등기 시스템 킥오프 회의.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "전자등기 시스템 킥오프 회의"
+                }
+              }
+            ]
           }
         ],
-        "currentTab": 10
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -302,10 +345,14 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "98369b107e054f15",
+  "active": "52cebed9abecc735",
   "lastOpenFiles": [
-    "20250304-0305.md",
     "20250306.md",
+    "20250307.md",
+    "전자등기 시스템 킥오프 회의.md",
+    "무제 13.md",
+    "20250307 1.md",
+    "20250304-0305.md",
     "Next.js 프로젝트 구축.md",
     "코스 가상 은행서버 사용 가이드.md",
     "무제 12.md",
@@ -326,10 +373,6 @@
     "20250219-0220.md",
     "무제 5.md",
     "무제 4.md",
-    "무제 3.md",
-    "sr api.md",
-    "statCd.md",
-    "sr mock data.md",
     ".md"
   ]
 }

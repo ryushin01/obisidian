@@ -1,0 +1,17 @@
+._select {
+  @apply bg-koser-grayscale-0 border rounded-md w-48 py-1 my-1;
+
+  &:hover {
+    @apply bg-koser-secondary-yellow-10;
+  }
+  &:focus {
+    @apply bg-koser-primary-30 border-koser-secondary-bluegray-50;
+  }
+  &:active {
+    @apply bg-koser-secondary-bluegray-50;
+  }
+
+  &._disabled {
+    @apply bg-koser-grayscale-10 text-koser-grayscale-50 cursor-not-allowed;
+  }
+}

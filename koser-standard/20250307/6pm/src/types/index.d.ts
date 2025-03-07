@@ -1,0 +1,1 @@
+export type ChangeInputType = (event: ChangeEvent<HTMLInputElement>) => void;
