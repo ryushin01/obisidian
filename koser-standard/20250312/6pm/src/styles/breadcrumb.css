@@ -1,0 +1,28 @@
+._breadcrumb {
+    @apply flex items-center;
+
+    li:not(:first-child) {
+        a {
+            @apply pl-2 gap-x-2;
+        }
+    }
+
+    li:first-child {
+        a {
+            @apply gap-x-1 text-koser-main-100;
+        }
+    }
+
+    li:last-child {
+        a {
+            span {
+                @apply font-semibold;
+            }
+        }
+    }
+
+    a {
+        @apply _flex-center;
+    }
+
+}

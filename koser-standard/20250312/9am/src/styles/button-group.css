@@ -1,0 +1,49 @@
+._button-group {
+    @apply flex;
+
+    button {
+        @apply rounded-none;
+
+        &:first-child {
+            @apply rounded-l-md;
+        }
+
+        &:last-child {
+            @apply rounded-r-md;
+        }
+
+        & + button {
+            @apply -ml-1;
+        }
+    }
+
+
+    /* TODO: 임시값 */
+
+    /*button {*/
+    /*    padding: 10px 20px;*/
+    /*    border: 4px #111111 solid;*/
+
+    /*    & + button {*/
+    /*        margin-left: -4px;*/
+    /*    }*/
+
+    /*    &:first-child {*/
+    /*        border-radius: 8px 0 0 8px;*/
+    /*    }*/
+
+    /*    &:last-child {*/
+    /*        border-radius: 0 8px 8px 0;*/
+    /*    }*/
+
+    /*    &[aria-selected="true"] {*/
+    /*        background-color: #0b56a7;*/
+    /*        color: #ffffff;*/
+    /*    }*/
+
+    /*    &[disabled] {*/
+    /*        opacity: 0.3;*/
+    /*        cursor: not-allowed;*/
+    /*    }*/
+    /*}*/
+}

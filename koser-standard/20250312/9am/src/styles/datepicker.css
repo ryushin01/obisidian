@@ -1,0 +1,19 @@
+._datepicker {
+    @apply flex relative;
+
+    /* TODO: 임시값 삭제 */
+    height: 50px;
+    border: 5px #00a8ff solid;
+
+    .react-datepicker-wrapper {
+        @apply w-full h-full;
+
+        .react-datepicker__input-container {
+            @apply flex items-center gap-2 w-full h-full;
+
+            input {
+                @apply flex w-full h-full px-8;
+            }
+        }
+    }
+}
