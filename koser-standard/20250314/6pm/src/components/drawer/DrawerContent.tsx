@@ -3,6 +3,8 @@ import { FinanceEmblemMedium } from "@logos";
 import { LogoutIcon } from "@icons14";
 import { Typography } from "@components/common";
 import { Button } from "@components/button";
+import { Modal } from "@components/modal";
+import { useDisclosure } from "@hooks";
 
 type DrawerContentProps = {
   level: number;
@@ -14,6 +16,12 @@ type DrawerContentProps = {
  * @author 류창선 <zero.ryushin@bankle.co.kr>
  */
 export default function DrawerContent({ level }: DrawerContentProps) {
+  const {
+    isOpen: isModalOpen,
+    open: openModal,
+    close: closeModal,
+  } = useDisclosure();
+
   return (
     <div className="_drawer-content">
 
@@ -31,7 +39,7 @@ export default function DrawerContent({ level }: DrawerContentProps) {
             shape="solid"
             size="sm"
             color="main5"
-            onClick={() => console.log("비밀번호 변경")}>
+            onClick={openModal}>
             비밀번호 변경
           </Button>
         )}
@@ -53,6 +61,16 @@ export default function DrawerContent({ level }: DrawerContentProps) {
           로그아웃
         </Button>
       </div>
+
+      {isModalOpen &&
+        <Modal
+          title="비밀번호 변경"
+          onClose={closeModal}
+          size="md"
+        >
+          <div>모달 내용</div>
+        </Modal>
+      }
     </div>
   );
 };

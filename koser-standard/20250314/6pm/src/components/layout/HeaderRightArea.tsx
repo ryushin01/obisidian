@@ -30,7 +30,7 @@ export default function HeaderRightArea() {
   } = useDisclosure();
 
   // 임시 권한 구분 코드(1: 금융기관 / 2: 법무대리인 / 3: 관리자)
-  const level: number = 3;
+  const level: number = 1;
 
   return (
     <div className="_header-right-area">
