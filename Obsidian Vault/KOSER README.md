@@ -32,28 +32,37 @@ pnpm run dev
 ```
 📦 project
 ├── 🗂️ public
-│ ├── 🗂️ fonts                // 웹 폰트
-│ ├── 🗂️ icons                // svg 아이콘
-│ └── 🗂️ images               // 이미지 파일
-│ └── 🏙️ logo.svg             // 파비콘
+│ ├── 🗂️ icons                    // svg 아이콘
+│ └── 🗂️ images                   // 이미지 파일
+│ └── 🏙️ logo.svg                 // 파비콘
 │
 ├── 🗂️ src
-│ ├── 🗂️ app                  // 라우팅 관련 파일
-│ │   ├── 🗂️ dashboard        // 대시보드
-│ │   ├── 🗂️ request-list     // 의뢰목록
-│ │   ├── 🗂️ status-inquiry   // 현황조회
-│ │   ├── 🗂️ notice           // 공지사항
-│ │   └── 🗂️ temp             // 임시 파일 모음(패키지 적용 샘플 페이지 등)
+│ ├── 🗂️ app                      // 라우팅 관련 파일
+│ │   ├── 🗂️ admin                // 관리자
+│ │   │   ├── 🗂️ assign           // 배정관리
+│ │   │   ├── 🗂️ registration     // 등기관리
+│ │   │   ├── 🗂️ member           // 회원관리
+│ │   │   └── 🗂️ notice           // 공지관리
+│ │   │
+│ │   ├── 🗂️ financial            // 금융기관
+│ │   │   ├── 🗂️ home             // 홈
+│ │   │   │   └── 🗂️ notice       // 공지사항
+│ │   │   │
+│ │   │   ├── 🗂️ request-list     // 의뢰목록
+│ │   │   │   └── 🗂️ request      // 전자등기 의뢰
+│ │   │   │
+│ │   │   └── 🗂️ status-inquiry   // (전자등기) 현황조회
+│ │   │
+│ │   └── 🗂️ temp                 // 임시 파일 모음(패키지 적용 샘플 페이지 등)
 │ │
-│ ├── 🗂️ components           // 공통 컴포넌트
-│ ├── 🗂️ constants            // 공통 상수값
-│ ├── 🗂️ hooks                // 공통 커스텀 훅
-│ ├── 🗂️ libs                 // 외부 라이브러리
-│ ├── 🗂️ services             // 각종 API 요청
-│ ├── 🗂️ stores               // 전역 상태 관리 대상인 state
-│ ├── 🗂️ styles               // 전역 및 모듈화된 스타일 파일
-│ ├── 🗂️ types                // 각종 타입스크립트 타입 정의
-│ └── 🗂️ utils                // 공통 유틸리티 함수
+│ ├── 🗂️ components               // 공통 컴포넌트
+│ ├── 🗂️ constants                // 공통 상수값
+│ ├── 🗂️ hooks                    // 공통 커스텀 훅
+│ ├── 🗂️ services                 // 각종 API 요청
+│ ├── 🗂️ stores                   // 전역 상태 관리 대상인 state
+│ ├── 🗂️ styles                   // 전역 및 모듈화된 스타일 파일
+│ ├── 🗂️ types                    // 각종 타입스크립트 타입 정의
+│ └── 🗂️ utils                    // 공통 유틸리티 함수
 ```
 ***
 ## 부가 설정
