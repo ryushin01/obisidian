@@ -1,0 +1,41 @@
+._tab-container {
+    @apply w-full py-3;
+
+    ._tab-list {
+        @apply flex items-center justify-around;
+
+        ._tab-list-wrap {
+            @apply relative w-full;
+        }
+
+        ._tab-trigger {
+            @apply w-full py-3 gap-2;
+
+            &:hover {
+                @apply bg-koser-grayscale-10 text-koser-main-100;
+            }
+
+            &:focus {
+                @apply bg-koser-main-5 text-koser-main-100;
+            }
+        }
+
+        ._tab-border {
+            @apply absolute bottom-0 left-0 w-full h-1 border-b-2 border-koser-grayscale-40;
+        }
+
+        .active {
+            @apply border-b-4 border-koser-main-100;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    ._tab-container {
+        ._tab-list {
+            ._tab-trigger {
+                @apply py-2;
+            }
+        }
+    }
+}

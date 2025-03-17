@@ -1,0 +1,94 @@
+/* input */
+._text-input {
+  @apply flex p-2 border outline-none text-[15px] min-w-56 w-full h-[40px];
+
+  &:focus {
+    @apply border-koser-main-80;
+  }
+  &._error {
+    @apply border-koser-secondary-red-50;
+  }
+  &:disabled {
+    @apply bg-koser-grayscale-30 text-koser-grayscale-0 cursor-not-allowed;
+
+    &._error {
+      @apply border-none;
+    }
+  }
+}
+
+._with-icon-label {
+  @apply flex items-center border border-koser-grayscale-40 outline-none rounded-lg justify-around bg-koser-grayscale-0 min-w-56 h-[40px];
+
+  &:focus-within {
+    @apply border-koser-main-100;
+  }
+
+  ._text-input {
+    @apply px-0 bg-transparent border-none outline-none;
+  }
+
+  &._error,
+  &._error ._text-input {
+    @apply border-koser-secondary-red-50;
+  }
+
+  &:has(input:disabled),
+  &:disabled {
+    @apply bg-koser-grayscale-30 text-koser-grayscale-0 cursor-not-allowed;
+
+    &._error {
+      @apply border-none;
+    }
+  }
+}
+
+._search-input-label {
+  @apply flex items-center bg-koser-main-0 border-none rounded-3xl justify-between px-4 min-w-56 h-[40px];
+
+  ._text-input {
+    @apply px-0 bg-transparent border-none text-koser-grayscale-80 flex-1;
+  }
+
+  input {
+    @apply w-full;
+  }
+
+  input::-ms-clear,
+  input::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+  input::-webkit-search-decoration,
+  input::-webkit-search-cancel-button,
+  input::-webkit-search-results-button,
+  input::-webkit-search-results-decoration {
+    display: none;
+  }
+}
+
+._input-message {
+  @apply text-[12px] opacity-0 transition-opacity duration-200;
+
+  /* isError가 true일 때 inputMessage 노출 */
+  &._error {
+    @apply opacity-100 text-koser-secondary-red-50;
+  }
+}
+
+/* label focus될 때는 표시 */
+._with-icon-label:focus-within + ._input-message {
+  @apply opacity-100 block;
+}
+
+/* input focus될 때 inputMessage 보이게 */
+._text-input:focus + ._input-message {
+  @apply opacity-100 text-koser-main-80;
+}
+
+/* input disabled이면 inputMessage 안보이게 */
+._text-input:disabled + ._input-message {
+  @apply opacity-0 hidden;
+}

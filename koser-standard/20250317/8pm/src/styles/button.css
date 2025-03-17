@@ -1,0 +1,19 @@
+._text-button {
+    @apply flex items-center justify-center w-full px-4;
+
+    &._disabled {
+        @apply bg-koser-grayscale-30 text-koser-grayscale-60 cursor-not-allowed;
+    }
+
+    span {
+        @apply whitespace-nowrap;
+    }
+}
+
+._icon-button {
+    @apply _flex-center bg-transparent border-none outline-none;
+
+    &._disabled {
+        @apply opacity-30 cursor-not-allowed;
+    }
+}

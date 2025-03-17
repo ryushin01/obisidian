@@ -1,0 +1,42 @@
+._account-layer-wrapper {
+    @apply absolute top-[calc(100%+15px)] -right-5 z-1;
+
+    ._account-layer {
+        @apply _flex-center flex-col relative z-10 p-6 rounded-xl border border-koser-grayscale-40 bg-koser-grayscale-0;
+
+        ._drawer-content {
+            @apply _flex-center flex-col gap-y-5 w-full;
+
+            ._drawer-content-inner-wrapper {
+                @apply _flex-center flex-col gap-y-3 w-full;
+            }
+        }
+
+        ._drawer-footer {
+            @apply _flex-center flex-col mt-6 px-12 py-5 rounded-xl bg-koser-main-0 text-center;
+
+            a {
+                @apply mt-[6px] mb-3;
+
+                span {
+                    @apply whitespace-nowrap;
+                }
+            }
+        }
+    }
+
+    &::before,
+    &::after {
+        @apply absolute left-1/2 -translate-x-1/2;
+        content: '';
+    }
+
+    &::before {
+        @apply w-6 h-5 absolute z-1 -top-[10px] bg-no-repeat bg-center ;
+        background-image: url('/icons/24/triangle-icon24.svg');
+    }
+
+    &::after {
+        @apply w-2 h-2 absolute z-10 -top-[2px] rotate-45 bg-koser-grayscale-0;
+    }
+}
