@@ -1,0 +1,52 @@
+._mobile-file-list {
+    @apply grid grid-cols-3 gap-4;
+
+    li {
+        @apply relative overflow-hidden aspect-square rounded border border-koser-grayscale-40;
+
+        &:first-child {
+            @apply border-koser-main-100;
+        }
+
+        ._take-picture-button {
+            @apply _flex-center flex-col gap-y-[2px] w-full h-full;
+        }
+
+        ._delete-single-file-button {
+            @apply _flex-center absolute top-0 right-0 z-10 w-[30px] h-[30px];
+
+            & > span {
+                @apply p-[2px] rounded-[3px] bg-koser-grayscale-100/30;
+            }
+        }
+
+        & > img {
+            @apply absolute top-0 left-0 z-1 w-full h-full object-cover;
+        }
+    }
+}
+
+._camera-backdrop {
+    @apply fixed inset-0 z-10 bg-koser-grayscale-0;
+}
+
+._camera {
+    @apply _flex-center flex-col fixed inset-0 z-100 gap-y-8 bg-koser-grayscale-100/60;
+
+    ._camera-inner-wrapper {
+        @apply relative w-full pb-[150%];
+
+        video,
+        img {
+            @apply absolute top-0 left-0 w-full h-full object-contain;
+        }
+    }
+
+    ._button-wrap {
+        @apply flex gap-x-2 w-full px-[22px];
+
+        button {
+            @apply flex-1;
+        }
+    }
+}

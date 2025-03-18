@@ -1,0 +1,35 @@
+._datepicker {
+  @apply flex relative;
+
+  /* TODO: 임시값 삭제 */
+  /* height: 50px; */
+  /* border: 5px #00a8ff solid; */
+
+  .react-datepicker-wrapper {
+    @apply w-full h-full;
+
+    .react-datepicker__input-container {
+      @apply flex items-center gap-2 w-full h-full;
+
+      input {
+        @apply flex w-full h-full px-8 border border-koser-grayscale-40 outline-none rounded-lg text-koser-grayscale-80;
+
+        &:focus {
+          @apply border-koser-main-100 text-koser-grayscale-100;
+        }
+        &:active {
+          @apply border-koser-main-100 text-koser-grayscale-100;
+        }
+      }
+    }
+  }
+  &._disabled {
+    .react-datepicker__input-container input {
+      @apply bg-koser-grayscale-30 border-koser-grayscale-50 text-koser-grayscale-60;
+    }
+  }
+
+  &._error {
+    @apply border-koser-secondary-red-50 text-koser-secondary-red-50;
+  }
+}

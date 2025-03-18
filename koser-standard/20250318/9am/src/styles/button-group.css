@@ -1,0 +1,31 @@
+._button-group {
+    @apply flex;
+
+    button {
+        @apply rounded-none;
+
+        &:focus {
+            @apply bg-koser-grayscale-0;
+        }
+
+        &[aria-selected="false"] {
+            @apply border-r-0;
+        }
+
+        &[aria-selected="true"] {
+            @apply -ml-1 border-koser-main-100 text-koser-main-100;
+
+            & + button {
+                @apply border-l-0;
+            }
+        }
+
+        &:first-child {
+            @apply rounded-l-md border-l;
+        }
+
+        &:last-child {
+            @apply rounded-r-md border-r;
+        }
+    }
+}
