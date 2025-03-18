@@ -79,6 +79,7 @@ export default function LoginForm({ isMobile }: ResponsiveType) {
         // disabled={true}
       />
       <InputField
+        type="password"
         name=""
         defaultValue=""
         required={false}
