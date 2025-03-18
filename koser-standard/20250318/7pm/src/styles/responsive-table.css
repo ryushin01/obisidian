@@ -1,0 +1,319 @@
+._responsive-table-inner-wrapper {
+    @apply overflow-hidden border border-koser-grayscale-40;
+
+    /* 반응형 테이블 공통 스타일링 */
+
+    ._responsive-table {
+        @apply table-fixed w-full border-collapse;
+
+        ._table-content-wrapper {
+            @apply _flex-center gap-x-[6px];
+
+            span {
+                @apply truncate;
+            }
+        }
+
+        ._table-button-wrapper {
+            @apply flex px-[20%];
+        }
+
+        ._status {
+            @apply text-koser-main-100;
+
+            &._supplement {
+                @apply text-koser-secondary-yellow-50;
+            }
+        }
+    }
+
+    /* thead 존재 테이블 */
+
+    &._has-thead {
+        @apply rounded-2xl;
+
+        ._responsive-table {
+            @apply text-center;
+
+            tr {
+                th,
+                td {
+                    @apply overflow-hidden px-4 py-[10px] border-r border-b border-koser-grayscale-40 text-ellipsis whitespace-nowrap;
+
+                    span {
+                        @apply align-middle;
+                    }
+                }
+
+                th:last-child,
+                td:last-child {
+                    @apply border-r-0;
+                }
+            }
+
+            thead {
+                tr {
+                    @apply bg-koser-main-10;
+
+                    th {
+                        @apply py-4;
+                    }
+                }
+            }
+
+            tbody {
+                tr:nth-child(odd) {
+                    @apply bg-koser-grayscale-0;
+                }
+
+                tr:nth-child(even) {
+                    @apply bg-koser-grayscale-10;
+                }
+
+                tr:last-child {
+                    th,
+                    td {
+                        @apply border-b-0;
+                    }
+                }
+            }
+
+            /* 2컬럼 */
+
+            &._col-2-type {
+                tr {
+                    th:first-child,
+                    td:first-child {
+                        @apply w-3/4;
+                    }
+
+                    th:last-child,
+                    td:last-child {
+                        @apply w-1/4;
+                    }
+                }
+
+                tr._emergency {
+                    th {
+                        @apply text-koser-secondary-red-50;
+                    }
+                }
+            }
+
+            /* 7컬럼 */
+
+            &._col-7-type {
+                tr {
+                    th:first-child,
+                    td:first-child {
+                        @apply w-[19%];
+                    }
+
+                    th:nth-child(6),
+                    td:nth-child(6),
+                    th:nth-child(7),
+                    td:nth-child(7) {
+                        @apply w-[125px];
+                    }
+                }
+            }
+        }
+    }
+
+    /* thead 부재 테이블 */
+
+    &._no-thead {
+        @apply rounded-lg;
+
+        ._responsive-table {
+            @apply text-left;
+
+            tbody {
+                tr {
+                    th,
+                    td {
+                        @apply px-4 py-3 truncate;
+                    }
+
+                    th {
+                        @apply bg-koser-main-0;
+
+                    }
+                }
+
+                tr:not(:last-child) {
+                    th,
+                    td {
+                        @apply border-b border-koser-grayscale-40;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1280px) {
+    ._responsive-table-outer-wrapper {
+        @apply py-9 pb-10 px-4 mt-6 -mx-4 border-t border-koser-grayscale-40 bg-koser-grayscale-0;
+    }
+
+    ._responsive-table-inner-wrapper {
+
+        ._responsive-table {
+            ._table-button-wrapper {
+                @apply px-0;
+            }
+        }
+
+        /* thead 존재 테이블 */
+
+        &._has-thead {
+            @apply border-0 border-t border-b border-koser-main-100 rounded-none;
+
+            ._responsive-table {
+                thead,
+                tbody {
+                    tr {
+                        th,
+                        td {
+                            @apply p-2;
+                        }
+                    }
+                }
+
+                tbody {
+                    tr:last-child {
+                        th,
+                        td {
+                            @apply border-b;
+                        }
+                    }
+                }
+
+                /* 5컬럼 */
+
+                &._col-5-type {
+                    tr {
+                        display: grid;
+                        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+                        th:last-child,
+                        td:last-child {
+                            grid-column: 1 / span 2;
+                        }
+
+                        th:nth-child(2),
+                        td:nth-child(2),
+                        th:nth-child(4),
+                        td:nth-child(4) {
+                            @apply border-r-0;
+                        }
+
+                        th:nth-child(5),
+                        td:nth-child(5) {
+                            @apply border-b-koser-grayscale-60;
+                        }
+                    }
+                }
+
+                /* 6컬럼 */
+
+                &._col-6-type {
+                    tr {
+                        display: grid;
+                        grid-template-columns: repeat(3, minmax(0, 1fr));
+
+                        ._line-breaking {
+                            display: block;
+                        }
+
+                        th:nth-child(3),
+                        td:nth-child(3) {
+                            @apply border-r-0;
+                        }
+
+                        th:nth-child(4),
+                        td:nth-child(4),
+                        th:nth-child(5),
+                        td:nth-child(5),
+                        th:nth-child(6),
+                        td:nth-child(6) {
+                            @apply border-b-koser-grayscale-60;
+                        }
+                    }
+                }
+
+                /* 7컬럼 */
+
+                &._col-7-type {
+                    tr {
+                        display: grid;
+                        grid-template-columns: repeat(6, minmax(0, 1fr));
+
+                        th:nth-child(1),
+                        td:nth-child(1),
+                        th:nth-child(2),
+                        td:nth-child(2),
+                        th:nth-child(3),
+                        td:nth-child(3) {
+                            grid-column: auto / span 2;
+                        }
+
+                        th:nth-child(4),
+                        td:nth-child(4),
+                        th:nth-child(5),
+                        td:nth-child(5),
+                        th:nth-child(6),
+                        td:nth-child(6),
+                        th:nth-child(7),
+                        td:nth-child(7) {
+                            grid-column: auto / span 3;
+                        }
+
+                        th:nth-child(1),
+                        td:nth-child(1),
+                        th:nth-child(6),
+                        td:nth-child(6),
+                        th:nth-child(7),
+                        td:nth-child(7) {
+                            @apply w-auto;
+                        }
+
+                        th:nth-child(3),
+                        td:nth-child(3),
+                        th:nth-child(5),
+                        td:nth-child(5) {
+                            @apply border-r-0;
+                        }
+
+                        th:nth-child(6),
+                        td:nth-child(6),
+                        th:nth-child(7),
+                        td:nth-child(7) {
+                            @apply border-b-koser-grayscale-60;
+                        }
+                    }
+                }
+            }
+        }
+
+        /* thead 부재 테이블 */
+
+        &._no-thead {
+            ._responsive-table {
+                tbody {
+                    tr {
+                        display: grid;
+                        grid-template-columns: 1fr 2fr;
+
+                        th,
+                        td {
+                            @apply px-3 py-2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

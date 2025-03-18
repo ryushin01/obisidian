@@ -1,0 +1,22 @@
+/* 비밀번호 변경 */
+._change-password-form {
+    @apply px-[10%] py-2;
+
+    fieldset {
+        @apply flex flex-col;
+
+        & > div + div {
+            @apply flex flex-col gap-y-3 mt-8 mb-10;
+        }
+
+        label + div {
+            @apply mt-4;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    ._change-password-form {
+        @apply px-4;
+    }
+}
