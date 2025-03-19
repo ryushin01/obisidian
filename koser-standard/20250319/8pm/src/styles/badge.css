@@ -1,0 +1,3 @@
+._badge {
+  @apply _flex-center px-1 py-1 whitespace-nowrap;
+}
