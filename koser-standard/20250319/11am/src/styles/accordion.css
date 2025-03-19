@@ -1,0 +1,84 @@
+/* ✅ PC & 패드 (768px 이상) */
+@media screen and (min-width: 768px) {
+    ._accordion-header {
+        @apply flex justify-between items-center text-center gap-4 py-5 px-6 border border-t-koser-main-100 bg-koser-main-10;
+        /* margin-left: -40px; */
+    }
+
+    ._accordion {
+        @apply flex flex-col;
+
+        ._accordion-trigger {
+            @apply flex items-center border-b border-b-koser-grayscale-40 bg-koser-grayscale-0 text-koser-grayscale-100 py-4 px-6 transition-all;
+
+            ._accordion-text {
+                @apply w-full flex items-center gap-4 justify-between;
+
+                & > span:last-child {
+                    @apply _flex-center;
+                }
+            }
+
+            ._accordion-toggle-icon {
+                @apply w-1/12;
+            }
+
+            ._date-text {
+                @apply text-koser-grayscale-80;
+            }
+        }
+
+        ._accordion-trigger.open {
+            @apply border-none;
+        }
+
+        ._accordion-content {
+            @apply overflow-hidden h-0 px-6 transition-all;
+
+            &.open {
+                @apply h-auto py-8 bg-koser-grayscale-10;
+            }
+        }
+    }
+}
+
+/* ✅ 모바일 (768px 이하) */
+@media screen and (max-width: 767px) {
+    ._mb-accordion-header {
+        @apply border border-t-koser-main-100 bg-koser-main-10;
+    }
+
+    ._accordion {
+        @apply flex flex-col;
+
+        ._accordion-trigger {
+            @apply flex items-center justify-between relative px-3 py-2 border-b border-b-koser-grayscale-40 bg-koser-grayscale-0 transition-all;
+
+            ._accordion-toggle-icon {
+                @apply absolute top-1/2 -translate-y-1/2 right-3;
+            }
+
+            ._mobile-accordion-texts {
+                @apply flex flex-col items-start;
+            }
+
+            ._date-text {
+                @apply text-koser-grayscale-80;
+            }
+        }
+
+        /* 펼쳐지면 border-bottom 제거 */
+
+        ._accordion-trigger.open {
+            @apply border-b-0;
+        }
+
+        ._accordion-content {
+            @apply overflow-hidden h-0 px-6 transition-all;
+
+            &.open {
+                @apply h-auto py-8 bg-koser-grayscale-10;
+            }
+        }
+    }
+}

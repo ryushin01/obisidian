@@ -1,13 +1,11 @@
 - [ ] 노션 > 어드민 티켓 담당자 할당
 - [ ] ==차주 수요일(3월 19일)까지 UI 개발 > 목요일(3월 20일)에 대표님 보고==
-- [ ] ==koser-standard app 내 금융기관 / 관리자 화면 GNB 분기(컬러 포함)==
 - [ ] 차세대 KOS App
 	- [ ] blob revokeObjectURL 처리
 	- [ ] 바텀시트 인터렉션 오류 수정
  - [ ] 금융기관 화면 업무 분장(UI 개발)
 	- 홍다인
 		- [ ] 홈
-		- [ ] 공지사항
 		- [ ] 현황조회
 		- [ ] 현황조회 - 등기자료
 		- [ ] 현황조회 - 등기접수증
@@ -17,9 +15,11 @@
 		- [x] 의뢰목록
 		- [x] 의뢰목록 - 등기자료
 		- [ ] 전자등기 의뢰 (+ 데스크탑 파일 업로더)
+		- [x] 모바일 전자등기 의뢰 페이지 UI
 		- [x] 사진촬영
 		- [x] 사진업로드
 		- [x] 로그인
+		- [x] 공지사항
 
 ***
 > https://inpa.tistory.com/entry/JS-%F0%9F%93%9A-Base64-Blob-ArrayBuffer-File-%EB%8B%A4%EB%A3%A8%EA%B8%B0-%EC%A0%95%EB%A7%90-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-%EC%89%BD%EA%B2%8C-%EC%84%A4%EB%AA%85
@@ -30,10 +30,10 @@
 	- [ ] 관리자: main100
 	- [ ] 법무대리인: gnb 미노출
 - [ ] 페이지별 에러 바운더리 처리
-- [ ] TabGroup 주석
+- [x] TabGroup 주석
 - [ ] pagination props 논의
 - [ ] base64 img src
-- [ ] 디버깅: 모바일 > 드로어 오픈 후 비밀변호 변경 버튼 클릭 시 모달 팝업 미노출
+- [x] 디버깅: 모바일 > 드로어 오픈 후 비밀변호 변경 버튼 클릭 시 모달 팝업 미노출
 - [x] 모바일 의뢰목록 th 규격 수정
 - [x] 접수번호 등록 페이지 내의 설정 접수번호, 말소번호 등록에 대한 자릿수를 현재 6자리에서 10자리까지 입력 가능하도록 처리 요청드립니다.
 - [ ] ==3월 24일부터 개발 진행 예정== SR 추가 개발 건
@@ -63,7 +63,10 @@ api 참고부탁드립니다.
 		- 회원 등록: create
 	- 공지관리 notice
 		- 공지사항 등록: create
+1554 
+1109
 
+71%
 ***
 
 - request-list (page)
@@ -139,4 +142,28 @@ Type '(() => void | undefined) | undefined' is not assignable to type '() => voi
 - https://jjunnak.tistory.com/5
 - https://stackoverflow.com/questions/76423267/next-js-having-trouble-setting-up-an-onclick-handler
 - https://velog.io/@1g2g/Next.js-path-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0
-- 
+- https://velog.io/@ursr0706/CSS-%EC%86%8D%EC%84%B1-%EC%84%A0%ED%83%9D%EC%9E%90#:~:text=%EC%A6%89%2C%20%22value%22%EA%B0%92%EC%9D%84%20%ED%8F%AC%ED%95%A8%ED%95%9C%20%EC%86%8D%EC%84%B1%EA%B0%92%EC%9D%84%20%EA%B0%80%EC%A7%84%20%EC%9A%94%EC%86%8C%EA%B0%80%20%EC%84%A0%ED%83%9D%EB%90%98%EB%8A%94,%EB%92%A4%EC%97%90%20%EA%B3%B5%EB%B0%B1%EB%AC%B8%EC%9E%90%20%EC%99%B8%EC%97%90%20%EB%8B%A4%EB%A5%B8%20%EB%AC%B8%EC%9E%90%EA%B0%80%20%EC%98%A4%EB%A9%B4%20%EC%95%88%EB%90%9C%EB%8B%A4.
+- https://codingapple.com/unit/react-if-else-patterns-enum-switch-case/
+- https://velog.io/@eggmun/%EC%9B%B9%ED%8C%A9%EC%A1%B4%EC%86%8D%EC%84%B1%EC%98%A4%EB%A5%98
+- next.js 페이지 이동 트랜지션
+- https://velog.io/@sarajo/Next.js-%ED%8E%98%EC%9D%B4%EC%A7%80-%ED%8A%B8%EB%9E%9C%EC%A7%80%EC%85%98-%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0-Layout%EA%B3%BC-Template-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0
+- https://jjang-j.tistory.com/128
+- https://velog.io/@kwaksj329/View-Transitions-API
+- https://cathodicpro.tistory.com/entry/%EC%89%AC%EC%9A%B4-NextJS-08-%EB%84%A4%EC%9D%B4%ED%8B%B0%EB%B8%8C-%EC%95%B1%EA%B3%BC-%EA%B0%99%EC%9D%80-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%A0%84%ED%99%98-%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0?category=1197746
+- https://yangtinomad.com/entry/Nextjs%EC%9B%B9-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%A0%84%ED%99%98-%ED%9A%A8%EA%B3%BC%EB%A5%BC-%EC%A3%BC%EB%8A%94-%EB%B0%A9%EB%B2%95%EB%93%A4
+- https://mingeesuh.tistory.com/entry/Nextjs-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%9D%B4%EB%8F%99%EC%8B%9C-%EB%A1%9C%EB%94%A9-%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0
+- https://blog.kmong.com/next-js-app-router-%EC%9D%B4%EC%A0%9C%EB%8A%94-%EC%95%B1%EB%9D%BC%EC%A0%81-%EC%82%AC%EA%B3%A0%EA%B0%80-%ED%95%84%EC%9A%94%ED%95%98%EB%8B%A4-deep-dive-%EC%8B%9C%EC%9E%91%EB%B6%80%ED%84%B0-%ED%8C%8C%ED%97%A4%EC%B9%98%EA%B8%B0-part-1-6399cea5f11d
+- https://velog.io/@springhana/Next-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%A1%9C%EB%94%A9-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0
+- https://lee-yo-han.github.io/nextjs-loading
+- https://cocoworld.tistory.com/83
+- https://prmblogs.tistory.com/34
+- next.js error boundary loading
+- https://velog.io/@jay/Next.js-13-master-course-loading-error-UI
+- https://nextjs-ko.org/docs/pages/building-your-application/configuring/error-handling
+- https://velog.io/@kingyong9169/react-declarative-error-loading-handling
+- https://www.lipsum.com/
+- ant file upload typescript / antd upload typescript
+- https://hee0.tistory.com/34
+- https://velog.io/@gunilna/613-%ED%9A%8C%EA%B3%A0-Antd-Upload-customRequest-S3-PresignedURL
+- https://programming119.tistory.com/168
+- <HeaderV1>
