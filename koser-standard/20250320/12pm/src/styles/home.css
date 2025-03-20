@@ -1,0 +1,13 @@
+._main {
+  @apply flex flex-col flex-1;
+  min-height: calc(100vh - 100px - 96px);
+}
+
+._banner-section {
+  @apply flex-[1_1_30%] min-h-[30vh] flex;
+}
+
+._contents-section {
+  @apply flex-[2_1_65%] -mt-10 sm:-mt-12 md:-mt-16 sm:pb-4 bg-koser-grayscale-0 border rounded-3xl flex-grow;
+  min-height: calc(65vh - 100px);
+}

@@ -6,24 +6,30 @@
  - [ ] 금융기관 화면 업무 분장(UI 개발)
 	- 홍다인
 		- [ ] 홈
-		- [ ] 현황조회
-		- [ ] 현황조회 - 등기자료
-		- [ ] 현황조회 - 등기접수증
 	- 류창선
 		- [x] 프로필
 		- [x] 비밀번호 변경
 		- [x] 의뢰목록
 		- [x] 의뢰목록 - 등기자료
-		- [ ] 전자등기 의뢰 (+ 데스크탑 파일 업로더)
+		- [x] 전자등기 의뢰 (+ 데스크탑 파일 업로더): ui/request
 		- [x] 모바일 전자등기 의뢰 페이지 UI
 		- [x] 사진촬영
 		- [x] 사진업로드
 		- [x] 로그인
 		- [x] 공지사항
+		- [x] 현황조회
+		- [x] 현황조회 - 등기자료
+		- [x] 현황조회 - 등기접수증
 
 ***
 > https://inpa.tistory.com/entry/JS-%F0%9F%93%9A-Base64-Blob-ArrayBuffer-File-%EB%8B%A4%EB%A3%A8%EA%B8%B0-%EC%A0%95%EB%A7%90-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-%EC%89%BD%EA%B2%8C-%EC%84%A4%EB%AA%85
 ***
+- [ ] 데스크탑 전자등기 의뢰
+	- [x] antd List 컴포넌트 대신 커스텀 컴포넌트 개발: 파일명, 용량 / 개별 삭제 버튼
+	- [ ] 10개 이하, 10MB 이하 첨부 가능 알림 영역 논의 필요
+
+- [ ] 데이터 페칭 가이드 작성 > 주석 추가
+- [ ] 파일 업로드 시 파일 용량 MB 단위로 변경
 
 - [x] 금융기관 / 관리자 GNB 분기 및 색상 분리 (_selected)
 	- [ ] 금융기관: main80
@@ -166,4 +172,20 @@ Type '(() => void | undefined) | undefined' is not assignable to type '() => voi
 - https://hee0.tistory.com/34
 - https://velog.io/@gunilna/613-%ED%9A%8C%EA%B3%A0-Antd-Upload-customRequest-S3-PresignedURL
 - https://programming119.tistory.com/168
+- https://seonhoman.tistory.com/41
+- https://velog.io/@oo009pbh/react-datepicker-%EC%BB%A4%EC%8A%A4%ED%85%80-%ED%95%98%EC%97%AC-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0
+- https://velog.io/@eunddodi/NextJS-%EB%B9%8C%EB%93%9C-%EC%8B%9C-%ED%8A%B9%EC%A0%95-%ED%8F%B4%EB%8D%94-%EC%A0%9C%EC%99%B8%ED%95%98%EA%B8%B0-1o7e3dr9
+- https://whitebeen.tistory.com/37
+- https://han-py.tistory.com/507
+- https://velog.io/@dongdong98/%EC%9A%B0%EB%8B%B9%ED%83%95%ED%83%95-Next.js-%EA%B0%9C%EB%B0%9C%EA%B8%B0-%EC%96%B4%EB%96%BB%EA%B2%8C%EB%93%A0-%EB%B2%88%EB%93%A4-%EC%82%AC%EC%9D%B4%EC%A6%88%EB%A5%BC-%EC%A4%84%EC%97%AC-%EB%B9%8C%EB%93%9C%EB%A5%BC-%EC%B5%9C%EC%A0%81%ED%99%94-%ED%95%B4%EB%B3%B4%EA%B8%B0
+- https://mine-it-record.tistory.com/707
+- https://fe-developers.kakaoent.com/2024/240418-optimizing-nextjs-cache/
+- https://webpack.kr/plugins/ignore-plugin/
+- https://velog.io/@buddle6091/%EC%83%9D%EA%B0%81%EB%B3%B4%EB%8B%A4-%EC%96%B4%EB%A0%A4%EC%9A%B4-Webpack-%EB%B2%88%EB%93%A4%EB%A7%81-loader-%EA%B4%80%EB%A0%A8-%EC%97%90%EB%9F%AC
+- https://arrayofsunshine.co.uk/articles/next-js-how-to-ignore-exclude-a-folder-when-running-next-build
+- Next build exclude
+- https://nextjs-ko.org/docs/pages/api-reference/next-cli
+- https://github.com/vercel/next.js/discussions/65322
+- https://github.com/vercel/next.js/discussions/51891
+- https://github.com/diegomura/react-pdf#readme
 - <HeaderV1>

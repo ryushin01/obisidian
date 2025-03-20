@@ -1,0 +1,40 @@
+._select-label {
+    @apply flex w-full py-2 px-4 bg-koser-grayscale-0 border border-koser-grayscale-40 rounded-lg text-koser-grayscale-80 text-sm;
+
+    &._border-none {
+        @apply p-0 border-none outline-none bg-koser-grayscale-10;
+
+        select,
+        select:focus {
+            @apply bg-koser-grayscale-10;
+        }
+
+        &.title-small {
+            @apply text-base text-koser-grayscale-100;
+        }
+
+        &.body-medium {
+            @apply text-sm text-koser-grayscale-100;
+        }
+    }
+
+    &._error {
+        @apply border-koser-secondary-red-50 text-koser-secondary-red-50;
+    }
+
+    ._select {
+        @apply w-full p-0 outline-none truncate;
+
+        &:focus {
+            @apply bg-koser-grayscale-0 border-koser-main-100 text-koser-grayscale-100;
+        }
+
+        &:active {
+            @apply bg-koser-grayscale-0 border-koser-main-100 text-koser-grayscale-100;
+        }
+
+        &:disabled {
+            @apply bg-koser-grayscale-30 border-koser-grayscale-50 text-koser-grayscale-60 cursor-not-allowed;
+        }
+    }
+}

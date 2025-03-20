@@ -1,0 +1,152 @@
+@media screen and (min-width: 1495px) {
+  ._banner-container {
+    @apply flex-grow p-12 pb-16 px-8 bg-[url(/images/banner-image.png)] bg-cover bg-no-repeat border-none rounded-t-3xl text-koser-grayscale-0 bg-koser-main-100;
+
+    /* 배너 왼쪽 영역 */
+    ._banner-left-content {
+      @apply flex flex-col justify-center;
+
+      ._banner-button {
+        @apply bg-koser-grayscale-0 rounded-md text-koser-main-100 mt-6;
+      }
+
+      ._banner-text {
+        @apply flex gap-2;
+      }
+    }
+
+    /* 배너 오른쪽 영역 */
+    ._banner-right-content {
+      @apply flex justify-around gap-4 items-center;
+
+      /* 오늘 실행 건수 */
+      ._todays-counts {
+        @apply flex gap-4 p-4 items-center justify-center w-2/3 h-32 relative;
+
+        ._content-text {
+          @apply flex flex-col text-koser-grayscale-0;
+        }
+        ._todays-image {
+          @apply min-w-[70px] min-h-[70px] flex items-center justify-center rounded-full bg-koser-main-30;
+        }
+      }
+
+      /* 진행중 & 접수완료 건수 */
+      ._each-counts {
+        @apply flex gap-4 p-4 items-center justify-center w-full h-32 relative;
+
+        ._content-text {
+          @apply flex flex-col min-w-16 w-auto text-koser-grayscale-0;
+        }
+        ._notice-image {
+          @apply min-w-[70px] min-h-[70px] flex items-center justify-center rounded-full bg-koser-secondary-red-10;
+        }
+        ._check-image {
+          @apply min-w-[70px] min-h-[70px] flex items-center justify-center rounded-full bg-koser-secondary-yellow-10;
+        }
+      }
+    }
+  }
+}
+
+/* ✅ 태블릿 (768px ~ 1279px) */
+@media screen and (min-width: 990px) and (max-width: 1494px) {
+  ._banner-container {
+    @apply grid w-full h-full p-10 pb-14 bg-[url(/images/banner-image.png)] bg-cover bg-no-repeat border-none rounded-t-3xl text-koser-grayscale-0 bg-koser-main-100;
+
+    /* 배너 왼쪽 영역 */
+    ._banner-left-content {
+      @apply flex flex-col items-start pb-8;
+      ._banner-button {
+        @apply bg-koser-grayscale-0 rounded-md text-koser-main-100 mt-5 mb-2;
+      }
+      ._banner-text {
+        @apply flex flex-col;
+      }
+    }
+
+    /* 배너 오른쪽 영역 */
+    ._banner-right-content {
+      @apply flex flex-col pb-8;
+
+      ._todays-image {
+        @apply min-w-[60px] min-h-[60px] flex items-center justify-center rounded-full bg-koser-main-30;
+      }
+      ._todays-counts {
+        @apply flex items-center justify-center py-4 mb-2 relative;
+        ._content-text {
+          @apply flex pl-5 gap-3 items-center text-koser-grayscale-0;
+        }
+      }
+
+      ._each-counts {
+        @apply flex items-center justify-center py-4 relative;
+        ._content-text {
+          @apply flex flex-col pl-5 text-koser-grayscale-0;
+        }
+      }
+
+      ._notice-image {
+        @apply min-w-[60px] min-h-[60px] flex items-center justify-center rounded-full p-1 bg-koser-secondary-red-10;
+      }
+      ._check-image {
+        @apply min-w-[60px] min-h-[60px] flex items-center justify-center ml-4 rounded-full p-1 bg-koser-secondary-yellow-10;
+      }
+    }
+  }
+}
+
+/* ✅ 모바일 (768px 이하) */
+@media screen and (max-width: 989px) {
+  ._banner-container {
+    @apply w-full h-full p-10 pb-14 bg-[url(/images/banner-image.png)] bg-cover bg-no-repeat border-none text-koser-grayscale-0 bg-koser-main-100;
+    /* grid-template-columns: 1fr; */
+
+    /* 배너 왼쪽 영역 */
+    ._banner-left-content {
+      @apply flex flex-col items-start pb-8;
+
+      ._banner-button {
+        @apply bg-koser-grayscale-0 rounded-md text-koser-main-100 mt-5 mb-1;
+      }
+
+      ._banner-text {
+        @apply flex flex-col;
+      }
+    }
+
+    /* 배너 오른쪽 영역 */
+    ._banner-right-content {
+      @apply flex flex-col gap-2 mb-10;
+
+      ._todays-image {
+        @apply min-w-[48px] min-h-[48px] flex items-center justify-center rounded-full bg-koser-main-30;
+      }
+
+      /* 오늘 실행 건수 */
+      ._todays-counts {
+        @apply flex items-center py-4 pl-5 mb-4 relative;
+
+        ._content-text {
+          @apply flex pl-5 gap-4 items-center text-koser-grayscale-0;
+        }
+      }
+
+      /* 진행중 & 접수완료 건수 */
+      ._each-counts {
+        @apply flex items-center py-4 pl-5 relative;
+
+        ._content-text {
+          @apply flex flex-col pl-5 text-koser-grayscale-0;
+        }
+      }
+
+      ._notice-image {
+        @apply min-w-[48px] min-h-[48px] flex items-center justify-center rounded-full bg-koser-secondary-red-10;
+      }
+      ._check-image {
+        @apply min-w-[48px] min-h-[48px] ml-4 flex items-center justify-center ml-6 rounded-full bg-koser-secondary-yellow-10;
+      }
+    }
+  }
+}

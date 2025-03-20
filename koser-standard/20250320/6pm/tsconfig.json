@@ -1,0 +1,152 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@fonts": [
+        "public/fonts"
+      ],
+      "@icons": [
+        "public/icons"
+      ],
+      "@icons/*": [
+        "public/icons/*"
+      ],
+      "@icons14": [
+        "public/icons/14"
+      ],
+      "@icons18": [
+        "public/icons/18"
+      ],
+      "@icons20": [
+        "public/icons/20"
+      ],
+      "@icons24": [
+        "public/icons/24"
+      ],
+      "@icons32": [
+        "public/icons/32"
+      ],
+      "@icons36": [
+        "public/icons/36"
+      ],
+      "@icons50": [
+        "public/icons/50"
+      ],
+      "@logos": [
+        "public/icons/logo"
+      ],
+      "@common": [
+        "public/icons/common"
+      ],
+      "@images": [
+        "public/images"
+      ],
+      "@images/*": [
+        "public/images/*"
+      ],
+      "@json/*": [
+        "public/json/*"
+      ],
+      "@/*": [
+        "src/*"
+      ],
+      "@app": [
+        "src/app"
+      ],
+      "@app/*": [
+        "src/app/*"
+      ],
+      "@constants": [
+        "src/constants"
+      ],
+      "@constants/*": [
+        "src/constants/*"
+      ],
+      "@components": [
+        "src/components"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@hooks": [
+        "src/hooks"
+      ],
+      "@hooks/*": [
+        "src/hooks/*"
+      ],
+      "@utils": [
+        "src/utils"
+      ],
+      "@utils/*": [
+        "src/utils/*"
+      ],
+      "@libs": [
+        "src/libs"
+      ],
+      "@libs/*": [
+        "src/libs/*"
+      ],
+      "@services": [
+        "src/services"
+      ],
+      "@services/*": [
+        "src/services/*"
+      ],
+      "@stores": [
+        "src/stores"
+      ],
+      "@stores/*": [
+        "src/stores/*"
+      ],
+      "@styles": [
+        "src/styles"
+      ],
+      "@styles/*": [
+        "src/styles/*"
+      ],
+      "@types": [
+        "src/types"
+      ],
+      "@types/*": [
+        "src/types/*"
+      ],
+      "@data": [
+        "src/data"
+      ],
+      "@data/*": [
+        "src/data/*"
+      ]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
