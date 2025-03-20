@@ -24,6 +24,8 @@
 ***
 > https://inpa.tistory.com/entry/JS-%F0%9F%93%9A-Base64-Blob-ArrayBuffer-File-%EB%8B%A4%EB%A3%A8%EA%B8%B0-%EC%A0%95%EB%A7%90-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-%EC%89%BD%EA%B2%8C-%EC%84%A4%EB%AA%85
 ***
+> https://velog.io/@baby_dev/%EA%B7%B9%ED%95%9C%EC%9D%98-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%EC%84%B1%EB%8A%A5%EC%B5%9C%EC%A0%81%ED%99%94-1%ED%8E%B8-Nextjs-13
+***
 - [ ] 데스크탑 전자등기 의뢰
 	- [x] antd List 컴포넌트 대신 커스텀 컴포넌트 개발: 파일명, 용량 / 개별 삭제 버튼
 	- [ ] 10개 이하, 10MB 이하 첨부 가능 알림 영역 논의 필요
@@ -188,4 +190,7 @@ Type '(() => void | undefined) | undefined' is not assignable to type '() => voi
 - https://github.com/vercel/next.js/discussions/65322
 - https://github.com/vercel/next.js/discussions/51891
 - https://github.com/diegomura/react-pdf#readme
+- 최적화
+- https://velog.io/@baby_dev/%EA%B7%B9%ED%95%9C%EC%9D%98-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%EC%84%B1%EB%8A%A5%EC%B5%9C%EC%A0%81%ED%99%94-1%ED%8E%B8-Nextjs-13
+- https://velog.io/@rladpwl0512/%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC%EC%BD%94%EC%8A%A4-%EB%AF%B8%EC%85%98-%EC%84%B1%EB%8A%A5%EC%B5%9C%EC%A0%81%ED%99%94-2-%ED%95%84%EC%9A%94%ED%95%9C-%EA%B2%83%EB%A7%8C-%EC%9A%94%EC%B2%AD%ED%95%98%EA%B8%B0
 - <HeaderV1>
