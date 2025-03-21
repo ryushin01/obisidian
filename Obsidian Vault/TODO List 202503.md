@@ -193,4 +193,12 @@ Type '(() => void | undefined) | undefined' is not assignable to type '() => voi
 - 최적화
 - https://velog.io/@baby_dev/%EA%B7%B9%ED%95%9C%EC%9D%98-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%EC%84%B1%EB%8A%A5%EC%B5%9C%EC%A0%81%ED%99%94-1%ED%8E%B8-Nextjs-13
 - https://velog.io/@rladpwl0512/%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC%EC%BD%94%EC%8A%A4-%EB%AF%B8%EC%85%98-%EC%84%B1%EB%8A%A5%EC%B5%9C%EC%A0%81%ED%99%94-2-%ED%95%84%EC%9A%94%ED%95%9C-%EA%B2%83%EB%A7%8C-%EC%9A%94%EC%B2%AD%ED%95%98%EA%B8%B0
+- https://velog.io/@kho5420/Web-API-%EA%B7%B8%EB%A6%AC%EA%B3%A0-EndPoint
+- https://blog.naver.com/ghdalswl77/222401162545
+- https://velog.io/@hamjw0122/useMutation-1-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0
+- https://velog.io/@kimhyo_0218/React-Query-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%BF%BC%EB%A6%AC-useMutation-%EA%B8%B0%EB%B3%B8-%ED%8E%B8
+- https://velog.io/@hamjw0122/React-Query-%EC%A0%9C%EB%8C%80%EB%A1%9C-%EC%82%AC%EC%9A%A9%ED%95%B4%EB%B3%B4%EA%B8%B0-2-select
+- https://velog.io/@hamjw0122/FE-tailwind-merge
+- https://velog.io/@hamjw0122/Supabase%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80
+- https://velog.io/@hamjw0122/%EC%9A%B0%EB%A6%AC%EA%B0%80-moment.js-%EB%8C%80%EC%8B%A0-day.js%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%95%BC-%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0
 - <HeaderV1>
