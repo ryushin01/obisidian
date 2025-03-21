@@ -1,0 +1,19 @@
+._pagination-button {
+    @apply _flex-center w-8 h-8;
+
+    &:disabled {
+        @apply opacity-30 cursor-not-allowed;
+    }
+}
+
+._page-button {
+    @apply _flex-center w-8 h-8;
+
+    &[aria-current="page"] {
+        @apply bg-koser-grayscale-50 text-koser-grayscale-0 rounded-md;
+    }
+}
+
+._page-indicator {
+    @apply flex items-center mb-4;
+}

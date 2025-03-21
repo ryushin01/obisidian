@@ -1,0 +1,23 @@
+._spinner-wrapper {
+    @apply relative z-1000;
+
+    ._spinner-backdrop {
+        @apply fixed inset-0 z-1 bg-koser-grayscale-100/50;
+    }
+
+    ._spinner-container {
+        @apply _flex-center fixed inset-0 z-10;
+
+        ._spinner {
+            @apply animate-spin;
+            transform-origin: center;
+            animation: _spinner 0.75s infinite linear;
+        }
+    }
+}
+
+@keyframes _spinner {
+    100% {
+        transform: rotate(360deg);
+    }
+}

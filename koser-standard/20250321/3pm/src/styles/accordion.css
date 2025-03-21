@@ -1,0 +1,125 @@
+/* ✅ PC & 패드 (768px 이상) */
+._accordion-header,
+._accordion-trigger {
+    @apply flex py-4 px-8;
+
+    ._accordion-text {
+        @apply w-full flex items-center justify-between;
+
+        & > span {
+            @apply flex;
+        }
+
+        /*& > span:not(._accordion-toggle-icon) {*/
+        /*    @apply gap-x-[2.5vw];*/
+        /*}*/
+
+        ._top-titles {
+            @apply w-8/12 text-left;
+
+            span:first-child {
+                @apply w-12 text-center;
+            }
+
+            span:last-child {
+                @apply flex-1 px-[2.5vw];
+            }
+        }
+
+        ._bottom-titles {
+            @apply w-3/12;
+
+            span {
+                @apply truncate text-center;
+            }
+
+            span:first-child {
+                @apply w-36;
+            }
+
+            span:last-child {
+                @apply w-40;
+            }
+        }
+
+        ._accordion-toggle-icon {
+            @apply w-5;
+        }
+    }
+}
+
+._accordion-header {
+    @apply border-t border-t-koser-main-100 bg-koser-main-10;
+
+    ._accordion-text {
+        ._top-titles,
+        ._bottom-titles {
+            & > span {
+                @apply font-semibold;
+            }
+        }
+
+        ._top-titles {
+            span:last-child {
+                @apply w-12 text-center
+            }
+        }
+    }
+}
+
+._accordion {
+    @apply flex flex-col;
+
+    ._accordion-trigger {
+        @apply relative border-b border-b-koser-grayscale-40 bg-koser-grayscale-0 text-koser-grayscale-100 transition-all;
+
+        ._date-text {
+            @apply text-koser-grayscale-80;
+        }
+    }
+
+    ._accordion-content {
+        @apply overflow-hidden h-0 px-6 transition-all;
+    }
+
+    &._open {
+        ._accordion-trigger {
+            @apply border-none;
+        }
+
+        ._accordion-content {
+            @apply h-auto py-8 bg-koser-grayscale-10 border-b border-koser-grayscale-40;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    ._accordion {
+        ._accordion-trigger {
+            @apply p-3;
+        }
+
+        &._open {
+            ._accordion-content {
+                @apply p-3;
+            }
+        }
+    }
+
+    ._mb-accordion-header {
+        @apply w-full h-px bg-koser-main-100;
+    }
+
+    ._mobile-accordion-texts {
+        @apply flex flex-col gap-y-1 text-left;
+    }
+
+    ._top-titles,
+    ._bottom-titles {
+        @apply flex;
+    }
+
+    ._accordion-toggle-icon {
+        @apply absolute top-1/2 -translate-y-1/2 right-3;
+    }
+}

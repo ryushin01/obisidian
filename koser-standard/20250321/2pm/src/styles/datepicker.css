@@ -1,0 +1,47 @@
+._datepicker {
+    @apply flex relative z-10;
+
+    .react-datepicker-wrapper {
+        @apply w-full h-full;
+
+        .react-datepicker__input-container {
+            @apply flex items-center gap-2 w-full h-full;
+
+            .react-datepicker__calendar-icon {
+                @apply w-5 h-5 p-4;
+            }
+
+            input {
+                @apply flex w-full h-full py-2 pl-10 pr-4 border border-koser-grayscale-40 outline-none rounded-md text-koser-grayscale-100 text-sm;
+
+                &:focus,
+                &:active {
+                    @apply border-koser-main-100 text-koser-grayscale-100;
+                }
+            }
+        }
+    }
+
+    &._disabled {
+        .react-datepicker__input-container input {
+            @apply bg-koser-grayscale-30 border-koser-grayscale-50 text-koser-grayscale-60;
+        }
+    }
+
+    &._error {
+        @apply border-koser-secondary-red-50 text-koser-secondary-red-50;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    ._datepicker {
+        .react-datepicker-wrapper {
+            .react-datepicker__input-container {
+                input {
+                    @apply flex w-full h-full py-2 text-sm;
+                }
+            }
+        }
+    }
+
+}

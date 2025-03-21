@@ -21,27 +21,28 @@ export const fakeURI = process.env.NEXT_PUBLIC_FAKE_URI;
 ## 3. 데이터 페칭 함수 생성
 ```tsx
 // src/services
-// 서버 리소스로 접근할 상수화된 API Endpoint 기반 함수를 생성하며, 일반적으로 페이지 단위(main.ts, notice.ts 등)로 파일을 만듭니다.
-// 아래는 예시이며, main.ts 파일에서도 확인하실 수 있습니다.
-// 1. 상수로 만든 API Endpoint를 불러옵니다. 해당 API Endpoint를 따로 정하지 않는다면 src/services/index.ts에서 초기값으로 지정된 API Endpoint가 기준이 됩니다. 사용법은 3.1. GET 절을 참고하시면 됩니다.
+// 서버 리소스로 접근할 상수화된 API Endpoint 기반 함수를 생성합니다. 일반적으로 페이지 단위(main.ts, notice.ts 등)로 파일을 만들고 여러 함수를 모아 놓습니다.
+// 아래는 예시이며, main.ts 파일에서도 일부 확인하실 수 있습니다.
+
+// 1. 상수로 만든 API Endpoint를 불러옵니다. 해당 API Endpoint를 따로 정하지 않는다면 src/services/index.ts에서 초기값으로 지정된 API Endpoint가 기준이 됩니다. 사용법은 3.1. [GET]을 참고하시면 됩니다.
 import { authURI } from "@constants/env";
 
 // 2. Axios Instance의 기본 구조를 불러옵니다.
 import { axiosBasicInstance } from "@services";
 
 // 3. 서버 통신용 함수를 생성합니다. HTTP Method를 접두사로 함수명을 짓습니다.
-// 3.1. GET 
+// 3.1. [GET] 
 export const getUserInfo = (id: string) => axiosBasicInstance.get(`/user/info/${id}`, {
 	baseURL: authURI
 });
 
-// 3.2. POST
+// 3.2. [POST]
 export const postLogin = (form: {  
   id: string;  
   password: string;
 }) => axiosBasicInstance.post('/login', form);
 
-// 3.3. PUT
+// 3.3. [PUT]
 export const putUpdateUserInfo = (
 	id: string,
 	form: {
@@ -51,19 +52,19 @@ export const putUpdateUserInfo = (
 	},
 ) => axiosBasicInstance.put(`/user/edit/${id}`, form);
 
-// 3.4. PATCH
+// 3.4. [PATCH]
 export const patchPassword = (password: string) => axiosBasicInstance.patch('/user/password', { password });
 
-// 3.5. DELETE
+// 3.5. [DELETE]
 export deleteAccount = (id: string) => axiosBasicInstance.delete(`/user/delete/${id}`)
 
-// 3.6. 단순 데이터 요청?
+// 3.6. [GET] (페이로드 없이 응답 데이터만 필요한 경우)
 export const getUserProfile = () => axiosBasicInstance.get('/user/profile').then((response) => response.data);
 ```
 
 ## 4. 페이지 진입 시 페이로드 없이 자동 데이터 페칭
 ```tsx
-// App Router 구조에서 각 최상위 페이지는 서버 컴포넌트이어야 합니다?
+// App Router 구조에서 각 최상위 페이지는 서버 컴포넌트로 두는 것을 추천합니다.
 import { CustomErrorBoundary } from "@components/error-boundary";
 import { Account } from "@components/user";
 import { getUserProfile } from "@services/user";
@@ -89,9 +90,10 @@ export default async function Page() {
 "use client";
 ```
 
-## 6. useQuery: GET
+## 6. useQuery: [GET]
 ```tsx
-// GET Method는 TanStack Query(v5)의 useQuery hook을 사용합니다. 아래는 기본형으로, 다양한 옵션으로 커스터마이징 가능합니다.
+// [GET] Method는 TanStack Query(v5)의 useQuery hook을 사용합니다. 아래는 기본형으로, 다양한 옵션으로 커스터마이징 가능합니다.
+// src/temp/fetching/get 안의 소스 코드를 참고해 주세요.
 import { useQuery } from "@tanstack/react-query";
 
 const {  
@@ -99,55 +101,45 @@ const {
 	data: userInfoData,  
 	// 수동 페칭 메서드  
 	refetch: refetchUserInfoData,
-	} = useQuery({  
+	// 페칭 로딩 여부
+	isLoading: userInfoDataLoading,
+} = useQuery({  
 	// queryKey 기반으로 데이터 캐싱을 관리하며, ReactQueryDevtools에서 구분 값으로도 활용합니다.
-	queryKey: ["sample-query"],
+	queryKey: ["sample-query", userId],
 	
 	// Promise 처리가 이뤄지는 실제 데이터 페칭 함수입니다. 3. 함수 생성 설명 중 GET에 해당하는 함수를 예시로 듭니다.
-	queryFn: async (id: string) => {  
-		const response = await getUserInfo(id);  
-		return response?.data;  
-	},
-	  
+	queryFn: async () => await getUserInfoData(userId),
+	
+	// queryFn에서 반환된 값을 가공, 정제할 수 있는 옵션
+	select: (response) => response.data,
+	
 	// 아래의 조건부 예시처럼 여신 번호가 없으면 자동 페칭을 막는 것으로 활용할 수 있습니다.  
 	enabled: loanNo !== "",  
 	
 	// 아래처럼 자동 페칭을 막을 수 있습니다. true이면 페이지 진입 후 바로 자동 페칭됩니다.
 	enabled: false,
 });
-
-return (  
-    <>  
-      <button type="button" onClick={() => refetchUserInfoData("ryushin0")}>유저 정보 다시 가져오기</button>
-      <div>
-	      <span>{userInfoData.name}</span>
-      </div>
-    </>  
-  );  
-}
 ```
 
-## 7. useMutation: POST, PUT, PATCH, DELETE
+## 7. useMutation: [POST], [PUT], [PATCH], [DELETE]
 ```tsx
-// GET Method를 제외한 HTTP Method는 TanStack Query(v5)의 useMutation hook을 사용합니다. 아래는 기본형으로, 다양한 옵션으로 커스터마이징 가능합니다.
+// [GET] Method를 제외한 HTTP Method는 TanStack Query(v5)의 useMutation hook을 사용합니다. 아래는 기본형으로, 다양한 옵션으로 커스터마이징 가능합니다.
+// src/temp/fetching/post 안의 소스 코드를 참고해 주세요.
 import { useMutation } from "@tanstack/react-query";
 
 const {
 	// 페칭 성공 후 반환 데이터
-	data: loginData,
+	data: postData,
 	// 수동 페칭 메서드
-	mutate: mutateLoginData,
-	// 초기 상태로 시셋 메서드
-	reset: resetLoginData,
+	mutate: mutatePostData,
+	// 페칭 로딩 여부
+	isPending: postDataLoading,
 } = useMutation({
 	// mutationKey 기반으로 데이터 캐싱을 관리하며, ReactQueryDevtools에서 구분 값으로도 활용합니다.
 	mutationKey: ["sample-mutation"],
 	
 	// Promise 처리가 이뤄지는 실제 데이터 페칭 함수입니다. 3. 함수 생성 설명 중 POST에 해당하는 함수를 예시로 듭니다.
-	mutationFn: async (form: FormProps) => {
-		const response = await postLogin(form);
-		return response?.data;
-	},
+	mutationFn: async () => await postFakeData(form),
 	
 	// 요청 성공 시
 	onSuccess: () => {
@@ -164,14 +156,4 @@ const {
 		// 예) 로그인 시도 아이디 로그를 서버로 전송
 	},
 });
-
-return (  
-    <>  
-      <button type="button" onClick={() => mutateLoginData(form)}>로그인</button>
-      <div>
-	      <span>{loginData.name}</span>
-      </div>
-    </>  
-  );  
-}
 ```

@@ -26,12 +26,16 @@
 ***
 > https://velog.io/@baby_dev/%EA%B7%B9%ED%95%9C%EC%9D%98-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%EC%84%B1%EB%8A%A5%EC%B5%9C%EC%A0%81%ED%99%94-1%ED%8E%B8-Nextjs-13
 ***
+> https://velog.io/@kim98111/useQuery
+***
+> 
+***
 - [ ] 데스크탑 전자등기 의뢰
 	- [x] antd List 컴포넌트 대신 커스텀 컴포넌트 개발: 파일명, 용량 / 개별 삭제 버튼
-	- [ ] 10개 이하, 10MB 이하 첨부 가능 알림 영역 논의 필요
+	- [x] 10개 이하, 10MB 이하 첨부 가능 알림 영역 논의 필요
 
-- [ ] 데이터 페칭 가이드 작성 > 주석 추가
-- [ ] 파일 업로드 시 파일 용량 MB 단위로 변경
+- [x] 데이터 페칭 가이드 작성 > 주석 추가
+- [ ] 파일 업로드 시 파일 용량 MB 단위로 변경 > 기획팀 노티 완료
 
 - [x] 금융기관 / 관리자 GNB 분기 및 색상 분리 (_selected)
 	- [ ] 금융기관: main80
@@ -209,6 +213,39 @@ Type '(() => void | undefined) | undefined' is not assignable to type '() => voi
 - https://duklook.tistory.com/336
 - https://yozm.wishket.com/magazine/detail/2271/
 - https://wikidocs.net/206500
+- usequery queryfn no overload matches this call
+- https://velog.io/@wlwl99/Next.js-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%B9%8C%EB%93%9C-%EC%97%90%EB%9F%AC
+- https://velog.io/@102wy/React-Query-V5-typescript-%EC%8B%9C%EC%9E%91%EA%B8%B0
+- https://honey-dev.tistory.com/5
+- https://seonlog.tistory.com/6
+- https://gusrb3164.github.io/web/2022/01/23/react-query-typescript/
+- https://velog.io/@dev_jazziron/useQuery
+- https://growing-jiwoo.tistory.com/118
+- https://velog.io/@roseis00/React-Query-Typescript
+- https://despiteallthat.tistory.com/303
+- https://velog.io/@exceed96/React-query-useQuery%EC%9D%98-refetch%EC%98%B5%EC%85%98
+- https://velog.io/@rmaomina/useQuery-refetch-options
+- https://i-ten.tistory.com/272
+- https://stackoverflow.com/questions/67796103/refetch-with-different-data-react-query
+- https://mycodings.fly.dev/blog/2023-09-24-react-query-refetch-on-click-success-callback-data-transformation
+- https://heycoding.tistory.com/128
+- https://cometruedream.tistory.com/252
+- https://professorleejaeman.tistory.com/entry/%ED%95%A8%EC%88%98%EC%97%90%EC%84%9C-useQuery-%ED%98%B8%EC%B6%9C%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95
+- https://stackoverflow.com/questions/62340697/react-query-how-to-usequery-when-button-is-clicked
+- https://velog.io/@leehyunho2001/React-Query%EC%97%90%EC%84%9C-%EB%B2%84%ED%8A%BC-%ED%81%B4%EB%A6%AD%EC%8B%9C%EC%97%90-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC-%EC%9A%94%EC%B2%AD%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95-feat.-useQuery
+- https://velog.io/@limelimejiwon/React-Query-%EB%B2%84%ED%8A%BC-%ED%81%B4%EB%A6%AD-%ED%96%88%EC%9D%84-%EB%95%8C-data-fetch%ED%95%98%EA%B8%B0
+- https://taejinii.tistory.com/70
+- https://pungwa.tistory.com/134
+- usequery select
+- https://velog.io/@apro_xo/ReactQuery-useQuery-select-%EC%98%B5%EC%85%98
+- https://velog.io/@exceed96/React-query-useQuery%EC%9D%98-select
+- https://velog.io/@kimhyo_0218/React-Query-useQuery-%EC%8B%A4%EC%9A%A9%ED%8E%B8
+- https://velog.io/@jhjung3/React-Query%EC%9D%98-useQueries-%ED%99%9C%EC%9A%A9%ED%95%98%EA%B8%B0-79d6b6k1
+- https://velog.io/@natural_min/react-nomad06
+- Property 'value' does not exist on type 'EventTarget & Element'
+- https://velog.io/@wlwl99/%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0-Property-X-does-not-exist-on-type-EventTarget-in-TS-2339
+- https://velog.io/@whdnjsgh22/e.target.value-%EC%9D%98-%ED%83%80%EC%9E%85%EC%97%90%EB%9F%AC
+- https://okky.kr/questions/1070060
 
 
 

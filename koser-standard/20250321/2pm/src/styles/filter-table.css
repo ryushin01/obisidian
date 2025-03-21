@@ -1,0 +1,29 @@
+._filter-table-wrapper {
+    @apply overflow-hidden mb-6 rounded-xl border border-koser-grayscale-40 bg-koser-grayscale-0;
+
+    ._button-wrap {
+        @apply _flex-center gap-x-3 w-[18%] py-[10px] mx-auto;
+
+        button {
+            @apply flex-1;
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    ._filter-table-wrapper {
+        @apply border-none rounded-none bg-transparent;
+
+        ._button-wrap {
+            @apply w-full pt-6 pb-2;
+
+            button:first-child {
+                @apply order-2 flex-3;
+            }
+
+            button:last-child {
+                @apply order-1 flex-1;
+            }
+        }
+    }
+}

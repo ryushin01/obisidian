@@ -1,0 +1,52 @@
+._button-group {
+    @apply flex;
+
+    button {
+        @apply relative rounded-none;
+
+        &:focus {
+            @apply bg-koser-grayscale-0;
+        }
+
+        &[aria-selected="true"] {
+            @apply text-koser-main-100;
+
+            &::after {
+                @apply absolute -inset-px border border-koser-main-100;
+                content: "";
+            }
+
+            &:first-child {
+                &::after {
+                    @apply rounded-l-md border-l;
+                }
+            }
+
+            &:last-child {
+                &::after {
+                    @apply rounded-r-md border-r;
+                }
+            }
+        }
+
+        &[aria-selected="false"] {
+            @apply border-r-0;
+        }
+
+        /*&[aria-selected="true"] {*/
+        /*    @apply -ml-1 border-koser-main-100 text-koser-main-100;*/
+
+        /*    & + button {*/
+        /*        @apply border-l-0;*/
+        /*    }*/
+        /*}*/
+
+        &:first-child {
+            @apply rounded-l-md border-l;
+        }
+
+        &:last-child {
+            @apply rounded-r-md border-r;
+        }
+    }
+}
