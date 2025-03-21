@@ -56,9 +56,40 @@ export const patchPassword = (password: string) => axiosBasicInstance.patch('/us
 
 // 3.5. DELETE
 export deleteAccount = (id: string) => axiosBasicInstance.delete(`/user/delete/${id}`)
+
+// 3.6. 단순 데이터 요청?
+export const getUserProfile = () => axiosBasicInstance.get('/user/profile').then((response) => response.data);
 ```
 
-## 4. useQuery: GET
+## 4. 페이지 진입 시 페이로드 없이 자동 데이터 페칭
+```tsx
+// App Router 구조에서 각 최상위 페이지는 서버 컴포넌트이어야 합니다?
+import { CustomErrorBoundary } from "@components/error-boundary";
+import { Account } from "@components/user";
+import { getUserProfile } from "@services/user";
+
+export default async function Page() {
+	try {
+		const data = await getUserProfile();
+		
+		return (
+			<CustomErrorBoundary
+				element={<Account data={data} />}	
+			/>
+		)
+	} catch (error) {
+		console.log(error);
+	}
+}
+```
+
+## 5. useQuery & useMutation
+```tsx
+// TanStack Query(v5)의 useQuery hook과 useMutation hook은 페이로드에 데이터를 담아 서버로 전송할 때 사용합니다. 또한 보통의 경우에 React hook과 이벤트 등과 함께 사용하므로, 아래와 같이 서버와 클라이언트 컴포넌트 간의 경계를 선언하는 지시문이 필요합니다.
+"use client";
+```
+
+## 6. useQuery: GET
 ```tsx
 // GET Method는 TanStack Query(v5)의 useQuery hook을 사용합니다. 아래는 기본형으로, 다양한 옵션으로 커스터마이징 가능합니다.
 import { useQuery } from "@tanstack/react-query";
@@ -96,7 +127,7 @@ return (
 }
 ```
 
-## 5. useMutation: POST, PUT, PATCH, DELETE
+## 7. useMutation: POST, PUT, PATCH, DELETE
 ```tsx
 // GET Method를 제외한 HTTP Method는 TanStack Query(v5)의 useMutation hook을 사용합니다. 아래는 기본형으로, 다양한 옵션으로 커스터마이징 가능합니다.
 import { useMutation } from "@tanstack/react-query";

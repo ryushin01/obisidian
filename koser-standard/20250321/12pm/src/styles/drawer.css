@@ -1,0 +1,35 @@
+._drawer-backdrop {
+    @apply fixed inset-0 z-10 bg-koser-grayscale-100/50;
+}
+
+._drawer-container {
+    @apply fixed inset-y-0 right-0 z-100 w-3/4 px-6 pb-5 bg-koser-grayscale-0;
+
+    ._drawer-container-wrap {
+        @apply flex flex-col h-full;
+    }
+
+    ._drawer-header {
+        @apply flex justify-end py-4 px-6 -mx-6 border-b border-koser-grayscale-20;
+    }
+
+    ._drawer-content {
+        @apply flex items-center flex-col gap-8 flex-1 overflow-y-auto w-full pt-10;
+
+        ._drawer-content-inner-wrapper {
+            @apply flex flex-col items-center gap-y-3 w-full;
+        }
+    }
+
+    ._drawer-footer {
+        @apply _flex-center flex-col w-full p-6 rounded-xl bg-koser-main-0 text-center;
+
+        a {
+            @apply mt-[6px] mb-3;
+
+            span {
+                @apply whitespace-nowrap;
+            }
+        }
+    }
+}

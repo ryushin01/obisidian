@@ -201,4 +201,19 @@ Type '(() => void | undefined) | undefined' is not assignable to type '() => voi
 - https://velog.io/@hamjw0122/FE-tailwind-merge
 - https://velog.io/@hamjw0122/Supabase%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80
 - https://velog.io/@hamjw0122/%EC%9A%B0%EB%A6%AC%EA%B0%80-moment.js-%EB%8C%80%EC%8B%A0-day.js%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%95%BC-%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0
+- https://fe-j.tistory.com/entry/QueryClient-%EB%8C%80%EC%8B%A0-useQueryClient-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0
+- https://velog.io/@kim98111/useQuery
+- https://leego.tistory.com/entry/react-query%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%A0%EA%B9%8C
+- https://velog.io/@kim9567/TIL-Next.Js-use-client-%EB%9E%80
+- https://velog.io/@tnrud4685/Next.js-13%EB%B2%84%EC%A0%84
+- https://duklook.tistory.com/336
+- https://yozm.wishket.com/magazine/detail/2271/
+- https://wikidocs.net/206500
+
+
+
+- https://ko.react.dev/reference/rsc/use-client
+
+
+
 - <HeaderV1>

@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<!-- saved from url=(0117)https://leego.tistory.com/entry/react-query%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%A0%EA%B9%8C -->
+<html id="__hELLO" lang="ko" data-theme="dark" data-phocus-theme="dark"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                <script type="text/javascript">if (!window.T) { window.T = {} }
+window.T.config = {"TOP_SSL_URL":"https://www.tistory.com","PREVIEW":false,"ROLE":"guest","PREV_PAGE":"","NEXT_PAGE":"","BLOG":{"id":4927241,"name":"leego","title":"하루 기록.","isDormancy":false,"nickName":"녘_","status":"open","profileStatus":"normal"},"NEED_COMMENT_LOGIN":false,"COMMENT_LOGIN_CONFIRM_MESSAGE":"","LOGIN_URL":"https://www.tistory.com/auth/login/?redirectUrl=https://leego.tistory.com/entry/react-query%25EB%258A%2594-%25EC%2596%25B4%25EB%2596%25BB%25EA%25B2%258C-%25EC%259E%2591%25EB%258F%2599%25ED%2595%25A0%25EA%25B9%258C","DEFAULT_URL":"https://leego.tistory.com","USER":{"name":null,"homepage":null,"id":0,"profileImage":null},"SUBSCRIPTION":{"status":"none","isConnected":false,"isPending":false,"isWait":false,"isProcessing":false,"isNone":true},"IS_LOGIN":false,"HAS_BLOG":false,"IS_SUPPORT":false,"IS_SCRAPABLE":false,"TOP_URL":"http://www.tistory.com","JOIN_URL":"https://www.tistory.com/member/join","PHASE":"prod","ROLE_GROUP":"visitor"};
+window.T.entryInfo = {"entryId":42,"isAuthor":false,"categoryId":504043,"categoryLabel":"Front-End/React"};
+window.appInfo = {"domain":"tistory.com","topUrl":"https://www.tistory.com","loginUrl":"https://www.tistory.com/auth/login","logoutUrl":"https://www.tistory.com/auth/logout"};
+window.initData = {};
+
+window.TistoryBlog = {
+    basePath: "",
+    url: "https://leego.tistory.com",
+    tistoryUrl: "https://leego.tistory.com",
+    manageUrl: "https://leego.tistory.com/manage",
+    token: "mElDnwnjAbw7YcGZUfn0o3auO8OHtxhs3UT+poTKUy+IeOQreBFFMlZ3YPhD5nSC"
+};
+var servicePath = "";
+var blogURL = "";</script>
+
+                
+                
+                        <!-- BusinessLicenseInfo - START -->
+        
+            <link href="./react-query는 어떻게 작동할까 — 하루 기록._files/style.css" rel="stylesheet" type="text/css">
+
+            <script>function switchFold(entryId) {
+    var businessLayer = document.getElementById("businessInfoLayer_" + entryId);
+
+    if (businessLayer) {
+        if (businessLayer.className.indexOf("unfold_license") > 0) {
+            businessLayer.className = "business_license_layer";
+        } else {
+            businessLayer.className = "business_license_layer unfold_license";
+        }
+    }
+}
+</script>
+
+        
+        <!-- BusinessLicenseInfo - END -->
+        <!-- DaumShow - START -->
+        <style type="text/css">#daumSearchBox {
+    height: 21px;
+    background-image: url(//i1.daumcdn.net/imgsrc.search/search_all/show/tistory/plugin/bg_search2_2.gif);
+    margin: 5px auto;
+    padding: 0;
+}
+
+#daumSearchBox input {
+    background: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#daumSearchBox #daumLogo {
+    width: 34px;
+    height: 21px;
+    float: left;
+    margin-right: 5px;
+    background-image: url(//i1.daumcdn.net/img-media/tistory/img/bg_search1_2_2010ci.gif);
+}
+
+#daumSearchBox #show_q {
+    background-color: transparent;
+    border: none;
+    font: 12px Gulim, Sans-serif;
+    color: #555;
+    margin-top: 4px;
+    margin-right: 15px;
+    float: left;
+}
+
+#daumSearchBox #show_btn {
+    background-image: url(//i1.daumcdn.net/imgsrc.search/search_all/show/tistory/plugin/bt_search_2.gif);
+    width: 37px;
+    height: 21px;
+    float: left;
+    margin: 0;
+    cursor: pointer;
+    text-indent: -1000em;
+}
+</style>
+
+        <!-- DaumShow - END -->
+
+        <!-- MetaTag - START -->
+        <meta name="google-site-verification" content="QU8LuTGQk7fgFSAv6z9IktJ0SoQQvbTnPzgrlttQwKs">
+<meta name="naver-site-verification" content="56ca6488ba2e149f13a13b79fcea55bbde0efc97">
+        <!-- MetaTag - END -->
+
+<!-- System - START -->
+
+<!-- System - END -->
+
+        <!-- TistoryProfileLayer - START -->
+        <link href="./react-query는 어떻게 작동할까 — 하루 기록._files/style(1).css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="./react-query는 어떻게 작동할까 — 하루 기록._files/script.js"></script>
+
+        <!-- TistoryProfileLayer - END -->
+
+                
+                <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="format-detection" content="telephone=no">
+<script src="./react-query는 어떻게 작동할까 — 하루 기록._files/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./react-query는 어떻게 작동할까 — 하루 기록._files/tiara.min.js"></script><meta name="referrer" content="always">
+<meta name="google-adsense-platform-account" content="ca-host-pub-9691043933427338">
+<meta name="google-adsense-platform-domain" content="tistory.com">
+<meta name="description" content="QueryClient react-query를 프로젝트에 셋팅할 때, 가장 먼저 하는 것은 앱의 최상위에서 QueryClientProvider로 우리의 앱을 감싸주는 일이다. import { QueryClient, QueryClientProvider } from &#39;@tanstack/react-query&#39;; ... const queryClient = new QueryClient(); function Root() { return ( ); } 우리는 먼저 새로운 QueryClient인스턴스를 생성하고, QueryClientProvider를 통해 앱 전체에서 생성한 QueryClient에 접근 가능하도록 해준다. 이 QueryClient는 단순하게 표현하자면 QueryCache와 MutationCache를 담는 ..">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://leego.tistory.com/entry/react-query%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%A0%EA%B9%8C">
+<meta property="og.article.author" content="녘_">
+<meta property="og:site_name" content="하루 기록.">
+<meta property="og:title" content="react-query는 어떻게 작동할까">
+<meta name="by" content="녘_">
+<meta property="og:description" content="QueryClient react-query를 프로젝트에 셋팅할 때, 가장 먼저 하는 것은 앱의 최상위에서 QueryClientProvider로 우리의 앱을 감싸주는 일이다. import { QueryClient, QueryClientProvider } from &#39;@tanstack/react-query&#39;; ... const queryClient = new QueryClient(); function Root() { return ( ); } 우리는 먼저 새로운 QueryClient인스턴스를 생성하고, QueryClientProvider를 통해 앱 전체에서 생성한 QueryClient에 접근 가능하도록 해준다. 이 QueryClient는 단순하게 표현하자면 QueryCache와 MutationCache를 담는 ..">
+<meta property="og:image" content="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FBVker%2Fbtsa9J7BxQL%2F76VJdqCIFVFUuYsYpURJ90%2Fimg.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@TISTORY">
+<meta name="twitter:title" content="react-query는 어떻게 작동할까">
+<meta name="twitter:description" content="QueryClient react-query를 프로젝트에 셋팅할 때, 가장 먼저 하는 것은 앱의 최상위에서 QueryClientProvider로 우리의 앱을 감싸주는 일이다. import { QueryClient, QueryClientProvider } from &#39;@tanstack/react-query&#39;; ... const queryClient = new QueryClient(); function Root() { return ( ); } 우리는 먼저 새로운 QueryClient인스턴스를 생성하고, QueryClientProvider를 통해 앱 전체에서 생성한 QueryClient에 접근 가능하도록 해준다. 이 QueryClient는 단순하게 표현하자면 QueryCache와 MutationCache를 담는 ..">
+<meta property="twitter:image" content="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FBVker%2Fbtsa9J7BxQL%2F76VJdqCIFVFUuYsYpURJ90%2Fimg.jpg">
+<meta content="https://leego.tistory.com/42" property="dg:plink">
+<meta name="plink">
+<meta name="title" content="react-query는 어떻게 작동할까">
+<meta name="article:media_name" content="하루 기록.">
+<meta property="article:mobile_url" content="https://leego.tistory.com/m/entry/react-query%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%A0%EA%B9%8C">
+<meta property="article:pc_url" content="https://leego.tistory.com/entry/react-query%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%A0%EA%B9%8C">
+<meta property="article:mobile_view_url" content="https://leego.tistory.com/m/entry/react-query%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%A0%EA%B9%8C">
+<meta property="article:pc_view_url" content="https://leego.tistory.com/entry/react-query%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%A0%EA%B9%8C">
+<meta property="article:talk_channel_view_url" content="https://leego.tistory.com/m/entry/react-query%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%A0%EA%B9%8C">
+<meta property="article:pc_service_home" content="https://www.tistory.com">
+<meta property="article:mobile_service_home" content="https://www.tistory.com/m">
+<meta property="article:txid" content="4927241_42">
+<meta property="article:published_time" content="2023-04-19T00:14:48+09:00">
+<meta property="og:regDate" content="20230419121448">
+<meta property="article:modified_time" content="2023-04-19T00:14:48+09:00">
+<script type="module" src="./react-query는 어떻게 작동할까 — 하루 기록._files/index.js" defer=""></script>
+<script type="text/javascript" src="./react-query는 어떻게 작동할까 — 하루 기록._files/index-legacy.js" defer="" nomodule="true"></script>
+<script type="text/javascript" src="./react-query는 어떻게 작동할까 — 하루 기록._files/polyfills-legacy.js" defer="" nomodule="true"></script>
+<link rel="icon" sizes="any" href="https://t1.daumcdn.net/tistory_admin/favicon/tistory_favicon_32x32.ico">
+<link rel="icon" type="image/svg+xml" href="https://t1.daumcdn.net/tistory_admin/top_v2/bi-tistory-favicon.svg">
+<link rel="apple-touch-icon" href="https://t1.daumcdn.net/tistory_admin/top_v2/tistory-apple-touch-favicon.png">
+<link rel="stylesheet" type="text/css" href="./react-query는 어떻게 작동할까 — 하루 기록._files/font.css">
+<link rel="stylesheet" type="text/css" href="./react-query는 어떻게 작동할까 — 하루 기록._files/content.css">
+<link rel="stylesheet" type="text/css" href="./react-query는 어떻게 작동할까 — 하루 기록._files/index.css">
+<link rel="stylesheet" type="text/css" href="./react-query는 어떻게 작동할까 — 하루 기록._files/uselessPMargin.css">
+<script type="text/javascript">(function() {
+    var tjQuery = jQuery.noConflict(true);
+    window.tjQuery = tjQuery;
+    window.orgjQuery = window.jQuery; window.jQuery = tjQuery;
+    window.jQuery = window.orgjQuery; delete window.orgjQuery;
+})()</script>
+<script type="text/javascript" src="./react-query는 어떻게 작동할까 — 하루 기록._files/base.js"></script>
+<script type="text/javascript" src="./react-query는 어떻게 작동할까 — 하루 기록._files/kakao.min.js"></script>
+
+                
+    
+    <meta name="viewport" content="width=device-width">
+    <title>react-query는 어떻게 작동할까 — 하루 기록.</title>
+    <link rel="alternate" type="application/rss+xml" title="하루 기록." href="https://leego.tistory.com/rss">
+    <script async="" src="./react-query는 어떻게 작동할까 — 하루 기록._files/highlight.min.js"></script>
+    <script defer="defer" src="./react-query는 어떻게 작동할까 — 하루 기록._files/uikit.min.js"></script>
+    <script defer="defer" src="./react-query는 어떻게 작동할까 — 하루 기록._files/uikit-icons.min.js"></script>
+    <script defer="defer" src="./react-query는 어떻게 작동할까 — 하루 기록._files/65f7e05682.js"></script>
+    <link rel="preconnect" href="https://ka-f.fontawesome.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link rel="stylesheet" href="./react-query는 어떻게 작동할까 — 하루 기록._files/css2">
+    <!-- HTML -->
+    <link rel="stylesheet" href="./react-query는 어떻게 작동할까 — 하루 기록._files/fira_code.css">
+    <link rel="stylesheet" href="./react-query는 어떻게 작동할까 — 하루 기록._files/uikit.min.css">
+    <link rel="stylesheet" href="./react-query는 어떻게 작동할까 — 하루 기록._files/d2coding-ligature-full.css" media="all" onload="this.media=&#39;all&#39;">
+    <link id="__hljs" rel="stylesheet" href="./react-query는 어떻게 작동할까 — 하루 기록._files/atom-one-dark.min.css">
+    <script>
+      var $ = tjQuery;
+    </script>
+    <script>
+      window.H = {};
+      window.H.skinOptions = {
+        listImageMode: 'default',
+        gridColumnCount: '3',
+        galleryColumnCount: '3',
+        articleMode: 'default',
+        hljsThemeLight: 'atom-one-light',
+        hljsThemeDark: 'atom-one-dark',
+        comment: '1',
+        messageRequest: '도움이 되셨다면 공감 부탁드립니다!',
+        messageHeart: '공감해주셔서 감사합니다.',
+        messageUnheart: '공감이 취소되었습니다.',
+        messageSubscribe: '구독 감사합니다.',
+        messageUnsubscribe: '구독이 취소되었습니다.',
+        messageUrl: '포스트 주소가 복사되었습니다.'
+      };
+    </script>
+    <script>
+      $('html').attr('data-theme', localStorage.TTDARK ? localStorage.TTDARK === 'Y' ? 'dark' : 'light' : window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : $('html').attr('data-theme'));
+    </script>
+    <style>
+      :root {
+        --h-article-width: 720px;
+        --h-index-width: 1100px;
+        --h-guestbook-width: 720px;
+        --h-tagcloud-width: 1100px;
+        --h-gallery-item-height: 280px;
+      }
+    </style>
+    <link rel="stylesheet" href="./react-query는 어떻게 작동할까 — 하루 기록._files/style(2).css">
+  
+                
+                
+                <link rel="stylesheet" type="text/css" href="./react-query는 어떻게 작동할까 — 하루 기록._files/revenue.css">
+<link rel="canonical" href="https://leego.tistory.com/entry/react-query%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%A0%EA%B9%8C">
+
+<!-- BEGIN STRUCTURED_DATA -->
+<script type="application/ld+json">
+    {"@context":"http://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@id":"https://leego.tistory.com/entry/react-query%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%A0%EA%B9%8C","name":null},"url":"https://leego.tistory.com/entry/react-query%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%A0%EA%B9%8C","headline":"react-query는 어떻게 작동할까","description":"QueryClient react-query를 프로젝트에 셋팅할 때, 가장 먼저 하는 것은 앱의 최상위에서 QueryClientProvider로 우리의 앱을 감싸주는 일이다. import { QueryClient, QueryClientProvider } from '@tanstack/react-query'; ... const queryClient = new QueryClient(); function Root() { return ( ); } 우리는 먼저 새로운 QueryClient인스턴스를 생성하고, QueryClientProvider를 통해 앱 전체에서 생성한 QueryClient에 접근 가능하도록 해준다. 이 QueryClient는 단순하게 표현하자면 QueryCache와 MutationCache를 담는 ..","author":{"@type":"Person","name":"녘_","logo":null},"image":{"@type":"ImageObject","url":"https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FBVker%2Fbtsa9J7BxQL%2F76VJdqCIFVFUuYsYpURJ90%2Fimg.jpg","width":"800px","height":"800px"},"datePublished":"2023-04-19T00:14:48+09:00","dateModified":"2023-04-19T00:14:48+09:00","publisher":{"@type":"Organization","name":"TISTORY","logo":{"@type":"ImageObject","url":"https://t1.daumcdn.net/tistory_admin/static/images/openGraph/opengraph.png","width":"800px","height":"800px"}}}
+</script>
+<!-- END STRUCTURED_DATA -->
+<link rel="stylesheet" type="text/css" href="./react-query는 어떻게 작동할까 — 하루 기록._files/dialog.css">
+<link rel="stylesheet" type="text/css" href="./react-query는 어떻게 작동할까 — 하루 기록._files/font(1).css">
+<link rel="stylesheet" type="text/css" href="./react-query는 어떻게 작동할까 — 하루 기록._files/postBtn.css">
+<link rel="stylesheet" type="text/css" href="./react-query는 어떻게 작동할까 — 하루 기록._files/tistory.css">
+<script type="text/javascript" src="./react-query는 어떻게 작동할까 — 하루 기록._files/common.js"></script>
+
+                
+                <style type="text/css">#DragSchLayer{display:block;position:absolute;z-index:1000;width:61px;height:31px;margin:-30px 0px 0px -5px;background:url(//search1.daumcdn.net/search/statics/common/pi/btn_drag_rect.png);cursor:pointer}             @media             only screen and (-webkit-min-device-pixel-ratio: 1.5),             only screen and (min-device-pixel-ratio: 1.5),             only screen and (min-resolution: 1.5dppx) {             #DragSchLayer{background-image:url(//search1.daumcdn.net/search/statics/common/pi/r2/btn_drag_rect.png);background-size:61px 31px}}            </style></head>
+
+                                                  <body id="tt-body-page" data-sidebar-default="true">
+                
+                
+                
+    
+      <div id="__loader" style="display: none;">
+        <div class="la-ball-clip-rotate uk-position-center">
+          <div></div>
+        </div>
+      </div>
+    
+    
+      <div id="__tidory">
+        <div id="sidebar__mask"></div>
+        <aside id="__sidebar">
+          <div id="sidebar__shadow">
+            
+                <!-- 프로필 -->
+                <div id="sidebar__profile"><img class="thumbnail lazyautosizes lazyloaded" data-src="https://tistory1.daumcdn.net/tistory/4927241/attach/4d11550e88354015ad1a601e2277195e" data-sizes="auto" width="100" height="100" alt="녘_" sizes="100px" src="./react-query는 어떻게 작동할까 — 하루 기록._files/4d11550e88354015ad1a601e2277195e">
+                  <div class="title"><a href="https://leego.tistory.com/">하루 기록.</a></div>
+                  <div class="blogger">녘_</div>
+                </div>
+              
+                <!-- 방문자 수 -->
+                <div id="sidebar__counter">
+                  <div class="total">
+                    <div class="cnt-item">
+                      <div class="title">전체 방문자</div>
+                      <div class="cnt">90,672</div>
+                    </div>
+                  </div>
+                  <div class="day">
+                    <div class="cnt-item">
+                      <div class="title">오늘</div>
+                      <div class="cnt">8</div>
+                    </div>
+                    <div class="cnt-item">
+                      <div class="title">어제</div>
+                      <div class="cnt">36</div>
+                    </div>
+                  </div>
+                </div>
+              
+                <!-- 검색 -->
+                <div id="sidebar__search">
+                  
+                    <div class="uk-search uk-search-default"><span uk-search-icon="" class="uk-icon uk-search-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="search-icon"><circle fill="none" stroke="#000" stroke-width="1.1" cx="9" cy="9" r="7"></circle><path fill="none" stroke="#000" stroke-width="1.1" d="M14,14 L18,18 L14,14 Z"></path></svg></span><label for="search">검색</label><input class="uk-search-input" id="search" type="search" name="search" value="" onkeypress="if (event.keyCode == 13) { try {
+    window.location.href = &#39;/search&#39; + &#39;/&#39; + looseURIEncode(document.getElementsByName(&#39;search&#39;)[0].value);
+    document.getElementsByName(&#39;search&#39;)[0].value = &#39;&#39;;
+    return false;
+} catch (e) {} }"></div>
+                  
+                </div>
+              
+                <!-- 카테고리 -->
+                <nav id="sidebar__category"><ul class="tt_category"><li class=""><a href="https://leego.tistory.com/category" class="link_tit"> 분류 전체보기 <span class="c_cnt">(40)</span> </a>
+  <ul class="category_list"><li class=""><a href="https://leego.tistory.com/category/Front-End" class="link_item"> Front-End <span class="c_cnt">(22)</span> </a>
+  <ul class="sub_category_list"><li class=""><a href="https://leego.tistory.com/category/Front-End/JavaScript" class="link_sub_item"> JavaScript <span class="c_cnt">(4)</span> </a></li>
+<li class=""><a href="https://leego.tistory.com/category/Front-End/React" class="link_sub_item"> React <span class="c_cnt">(14)</span> </a></li>
+<li class=""><a href="https://leego.tistory.com/category/Front-End/%EA%B0%9C%EB%B0%9C%EC%9D%BC%EC%A7%80" class="link_sub_item"> 개발일지 <span class="c_cnt">(4)</span> </a></li>
+</ul>
+</li>
+<li class=""><a href="https://leego.tistory.com/category/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" class="link_item"> 알고리즘 <span class="c_cnt">(7)</span> </a>
+  <ul class="sub_category_list"><li class=""><a href="https://leego.tistory.com/category/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4" class="link_sub_item"> 프로그래머스 <span class="c_cnt">(7)</span> </a></li>
+<li class=""><a href="https://leego.tistory.com/category/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EA%B0%9C%EB%85%90%EC%A0%95%EB%A6%AC" class="link_sub_item"> 개념정리 <span class="c_cnt">(0)</span> </a></li>
+</ul>
+</li>
+<li class=""><a href="https://leego.tistory.com/category/%EB%8F%85%EC%84%9C" class="link_item"> 독서 <span class="c_cnt">(10)</span> </a>
+  <ul class="sub_category_list"><li class=""><a href="https://leego.tistory.com/category/%EB%8F%85%EC%84%9C/%EB%85%B8%EA%B0%9C%EB%B6%81" class="link_sub_item"> 노개북 <span class="c_cnt">(10)</span> </a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+              
+                <!-- 인기 글 -->
+                <nav id="sidebar__popular-posts">
+                  <h2>인기 글</h2>
+                  <ul>
+                    
+                      <li>
+                        <div class="metainfo"><a class="title" href="https://leego.tistory.com/entry/React-%ED%9A%A8%EC%9C%A8%EC%A0%81%EC%9C%BC%EB%A1%9C-%EB%AA%A8%EB%8B%AC-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0">[React] 효율적으로 모달 관리하기</a>
+                          <div class="date">2022.09.12</div>
+                        </div>
+                        <img class="thumbnail lazyautosizes lazyloaded" data-src="https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcLXOmm%2FbtrLNqTI1W5%2FmEMMkUkJIc8tLsv3AxJMV1%2Fimg.png" data-sizes="auto" width="60" height="45" alt="[React] 효율적으로 모달 관리하기" sizes="60px" src="./react-query는 어떻게 작동할까 — 하루 기록._files/saved_resource">
+                      </li>
+                    
+                      <li>
+                        <div class="metainfo"><a class="title" href="https://leego.tistory.com/entry/react-query%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%A0%EA%B9%8C">react-query는 어떻게 작동할까</a>
+                          <div class="date">2023.04.19</div>
+                        </div>
+                        <img class="thumbnail lazyautosizes lazyloaded" data-src="https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FBVker%2Fbtsa9J7BxQL%2F76VJdqCIFVFUuYsYpURJ90%2Fimg.jpg" data-sizes="auto" width="60" height="45" alt="react-query는 어떻게 작동할까" sizes="60px" src="./react-query는 어떻게 작동할까 — 하루 기록._files/saved_resource(1)">
+                      </li>
+                    
+                      <li>
+                        <div class="metainfo"><a class="title" href="https://leego.tistory.com/entry/React-%EC%97%90%EB%94%94%ED%84%B0%EB%A1%9C-TOAST-UI-Editor-%EC%82%AC%EC%9A%A9%ED%95%B4%EB%B3%B4%EA%B8%B0">React 에디터로 TOAST UI Editor 사용해보기</a>
+                          <div class="date">2022.04.27</div>
+                        </div>
+                        <img class="thumbnail lazyautosizes lazyloaded" data-src="https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FkUPbt%2FbtrA6xBhSJQ%2FkBiryqqZjSvWH9DKQvvLkK%2Fimg.png" data-sizes="auto" width="60" height="45" alt="React 에디터로 TOAST UI Editor 사용해보기" sizes="60px" src="./react-query는 어떻게 작동할까 — 하루 기록._files/saved_resource(2)">
+                      </li>
+                    
+                      <li>
+                        <div class="metainfo"><a class="title" href="https://leego.tistory.com/entry/React-Custom-hook%EC%9D%84-%EB%A7%8C%EB%93%A4%EA%B8%B0-%EC%A0%84%EC%97%90-%EA%B3%A0%EB%A0%A4%ED%95%B4%EC%95%BC-%ED%95%A0-%EA%B2%83%EB%93%A4">[React] Custom hook을 만들기 전에 고려해야⋯</a>
+                          <div class="date">2021.10.16</div>
+                        </div>
+                        <img class="thumbnail lazyautosizes lazyloaded" data-src="https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbhTyQZ%2FbtrhTTjyHJB%2FkcTkILgdF9sQKbkQHQoDh0%2Fimg.jpg" data-sizes="auto" width="60" height="45" alt="[React] Custom hook을 만들기 전에 고려해야⋯" sizes="60px" src="./react-query는 어떻게 작동할까 — 하루 기록._files/saved_resource(3)">
+                      </li>
+                    
+                      <li>
+                        <div class="metainfo"><a class="title" href="https://leego.tistory.com/entry/Toast-UI-Editor-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%B2%A8%EB%B6%80%ED%95%98%EA%B8%B0">Toast UI Editor 이미지 첨부하기</a>
+                          <div class="date">2022.05.02</div>
+                        </div>
+                        <img class="thumbnail lazyautosizes ls-is-cached lazyloaded" data-src="https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbD7pTN%2FbtrA3s9f78g%2FwZULmZAvaIBYH88cE3wohk%2Fimg.png" data-sizes="auto" width="60" height="45" alt="Toast UI Editor 이미지 첨부하기" sizes="60px" src="./react-query는 어떻게 작동할까 — 하루 기록._files/saved_resource(4)">
+                      </li>
+                    
+                  </ul>
+                </nav>
+              
+                <!-- 최근 댓글 -->
+                <div id="sidebar__recent-comments">
+                  <h2>최근 댓글</h2>
+                  <ul>
+                    
+                      <li><a href="https://leego.tistory.com/7#comment8331142">설명 잘 봤습니다. 정확한 차이를 몰랐는데 덕분에 이해하게⋯</a>
+                        <div class="metainfo">
+                          <div class="author">4개월차 초보</div>
+                        </div>
+                      </li>
+                    
+                      <li><a href="https://leego.tistory.com/32#comment7887816">진짜 감사합니다ㅠㅠ</a>
+                        <div class="metainfo">
+                          <div class="author">Aubri</div>
+                        </div>
+                      </li>
+                    
+                      <li><a href="https://leego.tistory.com/37#comment7570403">좋은 글 잘보고 갑니다!</a>
+                        <div class="metainfo">
+                          <div class="author">코드생활</div>
+                        </div>
+                      </li>
+                    
+                      <li><a href="https://leego.tistory.com/9#comment7346319">몇달전에 수준낮을 때 즐겨찾기 해두고 다시 읽어봤는데 굉장⋯</a>
+                        <div class="metainfo">
+                          <div class="author">후</div>
+                        </div>
+                      </li>
+                    
+                      <li><a href="https://leego.tistory.com/37#comment7206317">좋은 글 감사합니다 잘 보고 갑니다!</a>
+                        <div class="metainfo">
+                          <div class="author">GYU</div>
+                        </div>
+                      </li>
+                    
+                  </ul>
+                </div>
+              
+                <!-- 최근 글 -->
+                <nav id="sidebar__recent-posts">
+                  <h2>최근 글</h2>
+                  <ul>
+                    
+                      <li>
+                        <div class="metainfo"><a class="title" href="https://leego.tistory.com/entry/recoil%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%9C-%EC%A0%84%EC%97%AD-%EB%AA%A8%EB%8B%AC-%EA%B4%80%EB%A6%ACwith-TypeScript">recoil을 사용한 전역 모달 관리(with TypeSc⋯</a>
+                          <div class="date">2023.05.02</div>
+                        </div>
+                        <img class="thumbnail lazyautosizes lazyloaded" data-src="https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fy2pDE%2Fbtsdi3c7dRQ%2FalovNK85FUSgYLVtYDgaLk%2Fimg.png" data-sizes="auto" width="60" height="45" alt="recoil을 사용한 전역 모달 관리(with TypeSc⋯" sizes="60px" src="./react-query는 어떻게 작동할까 — 하루 기록._files/saved_resource(5)">
+                      </li>
+                    
+                      <li>
+                        <div class="metainfo"><a class="title" href="https://leego.tistory.com/entry/react-query%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%A0%EA%B9%8C">react-query는 어떻게 작동할까</a>
+                          <div class="date">2023.04.19</div>
+                        </div>
+                        <img class="thumbnail lazyautosizes ls-is-cached lazyloaded" data-src="https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FBVker%2Fbtsa9J7BxQL%2F76VJdqCIFVFUuYsYpURJ90%2Fimg.jpg" data-sizes="auto" width="60" height="45" alt="react-query는 어떻게 작동할까" sizes="60px" src="./react-query는 어떻게 작동할까 — 하루 기록._files/saved_resource(1)">
+                      </li>
+                    
+                      <li>
+                        <div class="metainfo"><a class="title" href="https://leego.tistory.com/entry/React-saga%EB%A5%BC-%ED%86%B5%ED%95%B4-axios-%ED%98%B8%EC%B6%9C-%EC%B7%A8%EC%86%8C%ED%95%98%EA%B8%B0">React-saga를 통해 axios 호출 취소하기</a>
+                          <div class="date">2022.11.26</div>
+                        </div>
+                        <img class="thumbnail lazyautosizes lazyloaded" data-src="https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FPvW0j%2FbtrSaq61PiV%2FaxgFtGDb5UnGdzTJCqVyH1%2Fimg.gif" data-sizes="auto" width="60" height="45" alt="React-saga를 통해 axios 호출 취소하기" sizes="60px" src="./react-query는 어떻게 작동할까 — 하루 기록._files/saved_resource(6)">
+                      </li>
+                    
+                      <li>
+                        <div class="metainfo"><a class="title" href="https://leego.tistory.com/entry/React-CRA%EC%97%90%EC%84%9C-Path-alias-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0">[React] CRA에서 Path alias 설정하기</a>
+                          <div class="date">2022.11.19</div>
+                        </div>
+                        <img class="thumbnail lazyautosizes lazyloaded" data-src="https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F3Bk6V%2FbtrRAEkQ3Xj%2FpD8kYkD7DjwvgCVtbttbVK%2Fimg.gif" data-sizes="auto" width="60" height="45" alt="[React] CRA에서 Path alias 설정하기" sizes="60px" src="./react-query는 어떻게 작동할까 — 하루 기록._files/saved_resource(7)">
+                      </li>
+                    
+                      <li>
+                        <div class="metainfo"><a class="title" href="https://leego.tistory.com/entry/React-%ED%9A%A8%EC%9C%A8%EC%A0%81%EC%9C%BC%EB%A1%9C-%EB%AA%A8%EB%8B%AC-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0">[React] 효율적으로 모달 관리하기</a>
+                          <div class="date">2022.09.12</div>
+                        </div>
+                        <img class="thumbnail lazyload" data-src="https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcLXOmm%2FbtrLNqTI1W5%2FmEMMkUkJIc8tLsv3AxJMV1%2Fimg.png" data-sizes="auto" width="60" height="45" alt="[React] 효율적으로 모달 관리하기">
+                      </li>
+                    
+                  </ul>
+                </nav>
+              
+          </div>
+        </aside>
+        <nav class="uk-navbar-container uk-sticky uk-navbar sticky uk-sticky-below uk-sticky-fixed" id="__nav" uk-sticky="top: 280; animation: uk-animation-slide-top; cls-active: sticky; cls-inactive: uk-navbar-transparent;" uk-navbar="" style="position: fixed; top: 0px; width: 1655px;">
+          <div class="uk-navbar-left" id="nav__s1"><img class="profile lazyautosizes ls-is-cached lazyloaded" data-src="https://tistory1.daumcdn.net/tistory/4927241/attach/4d11550e88354015ad1a601e2277195e" data-sizes="auto" alt="녘_" width="40" height="40" sizes="40px" src="./react-query는 어떻게 작동할까 — 하루 기록._files/4d11550e88354015ad1a601e2277195e"></div>
+          <div class="uk-navbar-center" id="nav__metainfo"><a class="category" href="https://leego.tistory.com/category/Front-End/React">Front-End/React</a><h1 class="title">react-query는 어떻게 작동할까</h1></div>
+          <div class="uk-navbar-right" id="nav__s2"></div>
+        </nav><div class="uk-sticky-placeholder" style="height: 59px; margin: 0px;"></div>
+        <main id="__main">
+          <div id="main__content">
+            
+            
+                
+        
+  
+    <div id="__permalink_article">
+      <div class="article content__permalink" data-mode="default">
+        <header class="header">
+          
+            <div class="img">
+              <div class="mask"></div><img class="thumbnail lazyload" data-src="https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FBVker%2Fbtsa9J7BxQL%2F76VJdqCIFVFUuYsYpURJ90%2Fimg.jpg" data-sizes="auto" alt="react-query는 어떻게 작동할까">
+            </div>
+          
+          <div class="heading"><a class="category" href="https://leego.tistory.com/category/Front-End/React">Front-End/React</a>
+            <h1 class="title">react-query는 어떻게 작동할까</h1>
+            <div class="metainfo"><time class="date">2023. 4. 19. 00:14</time><span class="permalink__admin">
+                
+              </span></div>
+          </div>
+        </header>
+        <article class="content">            <!-- System - START -->
+
+<!-- System - END -->
+
+            <div class="tt_article_useless_p_margin contents_style"><p></p><figure class="imageblock alignCenter" data-ke-mobilestyle="widthOrigin" data-filename="react-query.jpeg" data-origin-width="849" data-origin-height="425" style="width: 849px; max-width: none; margin-left: calc(50% - 424.5px);"><span data-url="https://blog.kakaocdn.net/dn/BVker/btsa9J7BxQL/76VJdqCIFVFUuYsYpURJ90/img.jpg" data-phocus="https://blog.kakaocdn.net/dn/BVker/btsa9J7BxQL/76VJdqCIFVFUuYsYpURJ90/img.jpg"><img src="./react-query는 어떻게 작동할까 — 하루 기록._files/img.jpg" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FBVker%2Fbtsa9J7BxQL%2F76VJdqCIFVFUuYsYpURJ90%2Fimg.jpg" onerror="this.onerror=null; this.src=&#39;//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png&#39;; this.srcset=&#39;//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png&#39;;" loading="lazy" width="597" height="299" data-filename="react-query.jpeg" data-origin-width="849" data-origin-height="425" data-phocus-index="0"></span></figure>
+<p></p>
+<p data-ke-size="size18">&nbsp;</p>
+<h3 data-ke-size="size23" id="QueryClient"><a href="https://leego.tistory.com/entry/react-query%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%A0%EA%B9%8C#QueryClient"><b>QueryClient</b></a></h3>
+<p data-ke-size="size16">react-query를 프로젝트에 셋팅할 때, 가장 먼저 하는 것은 앱의 최상위에서 <code>QueryClientProvider</code>로 우리의 앱을 감싸주는 일이다.</p>
+<pre class="javascript"><code class="hljs"><span class="hljs-keyword">import</span> { QueryClient, QueryClientProvider } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tanstack/react-query'</span>;
+...
+
+const queryClient = <span class="hljs-keyword">new</span> QueryClient();
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Root</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> (
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">QueryClientProvider</span> <span class="hljs-attr">client</span>=<span class="hljs-string">{queryClient}</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">App</span> /&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">QueryClientProvider</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<p data-ke-size="size16">우리는 먼저 새로운 <code>QueryClient</code>인스턴스를 생성하고, <code>QueryClientProvider</code>를 통해 앱 전체에서 생성한 <code>QueryClient</code>에 접근 가능하도록 해준다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">이 <code>QueryClient</code>는 단순하게 표현하자면 <code>QueryCache</code>와 <code>MutationCache</code>를 담는 그릇이다. 우리는 대부분의 경우에 직접 <code>QueryCache</code>에 접근하기보다, <code>QueryClient</code>를 통해 <code>QueryCache</code>와 <code>MutationCache</code>에 접근한다.</p>
+<p></p><figure class="imageblock alignCenter" data-ke-mobilestyle="widthOrigin" data-filename="IMG_95C85CAF3F0D-1.jpeg" data-origin-width="1319" data-origin-height="999" style="width: 1100px; max-width: none; margin-left: calc(50% - 550px);"><span data-url="https://blog.kakaocdn.net/dn/ceNUPV/btsak9GTTBJ/kayd2JfAISPXslo0C568U1/img.jpg" data-phocus="https://blog.kakaocdn.net/dn/ceNUPV/btsak9GTTBJ/kayd2JfAISPXslo0C568U1/img.jpg"><img src="./react-query는 어떻게 작동할까 — 하루 기록._files/img(1).jpg" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FceNUPV%2Fbtsak9GTTBJ%2Fkayd2JfAISPXslo0C568U1%2Fimg.jpg" onerror="this.onerror=null; this.src=&#39;//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png&#39;; this.srcset=&#39;//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png&#39;;" loading="lazy" width="282" height="214" data-filename="IMG_95C85CAF3F0D-1.jpeg" data-origin-width="1319" data-origin-height="999" data-phocus-index="1"></span></figure>
+<p></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><code>QueryClientProvider</code>를 통해 내려준 <code>queryClient</code>에 접근하기 위해서는 <code>useQueryClient</code>를 사용한다.</p>
+<pre class="ebnf"><code class="hljs cpp"><span class="hljs-keyword">const</span> queryClient = useQueryClient();</code></pre>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">이렇게 가져온 <code>queryClient</code>객체를 <code>console</code>에 찍어보면 내부 구조를 볼 수 있다.</p>
+<p></p><figure class="imageblock alignCenter" data-ke-mobilestyle="widthOrigin" data-origin-width="2000" data-origin-height="385" style="width: 1100px; max-width: none; margin-left: calc(50% - 550px);"><span data-url="https://blog.kakaocdn.net/dn/blQGgn/btsayVgIboL/t8Yzl5dYc2Q3smuFcsTIL0/img.png" data-phocus="https://blog.kakaocdn.net/dn/blQGgn/btsayVgIboL/t8Yzl5dYc2Q3smuFcsTIL0/img.png"><img src="./react-query는 어떻게 작동할까 — 하루 기록._files/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FblQGgn%2FbtsayVgIboL%2Ft8Yzl5dYc2Q3smuFcsTIL0%2Fimg.png" onerror="this.onerror=null; this.src=&#39;//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png&#39;; this.srcset=&#39;//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png&#39;;" loading="lazy" width="695" height="134" data-origin-width="2000" data-origin-height="385" data-phocus-index="2"></span></figure>
+<p></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<pre class="properties"><code class="hljs"><span class="hljs-attr">const</span> <span class="hljs-string">queryClient = new QueryClient({</span>
+  <span class="hljs-attr">defaultOptions</span>: <span class="hljs-string">{</span>
+    <span class="hljs-attr">queries</span>: <span class="hljs-string">{</span>
+      <span class="hljs-attr">staleTime</span>: <span class="hljs-string">20000</span>
+    <span class="hljs-attr">}</span>
+  <span class="hljs-attr">}</span>
+<span class="hljs-attr">});</span></code></pre>
+<p data-ke-size="size16">만약 위와 같이 <code>QueryClient</code> 객체를 생성하면서 <code>defaultOption</code>을 설정해줬다면, 해당 객체에 잘 들어가 있는 것을 확인할 수 있다.</p>
+<p></p><figure class="imageblock alignCenter" data-ke-mobilestyle="widthOrigin" data-origin-width="2000" data-origin-height="330" style="width: 1100px; max-width: none; margin-left: calc(50% - 550px);"><span data-url="https://blog.kakaocdn.net/dn/btzOGA/btsajdJ9NfX/XayNAnkAJIrvIHrZwnGebK/img.png" data-phocus="https://blog.kakaocdn.net/dn/btzOGA/btsajdJ9NfX/XayNAnkAJIrvIHrZwnGebK/img.png"><img src="./react-query는 어떻게 작동할까 — 하루 기록._files/img(2).png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbtzOGA%2FbtsajdJ9NfX%2FXayNAnkAJIrvIHrZwnGebK%2Fimg.png" onerror="this.onerror=null; this.src=&#39;//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png&#39;; this.srcset=&#39;//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png&#39;;" loading="lazy" width="369" height="61" data-origin-width="2000" data-origin-height="330" data-phocus-index="3"></span></figure>
+<p></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h3 data-ke-size="size23" id="QueryCache"><a href="https://leego.tistory.com/entry/react-query%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%A0%EA%B9%8C#QueryCache"><b>QueryCache</b></a></h3>
+<p data-ke-size="size16">위에서 살펴본 <code>QueryClient</code>객체 안에는 QueryCache가 존재한다.</p>
+<p></p><figure class="imageblock alignCenter" data-ke-mobilestyle="widthOrigin" data-origin-width="2000" data-origin-height="459" style="width: 1100px; max-width: none; margin-left: calc(50% - 550px);"><span data-url="https://blog.kakaocdn.net/dn/b3SW2I/btsaEhX1n8r/lzaeL41GQjOAdi7KY5qXJ1/img.png" data-phocus="https://blog.kakaocdn.net/dn/b3SW2I/btsaEhX1n8r/lzaeL41GQjOAdi7KY5qXJ1/img.png"><img src="./react-query는 어떻게 작동할까 — 하루 기록._files/img(3).png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fb3SW2I%2FbtsaEhX1n8r%2FlzaeL41GQjOAdi7KY5qXJ1%2Fimg.png" onerror="this.onerror=null; this.src=&#39;//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png&#39;; this.srcset=&#39;//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png&#39;;" loading="lazy" width="546" height="125" data-origin-width="2000" data-origin-height="459" data-phocus-index="4"></span></figure>
+<p></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><code>QueryCache</code>는 javascript 객체다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<pre class="scala"><code class="hljs typescript"><span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> QueryCache <span class="hljs-keyword">extends</span> Subscribable&lt;QueryCacheListener&gt; {
+
+  <span class="hljs-keyword">private</span> queries: Query&lt;<span class="hljs-built_in">any</span>, <span class="hljs-built_in">any</span>, <span class="hljs-built_in">any</span>, <span class="hljs-built_in">any</span>&gt;[];
+  <span class="hljs-keyword">private</span> queriesMap: QueryHashMap;
+...
+
+add(query: Query&lt;<span class="hljs-built_in">any</span>, <span class="hljs-built_in">any</span>, <span class="hljs-built_in">any</span>, <span class="hljs-built_in">any</span>&gt;): <span class="hljs-built_in">void</span> {
+    <span class="hljs-keyword">if</span> (!<span class="hljs-built_in">this</span>.queriesMap[query.queryHash]) {
+      <span class="hljs-built_in">this</span>.queriesMap[query.queryHash] = query
+      <span class="hljs-built_in">this</span>.queries.push(query)
+      <span class="hljs-built_in">this</span>.notify({
+        <span class="hljs-keyword">type</span>: <span class="hljs-string">'added'</span>,
+        query,
+      })
+    }
+  }
+}</code></pre>
+<p data-ke-size="size16">우리가 Query를 생성하면, <code>queryHash</code>를 객체의 key로,</p>
+<p data-ke-size="size16">query 인스턴스를 값으로 넣어준다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">그리고 <code>queries</code> 라는 배열에 query 인스턴스를 추가한다.</p>
+<p></p><figure class="imageblock alignCenter" data-ke-mobilestyle="widthOrigin" data-origin-width="2000" data-origin-height="486" style="width: 1100px; max-width: none; margin-left: calc(50% - 550px);"><span data-url="https://blog.kakaocdn.net/dn/XME6Q/btsaw8UFEBT/6lDIT6g0i0BgsbC2IrXQIK/img.png" data-phocus="https://blog.kakaocdn.net/dn/XME6Q/btsaw8UFEBT/6lDIT6g0i0BgsbC2IrXQIK/img.png"><img src="./react-query는 어떻게 작동할까 — 하루 기록._files/img(4).png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FXME6Q%2Fbtsaw8UFEBT%2F6lDIT6g0i0BgsbC2IrXQIK%2Fimg.png" onerror="this.onerror=null; this.src=&#39;//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png&#39;; this.srcset=&#39;//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png&#39;;" loading="lazy" width="704" height="171" data-origin-width="2000" data-origin-height="486" data-phocus-index="5"></span></figure>
+<p></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">여기서 <code>queryHash</code>는 query key를 stringify한 값이다.</p>
+<pre class="reasonml"><code class="hljs typescript"><span class="hljs-comment">/**
+ * Default query keys hash function.
+ * Hashes the value into a stable hash.
+ */</span>
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">hashQueryKey</span>(<span class="hljs-params">queryKey: QueryKey</span>): <span class="hljs-title">string</span> </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-built_in">JSON</span>.stringify(queryKey, <span class="hljs-function">(<span class="hljs-params">_, val</span>) =&gt;</span>
+    isPlainObject(val)
+      ? <span class="hljs-built_in">Object</span>.keys(val)
+          .sort()
+          .reduce(<span class="hljs-function">(<span class="hljs-params">result, key</span>) =&gt;</span> {
+            result[key] = val[key]
+            <span class="hljs-keyword">return</span> result
+          }, {} <span class="hljs-keyword">as</span> <span class="hljs-built_in">any</span>)
+      : val,
+  )
+}</code></pre>
+<p></p><figure class="imageblock alignCenter" data-ke-mobilestyle="widthOrigin" data-origin-width="2000" data-origin-height="265" style="width: 1100px; max-width: none; margin-left: calc(50% - 550px);"><span data-url="https://blog.kakaocdn.net/dn/ciw2GB/btsak3AcP1G/yIox0sBFqd6jipKpJjgFw1/img.png" data-phocus="https://blog.kakaocdn.net/dn/ciw2GB/btsak3AcP1G/yIox0sBFqd6jipKpJjgFw1/img.png"><img src="./react-query는 어떻게 작동할까 — 하루 기록._files/img(5).png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fciw2GB%2Fbtsak3AcP1G%2FyIox0sBFqd6jipKpJjgFw1%2Fimg.png" onerror="this.onerror=null; this.src=&#39;//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png&#39;; this.srcset=&#39;//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png&#39;;" loading="lazy" width="385" height="51" data-origin-width="2000" data-origin-height="265" data-phocus-index="6"></span></figure>
+<p></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">따라서 우리는 query 생성시 반드시 query key로 유니크한 값을 지정해주어야 한다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h3 data-ke-size="size23" id="Query"><a href="https://leego.tistory.com/entry/react-query%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%A0%EA%B9%8C#Query"><b>Query</b></a></h3>
+<p data-ke-size="size16"><code>QueryCache</code>의 value로 Query 객체 안에는 Query의 모든 정보들이 들어있다.</p>
+<p></p><figure class="imageblock alignCenter" data-ke-mobilestyle="widthOrigin" data-origin-width="2000" data-origin-height="860" style="width: 1100px; max-width: none; margin-left: calc(50% - 550px);"><span data-url="https://blog.kakaocdn.net/dn/q2gPN/btsai557puT/f50BoPHIz8vYAxKc2ajYek/img.png" data-phocus="https://blog.kakaocdn.net/dn/q2gPN/btsai557puT/f50BoPHIz8vYAxKc2ajYek/img.png"><img src="./react-query는 어떻게 작동할까 — 하루 기록._files/img(6).png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fq2gPN%2Fbtsai557puT%2Ff50BoPHIz8vYAxKc2ajYek%2Fimg.png" onerror="this.onerror=null; this.src=&#39;//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png&#39;; this.srcset=&#39;//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png&#39;;" loading="lazy" width="665" height="286" data-origin-width="2000" data-origin-height="860" data-phocus-index="7"></span></figure>
+<p></p>
+<p data-ke-size="size16"><code>cache</code>에 자신이 위치한 <code>QueryCache</code>정보를 가지고 있으며, <code>observers</code>라는 배열도 가지고 있다.</p>
+<p data-ke-size="size16">이 <code>observers</code>에는 <code>QueryObserver</code>가 담긴다. <code>Query</code>는 <code>Observer</code>를 통해 누가 자신을 구독했는지 알고, <code>Observer</code>를 통해 모든 변경사항을 알릴 수 있다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h3 data-ke-size="size23" id="QueryObserver"><a href="https://leego.tistory.com/entry/react-query%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%A0%EA%B9%8C#QueryObserver"><b>QueryObserver</b></a></h3>
+<p data-ke-size="size16"><code>useQuery호출 시</code> <code>Observer</code>가 생성된다. 이 <code>Observer</code>를 통해 <code>Query</code>와 컴포넌트가 연결된다.</p>
+<p></p><figure class="imageblock alignCenter" data-ke-mobilestyle="widthOrigin" data-filename="IMG_8C8D8FD8510D-1.jpeg" data-origin-width="999" data-origin-height="1124" style="width: 999px; max-width: none; margin-left: calc(50% - 499.5px);"><span data-url="https://blog.kakaocdn.net/dn/dQJ1uj/btsaJVAnGCZ/AWAk7PUVHYWPVlp7IT6Ygk/img.jpg" data-phocus="https://blog.kakaocdn.net/dn/dQJ1uj/btsaJVAnGCZ/AWAk7PUVHYWPVlp7IT6Ygk/img.jpg"><img src="./react-query는 어떻게 작동할까 — 하루 기록._files/img(7).jpg" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdQJ1uj%2FbtsaJVAnGCZ%2FAWAk7PUVHYWPVlp7IT6Ygk%2Fimg.jpg" onerror="this.onerror=null; this.src=&#39;//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png&#39;; this.srcset=&#39;//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png&#39;;" loading="lazy" width="265" height="298" data-filename="IMG_8C8D8FD8510D-1.jpeg" data-origin-width="999" data-origin-height="1124" data-phocus-index="8"></span></figure>
+<figure class="imageblock alignCenter" data-ke-mobilestyle="widthOrigin" data-origin-width="2000" data-origin-height="1170" style="width: 1100px; max-width: none; margin-left: calc(50% - 550px);"><span data-url="https://blog.kakaocdn.net/dn/ECpGH/btsakftRfS8/3lWp6zMtQnNn1PhhZ30JmK/img.png" data-phocus="https://blog.kakaocdn.net/dn/ECpGH/btsakftRfS8/3lWp6zMtQnNn1PhhZ30JmK/img.png"><img src="./react-query는 어떻게 작동할까 — 하루 기록._files/img(8).png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FECpGH%2FbtsakftRfS8%2F3lWp6zMtQnNn1PhhZ30JmK%2Fimg.png" onerror="this.onerror=null; this.src=&#39;//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png&#39;; this.srcset=&#39;//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png&#39;;" loading="lazy" width="723" height="423" data-origin-width="2000" data-origin-height="1170" data-phocus-index="9"></span></figure>
+<p></p>
+<p data-ke-size="size16">Observer에는 QueryClient객체를 비롯하여 현재 Query, 랜더링 유발 여부를 파악하기 위한 현재 결과값 등이 담겨있다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h3 data-ke-size="size23" id="useQuery%--%ED%--%B-%EC%B-%-C%--%EC%-B%-C%--%EC%-D%BC%EC%--%B-%EB%--%--%EB%-A%--%--%EC%-D%BC"><a href="https://leego.tistory.com/entry/react-query%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%A0%EA%B9%8C#useQuery%--%ED%--%B-%EC%B-%-C%--%EC%-B%-C%--%EC%-D%BC%EC%--%B-%EB%--%--%EB%-A%--%--%EC%-D%BC"><b>useQuery 호출 시 일어나는 일</b></a></h3>
+<p data-ke-size="size16"><code>useQuery</code>를 호출하고 <code>QueryCache</code>에서 데이터를 가져오는 과정을 살펴보자.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><code>Observer</code>를 생성하고, <code>queryCache</code>에서 데이터를 가져오는 핵심 로직은 모두 <code>useBaseQuery</code>에 존재한다.</p>
+<p data-ke-size="size16">useQuery, useQueries, useInfiniteQuery는 모두 <code>useBaseQuery</code>를 감싼 custom hook이다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><code>useBaseQuery</code>의 구조를 살펴보자.</p>
+<pre class="javascript" data-ke-language="javascript"><code class="hljs"><span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">useBaseQuery</span>&lt;
+  <span class="hljs-title">TQueryFnData</span>,
+  <span class="hljs-title">TError</span>,
+  <span class="hljs-title">TData</span>,
+  <span class="hljs-title">TQueryData</span>,
+  <span class="hljs-title">TQueryKey</span> <span class="hljs-title">extends</span> <span class="hljs-title">QueryKey</span>,
+&gt;(<span class="hljs-params">
+  options: UseBaseQueryOptions&lt;
+    TQueryFnData,
+    TError,
+    TData,
+    TQueryData,
+    TQueryKey
+  &gt;,
+  Observer: typeof QueryObserver,
+</span>) </span>{
+  <span class="hljs-keyword">const</span> queryClient = useQueryClient({ <span class="hljs-attr">context</span>: options.context })
+...
+  const [observer] = React.useState(
+    <span class="hljs-function">() =&gt;</span>
+      <span class="hljs-keyword">new</span> Observer&lt;TQueryFnData, TError, TData, TQueryData, TQueryKey&gt;(
+        queryClient,
+        defaultedOptions,
+      ),
+  )
+
+  <span class="hljs-keyword">const</span> result = observer.getOptimisticResult(defaultedOptions)
+
+ <span class="hljs-keyword">return</span> result;</code></pre>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<pre class="javascript" data-ke-language="javascript"><code class="hljs"><span class="hljs-comment">// useBaseQuery.ts</span>
+
+<span class="hljs-keyword">const</span> queryClient = useQueryClient({ <span class="hljs-attr">context</span>: options.context })</code></pre>
+<p data-ke-size="size16"><code>useBaseQuery</code> 호출 시 가장 먼저 하는 일은 <code>QueryClient</code> 객체를 가져오는 일이다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h4 data-ke-size="size20" id="observer%--%EC%--%-D%EC%--%B-"><a href="https://leego.tistory.com/entry/react-query%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%A0%EA%B9%8C#observer%--%EC%--%-D%EC%--%B-">observer 생성</a></h4>
+<pre class="javascript" data-ke-language="javascript"><code class="hljs"><span class="hljs-comment">// useBaseQuery.ts</span>
+
+<span class="hljs-keyword">const</span> [observer] = React.useState(
+    <span class="hljs-function">() =&gt;</span>
+      <span class="hljs-keyword">new</span> Observer&lt;TQueryFnData, TError, TData, TQueryData, TQueryKey&gt;(
+        queryClient,
+        defaultedOptions,
+      ),
+  )</code></pre>
+<p data-ke-size="size16">그 이후 <code>observer</code>를 생성한다. 위에서 가져온 <code>queryClient</code>와 <code>useQuery호출 시</code> 넣어준 <code>key</code>를 포함한 옵션값을 넣어준다. 이 <code>observer</code> 는 <code>useState</code>를 통해 생성되었으므로, <code>useQuery</code>를 호출한 컴포넌트가 <code>unmount</code> 되면 사라진다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<pre class="kotlin"><code class="hljs"><span class="hljs-comment">// queryObserver.ts</span>
+
+<span class="hljs-keyword">constructor</span>(
+    client: QueryClient,
+    options: QueryObserverOptions&lt;
+      TQueryFnData,
+      TError,
+      TData,
+      TQueryData,
+      TQueryKey
+    &gt;,
+  ) {
+    <span class="hljs-keyword">super</span>()
+
+    <span class="hljs-keyword">this</span>.client = client
+    <span class="hljs-keyword">this</span>.options = options
+    <span class="hljs-keyword">this</span>.trackedProps = new Set()
+    <span class="hljs-keyword">this</span>.selectError = <span class="hljs-literal">null</span>
+    <span class="hljs-keyword">this</span>.bindMethods()
+    <span class="hljs-keyword">this</span>.setOptions(options)
+  }</code></pre>
+<p data-ke-size="size16"><code>Observer</code> 가 생성되면 <code>setOptions</code>를 실행한다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<pre class="javascript" data-ke-language="javascript"><code class="hljs"><span class="hljs-comment">// queryObserver.ts</span>
+
+setOptions(options?: QueryObserverOptions&lt;
+      TQueryFnData,
+      TError,
+      TData,
+      TQueryData,
+      TQueryKey
+    &gt;,
+    notifyOptions?: NotifyOptions,
+  ): <span class="hljs-keyword">void</span> {
+    <span class="hljs-keyword">const</span> prevOptions = <span class="hljs-built_in">this</span>.options
+    <span class="hljs-keyword">const</span> prevQuery = <span class="hljs-built_in">this</span>.currentQuery
+
+    <span class="hljs-built_in">this</span>.options = <span class="hljs-built_in">this</span>.client.defaultQueryOptions(options)
+
+<span class="hljs-built_in">this</span>.updateQuery();
+
+...
+this.updateResult(notifyOptions);
+
+}</code></pre>
+<p data-ke-size="size16"><code>setOptions</code> 은 <code>updateQuery</code> 와 <code>updateResult</code> 를 실행하는데,  <code>updateQuery</code> 를 좀 더 자세히 살펴보자.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<pre class="javascript" data-ke-language="javascript"><code class="hljs"><span class="hljs-comment">// queryObserver.ts</span>
+
+private updateQuery(): <span class="hljs-keyword">void</span> {
+    <span class="hljs-keyword">const</span> query = <span class="hljs-built_in">this</span>.client.getQueryCache().build(<span class="hljs-built_in">this</span>.client, <span class="hljs-built_in">this</span>.options)
+
+    <span class="hljs-keyword">if</span> (query === <span class="hljs-built_in">this</span>.currentQuery) {
+      <span class="hljs-keyword">return</span>
+    }
+
+    <span class="hljs-keyword">const</span> prevQuery = <span class="hljs-built_in">this</span>.currentQuery <span class="hljs-keyword">as</span>
+      | Query&lt;TQueryFnData, TError, TQueryData, TQueryKey&gt;
+      | <span class="hljs-literal">undefined</span>
+    <span class="hljs-built_in">this</span>.currentQuery = query
+    <span class="hljs-built_in">this</span>.currentQueryInitialState = query.state
+    <span class="hljs-built_in">this</span>.previousQueryResult = <span class="hljs-built_in">this</span>.currentResult
+
+    <span class="hljs-keyword">if</span> (<span class="hljs-built_in">this</span>.hasListeners()) {
+      prevQuery?.removeObserver(<span class="hljs-built_in">this</span>)
+      query.addObserver(<span class="hljs-built_in">this</span>)
+    }
+  }</code></pre>
+<p data-ke-size="size16">대략적으로 코드를 훑어보면, <code>options</code>을 가진 <code>Query</code> 객체를 <code>queryCache</code>에서 찾은 후 해당 <code>Query</code> 가 가지고 있는 결과값을 리턴한다는 것을 추측해 볼 수 있다.&nbsp;</p>
+<p data-ke-size="size16">하지만 여기까지의 과정에서 우리는 아직 <code>Query</code>가 생성되지 않았다는 것을 떠올려야 한다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h4 data-ke-size="size20" id="Query%--%EC%--%-D%EC%--%B-"><a href="https://leego.tistory.com/entry/react-query%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%A0%EA%B9%8C#Query%--%EC%--%-D%EC%--%B-">Query 생성</a></h4>
+<p data-ke-size="size16"><code>this.client.getQueryCache().build(this.client, this.options)</code>를 좀 더 들여다보자.</p>
+<pre class="javascript" data-ke-language="javascript"><code class="hljs"><span class="hljs-comment">// queryCache.ts</span>
+
+build&lt;TQueryFnData, TError, TData, TQueryKey <span class="hljs-keyword">extends</span> QueryKey&gt;(
+    client: QueryClient,
+    <span class="hljs-attr">options</span>: QueryOptions&lt;TQueryFnData, TError, TData, TQueryKey&gt;,
+    state?: QueryState&lt;TData, TError&gt;,
+  ): Query&lt;TQueryFnData, TError, TData, TQueryKey&gt; {
+    <span class="hljs-keyword">const</span> queryKey = options.queryKey!
+    <span class="hljs-keyword">const</span> queryHash =
+      options.queryHash ?? hashQueryKeyByOptions(queryKey, options)
+    <span class="hljs-keyword">let</span> query = <span class="hljs-built_in">this</span>.get&lt;TQueryFnData, TError, TData, TQueryKey&gt;(queryHash)
+
+    <span class="hljs-keyword">if</span> (!query) {
+      query = <span class="hljs-keyword">new</span> Query({
+        <span class="hljs-attr">cache</span>: <span class="hljs-built_in">this</span>,
+        <span class="hljs-attr">logger</span>: client.getLogger(),
+        queryKey,
+        queryHash,
+        <span class="hljs-attr">options</span>: client.defaultQueryOptions(options),
+        state,
+        <span class="hljs-attr">defaultOptions</span>: client.getQueryDefaults(queryKey),
+      })
+      <span class="hljs-built_in">this</span>.add(query)
+    }
+
+    <span class="hljs-keyword">return</span> query
+  }</code></pre>
+<p data-ke-size="size16"><code>Query</code> 의 생성은 <code>QueryCache</code> 의 <code>build</code> 매서드에서 이뤄진다.</p>
+<ol style="list-style-type: decimal;" data-ke-list-type="decimal">
+<li><code>queryKey</code> 를 stringify해서 <code>queryHash</code> 를 생성</li>
+<li><code>QueryCache</code> 에서 해당 key를 가진 <code>query</code>가 있는지 확인</li>
+<li>없다면 새로운 <code>query</code> 생성</li>
+</ol>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">이제 <code>Query</code>가 생성되어 <code>cache</code>에 들어있게 되었다.</p>
+<p data-ke-size="size16">생성한&nbsp;<code>Query</code>를 return해준다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">다시 <code>updateQuery</code>로 돌아가보면, 이제 <code>query</code>에 막 생성한 <code>Query</code> 인스턴스가 담겨있게된다.</p>
+<p data-ke-size="size16">이 <code>Query</code>의 정보를 <code>Observer</code>에 저장해두고 만약 다시 <code>updateQuery</code>가 호출되면 새로운 <code>Query</code>와 비교해서 새로운 <code>Query</code> 정보로 업데이트 해준다.</p>
+<pre id="code_1681730906891" class="javascript" data-ke-language="javascript" data-ke-type="codeblock"><code class="hljs"><span class="hljs-comment">// queryObserver.ts</span>
+
+private updateQuery(): <span class="hljs-keyword">void</span> {
+    <span class="hljs-keyword">const</span> query = <span class="hljs-built_in">this</span>.client.getQueryCache().build(<span class="hljs-built_in">this</span>.client, <span class="hljs-built_in">this</span>.options)
+    
+	...
+    
+ 	this.currentQuery = query
+ 	<span class="hljs-built_in">this</span>.currentQueryInitialState = query.state
+    
+ 	...
+    
+}</code></pre>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18">&nbsp;</p>
+<p data-ke-size="size16">다음은 <code>result</code>에 결과값들을 넣어준다.</p>
+<pre class="javascript" data-ke-language="javascript"><code class="hljs"><span class="hljs-comment">// useBaseQuery.ts</span>
+
+<span class="hljs-keyword">const</span> result = observer.getOptimisticResult(defaultedOptions)</code></pre>
+<pre class="javascript" data-ke-language="javascript"><code class="hljs"><span class="hljs-comment">// queryObserver.ts</span>
+
+getOptimisticResult(
+    options: DefaultedQueryObserverOptions&lt;
+      TQueryFnData,
+      TError,
+      TData,
+      TQueryData,
+      TQueryKey
+    &gt;,
+  ): QueryObserverResult&lt;TData, TError&gt; {
+    <span class="hljs-keyword">const</span> query = <span class="hljs-built_in">this</span>.client.getQueryCache().build(<span class="hljs-built_in">this</span>.client, options)
+
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>.createResult(query, options)
+  }</code></pre>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><span>바로 위에서 알아봤듯, <code>const query = this.client.getQueryCache().build(this.client, options)</code>은 <code>options</code>에 해당하는 <code>Query</code>를 반환하고, 없으면 <code>Query</code>를 새로 생성한다.</span></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><span><code>createResult</code>는 함수명 그대로 사용자가 설정한 옵션에 따라</span></p>
+<p data-ke-size="size16">&nbsp;<code>Query</code>가 가진 데이터를 비롯한 <code>isLoading</code>, <code>isStale</code>, <code>status</code> 등의 상태 값을 리턴해준다.</p>
+<pre id="code_1681732570825" class="javascript" data-ke-language="javascript" data-ke-type="codeblock"><code class="hljs"><span class="hljs-comment">// queryObserver.ts</span>
+
+	protected createResult(
+        query: Query&lt;TQueryFnData, TError, TQueryData, TQueryKey&gt;,
+        options: QueryObserverOptions&lt;
+          TQueryFnData,
+          TError,
+          TData,
+          TQueryData,
+          TQueryKey
+        &gt;,
+      ): QueryObserverResult&lt;TData, TError&gt; {
+  
+      ...
+        const result: QueryObserverBaseResult&lt;TData, TError&gt; = {
+          status,
+          fetchStatus,
+          isLoading,
+          <span class="hljs-attr">isSuccess</span>: status === <span class="hljs-string">'success'</span>,
+          isError,
+          <span class="hljs-attr">isInitialLoading</span>: isLoading &amp;&amp; isFetching,
+          data,
+          dataUpdatedAt,
+          error,
+          errorUpdatedAt,
+          <span class="hljs-attr">failureCount</span>: state.fetchFailureCount,
+          <span class="hljs-attr">failureReason</span>: state.fetchFailureReason,
+          <span class="hljs-attr">errorUpdateCount</span>: state.errorUpdateCount,
+          <span class="hljs-attr">isFetched</span>: state.dataUpdateCount &gt; <span class="hljs-number">0</span> || state.errorUpdateCount &gt; <span class="hljs-number">0</span>,
+          <span class="hljs-attr">isFetchedAfterMount</span>:
+            state.dataUpdateCount &gt; queryInitialState.dataUpdateCount ||
+            state.errorUpdateCount &gt; queryInitialState.errorUpdateCount,
+          isFetching,
+          <span class="hljs-attr">isRefetching</span>: isFetching &amp;&amp; !isLoading,
+          <span class="hljs-attr">isLoadingError</span>: isError &amp;&amp; state.dataUpdatedAt === <span class="hljs-number">0</span>,
+          <span class="hljs-attr">isPaused</span>: fetchStatus === <span class="hljs-string">'paused'</span>,
+          isPlaceholderData,
+          isPreviousData,
+          <span class="hljs-attr">isRefetchError</span>: isError &amp;&amp; state.dataUpdatedAt !== <span class="hljs-number">0</span>,
+          <span class="hljs-attr">isStale</span>: isStale(query, options),
+          <span class="hljs-attr">refetch</span>: <span class="hljs-built_in">this</span>.refetch,
+          <span class="hljs-attr">remove</span>: <span class="hljs-built_in">this</span>.remove,
+        }
+
+        <span class="hljs-keyword">return</span> result <span class="hljs-keyword">as</span> QueryObserverResult&lt;TData, TError&gt;
+  }</code></pre>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h4 style="color: #000000; text-align: start;" data-ke-size="size20" id="%EA%B-%B-%EA%B-%BC%EA%B-%--%--%EB%A-%AC%ED%--%B-"><a href="https://leego.tistory.com/entry/react-query%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%A0%EA%B9%8C#%EA%B-%B-%EA%B-%BC%EA%B-%--%--%EB%A-%AC%ED%--%B-">결과값 리턴</a></h4>
+<p data-ke-size="size16">이제 마지막 줄이다.</p>
+<pre class="javascript" data-ke-language="javascript"><code class="hljs"><span class="hljs-comment">// useBaseQuery.ts</span>
+
+<span class="hljs-comment">// Handle result property usage tracking</span>
+<span class="hljs-keyword">return</span> !defaultedOptions.notifyOnChangeProps
+    ? observer.trackResult(result)
+    : result</code></pre>
+<p data-ke-size="size16">v3까지는 <code>notifyOnChangeProps</code> 을 <code>'tracked'</code> 로 설정해야 실제 사용하고 있는 속성이 변경되는 경우에만 리렌더링을 해주었다. 하지만 v4에서는 이 설정이 기본값이 되었다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<pre class="typescript"><code class="hljs">trackResult(
+    result: QueryObserverResult&lt;TData, TError&gt;,
+  ): QueryObserverResult&lt;TData, TError&gt; {
+    <span class="hljs-keyword">const</span> trackedResult = {} <span class="hljs-keyword">as</span> QueryObserverResult&lt;TData, TError&gt;
+
+    <span class="hljs-built_in">Object</span>.keys(result).forEach(<span class="hljs-function">(<span class="hljs-params">key</span>) =&gt;</span> {
+      <span class="hljs-built_in">Object</span>.defineProperty(trackedResult, key, {
+        configurable: <span class="hljs-literal">false</span>,
+        enumerable: <span class="hljs-literal">true</span>,
+        get: <span class="hljs-function">() =&gt;</span> {
+          <span class="hljs-built_in">this</span>.trackedProps.add(key <span class="hljs-keyword">as</span> keyof QueryObserverResult)
+          <span class="hljs-keyword">return</span> result[key <span class="hljs-keyword">as</span> keyof QueryObserverResult]
+        },
+      })
+    })
+
+    <span class="hljs-keyword">return</span> trackedResult
+  }</code></pre>
+<p data-ke-size="size16">query에서 가져온 result는 <code>observer.trackResult</code> 를 통해 실제 사용하고 있는 속성들을 <code>trackedProps</code> 에 넣고 관리한다. <span style="color: #333333; text-align: start;"><code>trackedProps</code>에 속한 속성들이 변경됐을때만 리랜더링을 발생시킨다.</span></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><code>notifyOnChangeProps</code>을 <code>‘all’</code> 로 해주면 v3의 기본 설정처럼 result에 포함된 모든 속성이 변경될 때마다 리렌더링을 야기한다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><code>useQuery</code>를 호출하면,</p>
+<p data-ke-size="size16"><code>Observer</code>가 생성되고 <code>Query</code>를 생성한 후 <code>Query</code>의 <code>result</code>를 가져와 반환하는 과정을 알아보았다.</p>
+<p data-ke-size="size16">하나의 <code>Query</code>에 대하여 <code>useQuery</code>는 여러번 호출될 수 있고, 이는 하나의 <code>Query</code>에 대하여 여러개의 <code>Observer</code>를 생성할 수 있다는 것을 의미한다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">그렇다면 <code>observer</code>는 <code>Query</code>의 변화를 어렇게 알아챌까?</p>
+<pre id="code_1681733691164" class="javascript" data-ke-language="javascript" data-ke-type="codeblock"><code class="hljs"><span class="hljs-comment">// useBaseQuery.ts</span>
+
+useSyncExternalStore(
+    React.useCallback(
+      <span class="hljs-function">(<span class="hljs-params">onStoreChange</span>) =&gt;</span>
+        isRestoring
+          ? <span class="hljs-function">() =&gt;</span> <span class="hljs-literal">undefined</span>
+          : observer.subscribe(notifyManager.batchCalls(onStoreChange)),
+      [observer, isRestoring],
+    ),
+    <span class="hljs-function">() =&gt;</span> observer.getCurrentResult(),
+    <span class="hljs-function">() =&gt;</span> observer.getCurrentResult(),
+  )</code></pre>
+<p data-ke-size="size16">모든 observer는 <code>useSyncExternalStore</code> 라는 hook를 통해 query 데이터의 변화를 감지한다.</p>
+<p data-ke-size="size16">여기서 모든걸 다루게 되면 포스팅이 너무 길어지기 때문에, <code>useSyncExternalStore</code> 에 대해서는 다음 포스팅으로 넘기겠다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h4 data-ke-size="size20" id="%EC%B-%B-%EA%B-%A-%F-%-F%--%-C"><a href="https://leego.tistory.com/entry/react-query%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%A0%EA%B9%8C#%EC%B-%B-%EA%B-%A-%F-%-F%--%-C"><b>참고📌</b></a></h4>
+<p data-ke-size="size16"><a href="https://github.com/TanStack/query/blob/main/packages/react-query/src/useBaseQuery.ts" target="_blank" rel="noopener">https://github.com/TanStack/query/blob/main/packages/react-query/src/useBaseQuery.ts</a></p>
+<figure id="og_1681734095038" contenteditable="false" data-ke-type="opengraph" data-ke-align="alignCenter" data-og-type="object" data-og-title="GitHub - TanStack/query: 🤖 Powerful asynchronous state management, server-state utilities and data fetching for the web. TS/J" data-og-description="🤖 Powerful asynchronous state management, server-state utilities and data fetching for the web. TS/JS, React Query, Solid Query, Svelte Query and Vue Query. - GitHub - TanStack/query: 🤖 Powerful as..." data-og-host="github.com" data-og-source-url="https://github.com/TanStack/query/blob/main/packages/react-query/src/useBaseQuery.ts" data-og-url="https://github.com/TanStack/query" data-og-image="https://scrap.kakaocdn.net/dn/c7d5o1/hySiV6B8Ol/1gMQ0PtGUblvbrhFzm9tQK/img.png?width=1279&amp;height=640&amp;face=0_0_1279_640"><a href="https://github.com/TanStack/query/blob/main/packages/react-query/src/useBaseQuery.ts" target="_blank" rel="noopener" data-source-url="https://github.com/TanStack/query/blob/main/packages/react-query/src/useBaseQuery.ts">
+<div class="og-image" style="background-image: url(&#39;https://scrap.kakaocdn.net/dn/c7d5o1/hySiV6B8Ol/1gMQ0PtGUblvbrhFzm9tQK/img.png?width=1279&amp;height=640&amp;face=0_0_1279_640&#39;);">&nbsp;</div>
+<div class="og-text">
+<p class="og-title" data-ke-size="size16">GitHub - TanStack/query: 🤖 Powerful asynchronous state management, server-state utilities and data fetching for the web. TS/J</p>
+<p class="og-desc" data-ke-size="size16">🤖 Powerful asynchronous state management, server-state utilities and data fetching for the web. TS/JS, React Query, Solid Query, Svelte Query and Vue Query. - GitHub - TanStack/query: 🤖 Powerful as...</p>
+<p class="og-host" data-ke-size="size16">github.com</p>
+</div>
+</a></figure>
+<p data-ke-size="size16"><a href="https://tkdodo.eu/blog/inside-react-query" target="_blank" rel="noopener">https://tkdodo.eu/blog/inside-react-query</a></p>
+<figure id="og_1681734149049" contenteditable="false" data-ke-type="opengraph" data-ke-align="alignCenter" data-og-type="website" data-og-title="Inside React Query" data-og-description="Taking a look under the hood of React Query" data-og-host="tkdodo.eu" data-og-source-url="https://tkdodo.eu/blog/inside-react-query" data-og-url="https://tkdodo.eu/blog/inside-react-query" data-og-image="https://scrap.kakaocdn.net/dn/fxX4H/hySk0d9yQ5/9Om8z3HDDXewBTHBqRtAfK/img.jpg?width=1200&amp;height=801&amp;face=0_0_1200_801,https://scrap.kakaocdn.net/dn/3oXR0/hySjapcey6/Axtcd5InExV3Y1bes2yYBK/img.jpg?width=1200&amp;height=801&amp;face=0_0_1200_801,https://scrap.kakaocdn.net/dn/zudtF/hySi43xPjE/nJH1AzOtDyf9TzNkmM68Jk/img.png?width=960&amp;height=549&amp;face=0_0_960_549"><a href="https://tkdodo.eu/blog/inside-react-query" target="_blank" rel="noopener" data-source-url="https://tkdodo.eu/blog/inside-react-query">
+<div class="og-image" style="background-image: url(&#39;https://scrap.kakaocdn.net/dn/fxX4H/hySk0d9yQ5/9Om8z3HDDXewBTHBqRtAfK/img.jpg?width=1200&amp;height=801&amp;face=0_0_1200_801,https://scrap.kakaocdn.net/dn/3oXR0/hySjapcey6/Axtcd5InExV3Y1bes2yYBK/img.jpg?width=1200&amp;height=801&amp;face=0_0_1200_801,https://scrap.kakaocdn.net/dn/zudtF/hySi43xPjE/nJH1AzOtDyf9TzNkmM68Jk/img.png?width=960&amp;height=549&amp;face=0_0_960_549&#39;);">&nbsp;</div>
+<div class="og-text">
+<p class="og-title" data-ke-size="size16">Inside React Query</p>
+<p class="og-desc" data-ke-size="size16">Taking a look under the hood of React Query</p>
+<p class="og-host" data-ke-size="size16">tkdodo.eu</p>
+</div>
+</a></figure>
+<p data-ke-size="size16">&nbsp;</p></div>
+            <!-- System - START -->
+
+<!-- System - END -->
+
+<div class="container_postbtn #post_button_group">
+  <div class="postbtn_like"><script>window.ReactionButtonType = 'reaction';
+window.ReactionApiUrl = '//leego.tistory.com/reaction';
+window.ReactionReqBody = {
+    entryId: 42
+}</script>
+<div class="wrap_btn" id="reaction-42" data-tistory-react-app="Reaction"><button class="btn_post uoc-icon" data-tiara-action-name="공감_클릭"><div class="uoc-icon"><span class="ico_postbtn ico_like">좋아요</span><span class="txt_like uoc-count">8</span></div></button></div><div class="wrap_btn wrap_btn_share"><button type="button" class="btn_post sns_btn btn_share" aria-expanded="false" data-thumbnail-url="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FBVker%2Fbtsa9J7BxQL%2F76VJdqCIFVFUuYsYpURJ90%2Fimg.jpg" data-title="react-query는 어떻게 작동할까" data-description="QueryClient react-query를 프로젝트에 셋팅할 때, 가장 먼저 하는 것은 앱의 최상위에서 QueryClientProvider로 우리의 앱을 감싸주는 일이다. import { QueryClient, QueryClientProvider } from &#39;@tanstack/react-query&#39;; ... const queryClient = new QueryClient(); function Root() { return ( ); } 우리는 먼저 새로운 QueryClient인스턴스를 생성하고, QueryClientProvider를 통해 앱 전체에서 생성한 QueryClient에 접근 가능하도록 해준다. 이 QueryClient는 단순하게 표현하자면 QueryCache와 MutationCache를 담는 .." data-profile-image="https://tistory1.daumcdn.net/tistory/4927241/attach/4d11550e88354015ad1a601e2277195e" data-profile-name="녘_" data-pc-url="https://leego.tistory.com/entry/react-query%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%A0%EA%B9%8C" data-relative-pc-url="/entry/react-query%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%A0%EA%B9%8C" data-blog-title="하루 기록."><span class="ico_postbtn ico_share">공유하기</span></button>
+  
+</div><div class="wrap_btn wrap_btn_etc" data-entry-id="42" data-entry-visibility="public" data-category-visibility="public"><button type="button" class="btn_post btn_etc2" aria-expanded="false"><span class="ico_postbtn ico_etc">게시글 관리</span></button>
+  
+</div></div>
+<button type="button" class="btn_menu_toolbar btn_subscription #subscribe" data-blog-id="4927241" data-url="https://leego.tistory.com/entry/react-query%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%A0%EA%B9%8C" data-device="web_pc" data-tiara-action-name="구독 버튼_클릭" data-tiara-copy="구독하기"><em class="txt_state">구독하기</em><strong class="txt_tool_id">하루 기록.</strong><span class="img_common_tistory ico_check_type1"></span></button>  <div data-tistory-react-app="SupportButton"></div>
+</div>
+
+            <div id="__spy">
+              <div id="spy__shadow" uk-sticky="offset: 65" class="uk-sticky uk-active uk-sticky-fixed uk-sticky-below" style="position: fixed; top: 65px; width: 180px;">
+                <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; offset: 65"><li class="uk-active"><a href="https://leego.tistory.com/entry/react-query%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%A0%EA%B9%8C#QueryClient" data-tag="h3">QueryClient</a></li><li><a href="https://leego.tistory.com/entry/react-query%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%A0%EA%B9%8C#QueryCache" data-tag="h3">QueryCache</a></li><li><a href="https://leego.tistory.com/entry/react-query%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%A0%EA%B9%8C#Query" data-tag="h3">Query</a></li><li><a href="https://leego.tistory.com/entry/react-query%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%A0%EA%B9%8C#QueryObserver" data-tag="h3">QueryObserver</a></li><li><a href="https://leego.tistory.com/entry/react-query%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%A0%EA%B9%8C#useQuery%--%ED%--%B-%EC%B-%-C%--%EC%-B%-C%--%EC%-D%BC%EC%--%B-%EB%--%--%EB%-A%--%--%EC%-D%BC" data-tag="h3">useQuery 호출 시 일어나는 일</a></li></ul>
+              </div><div class="uk-sticky-placeholder" style="height: 168px; margin: 0px;"></div>
+            </div>
+          
+        </article>
+        <footer class="footer">
+          
+            
+              <div class="permalink__related"><strong>'Front-End/React' 카테고리의 다른 글</strong>
+                <ul>
+                  
+                    <li><a href="https://leego.tistory.com/entry/recoil%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%9C-%EC%A0%84%EC%97%AD-%EB%AA%A8%EB%8B%AC-%EA%B4%80%EB%A6%ACwith-TypeScript?category=504043">recoil을 사용한 전역 모달 관리(with TypeScript)</a></li>
+                  
+                    <li><a href="https://leego.tistory.com/entry/React-saga%EB%A5%BC-%ED%86%B5%ED%95%B4-axios-%ED%98%B8%EC%B6%9C-%EC%B7%A8%EC%86%8C%ED%95%98%EA%B8%B0?category=504043">React-saga를 통해 axios 호출 취소하기</a></li>
+                  
+                    <li><a href="https://leego.tistory.com/entry/React-CRA%EC%97%90%EC%84%9C-Path-alias-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0?category=504043">[React] CRA에서 Path alias 설정하기</a></li>
+                  
+                    <li><a href="https://leego.tistory.com/entry/React-%ED%9A%A8%EC%9C%A8%EC%A0%81%EC%9C%BC%EB%A1%9C-%EB%AA%A8%EB%8B%AC-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0?category=504043">[React] 효율적으로 모달 관리하기</a></li>
+                  
+                </ul>
+              </div>
+            
+          
+          
+          <div class="permalink__btn"><button class="permalink__comment-btn" uk-toggle=".permalink__comment"><i class="fas fa-comment"></i>댓글</button><div class="layer_post" id="tistorySnsLayer" style="display: none;"><div class="bundle_post"><button class="btn_mark" data-service="url" data-tiara-action-name="공유_클릭" data-tiara-layer="copy_url" data-tiara-copy="URL복사"><span class="ico_sns ico_url"></span><span class="txt_sns">URL 복사</span></button><button class="btn_mark" data-service="kakaotalk" data-tiara-action-name="공유_클릭" data-tiara-layer="kakao" data-tiara-copy="카카오톡 공유"><span class="ico_sns ico_kt"></span><span class="txt_sns">카카오톡 공유</span></button><button class="btn_mark" data-service="facebook" data-tiara-action-name="공유_클릭" data-tiara-layer="facebook" data-tiara-copy="페이스북 공유"><span class="ico_sns ico_fb"></span><span class="txt_sns">페이스북 공유</span></button><button class="btn_mark" data-service="twitter" data-tiara-action-name="공유_클릭" data-tiara-layer="X" data-tiara-copy="엑스 공유"><span class="ico_sns ico_x"></span><span class="txt_sns">엑스 공유</span></button><span class="ico_postbtn ico_arrbt"></span></div></div><div class="layer_post" id="tistoryEtcLayer" style="left: 0px; bottom: 42px; display: none;"><div class="bundle_post"><button type="button" class="btn_mark" role="report" data-tiara-action-name="글신고하기_클릭">신고하기</button><span class="ico_postbtn ico_arrbt"></span></div></div></div>
+          
+            <div class="permalink__author"><img class="profile lazyload" data-src="https://tistory1.daumcdn.net/tistory/4927241/attach/4d11550e88354015ad1a601e2277195e" data-sizes="auto" width="80" height="80" alt="녘_">
+              <div class="description">
+                <div class="user">녘_</div>
+                <div class="desc">하루하루를 의미있게 보내고 싶은 개발자 입니다. 내일의 성장을 위해 오늘을 기록합니다.</div>
+              </div>
+            </div>
+          
+        </footer>
+      </div>
+      <div class="permalink__comment" aria-hidden="false">
+        <div data-tistory-react-app="Namecard"><div class="tt_box_namecard"><div class="tt_cont"><a class="tt_tit_cont" href="https://leego.tistory.com/">하루 기록.</a><a class="tt_desc" href="https://leego.tistory.com/">하루하루를 의미있게 보내고 싶은 개발자 입니다. 내일의 성장을 위해 오늘을 기록합니다.</a><button class="tt_btn_subscribe" data-tiara-action-name="프로필영역 구독 버튼_클릭" data-tiara-copy="구독하기" type="button"><span class="tt_txt_g">구독하기</span><span class="tt_img_area_reply tt_ico_cross"></span></button></div><a class="tt_wrap_thumb" href="https://leego.tistory.com/"><span class="tt_thumb_g" style="background-image: url(&quot;https://img1.daumcdn.net/thumb/S56x56/?scode=mtistory2&amp;fname=https%3A%2F%2Ftistory1.daumcdn.net%2Ftistory%2F4927241%2Fattach%2F4d11550e88354015ad1a601e2277195e&quot;);"></span></a></div></div><div id="entry42Comment">
+          <form method="post" action="https://leego.tistory.com/comment/add/42" onsubmit="return false" style="margin: 0">
+    
+<div class="rp-form content__form">
+  <div class="form__shadow"><label for="comment">댓글</label><textarea id="comment" name="comment"></textarea>
+    <div class="rp-form-control form-control">
+      
+        <div class="form__control__inner">
+          
+            <div class="form__guest">
+              <div class="name"><label for="name">이름</label><input id="name" name="name" value=""></div>
+              <div class="password"><label for="password">암호</label><input id="password" type="password" maxlength="8" name="password" value=""></div>
+            </div>
+          
+        </div>
+      
+      <div class="form__submit"><input id="secret" type="checkbox" name="secret"><label id="secret-label" for="secret"></label><a href="https://leego.tistory.com/entry/react-query%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%A0%EA%B9%8C#" onclick="addComment(this, 42); return false;">댓글쓰기</a></div>
+    </div>
+  </div>
+</div>
+
+</form>
+          
+            <div class="rp-list content__list">
+              <ol uk-accordion="multiple: true; toggle: .control &gt; .more; content: &gt; ol; animation: false; targets: &gt; li[id^=comment]" class="uk-accordion">
+                            
+
+            
+              </ol>
+            </div>
+          
+        </div>
+<script type="text/javascript">loadedComments[42]=true;
+findFragmentAndHighlight(42);</script>
+
+      </div>
+      
+    </div>
+  
+  
+  
+
+        
+    
+            
+            
+            
+            
+              
+            
+          </div>
+        </main>
+        <footer class="uk-navbar-container uk-navbar-transparent uk-navbar" id="__footer" uk-navbar="">
+          <div class="uk-navbar-left"><a id="__designed-by" href="https://pronist.tistory.com/5" target="_blank" rel="noreferrer">hELLO. 티스토리 스킨을 소개합니다.<i class="fa fa-code"></i></a></div>
+          <div class="uk-navbar-right">
+            
+              <div id="__theme-btn">테마 바꾸기<i class="fa fa-moon-o" aria-hidden="true"></i></div>
+            
+            <a id="__toTop" href="https://leego.tistory.com/entry/react-query%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%A0%EA%B9%8C#" uk-scroll="target: #__hELLO">제일 위로<i class="fa fa-chevron-up"></i></a>
+          </div>
+        </footer>
+      </div>
+    
+    <div id="scroll-indicator">
+      <div class="progress-container">
+        <div class="progress-bar" style="width: 11.538%;"></div>
+      </div>
+    </div>
+    <script src="./react-query는 어떻게 작동할까 — 하루 기록._files/app.49d2b53210c40e0b23ef.js"></script>
+    <script src="./react-query는 어떻게 작동할까 — 하루 기록._files/script.ReW8sCdcH8fUGCTHwmZk.js"></script>
+  <div class="#menubar menu_toolbar ">
+  <h2 class="screen_out">티스토리툴바</h2>
+</div>
+<div class="#menubar menu_toolbar "></div>
+<div class="layer_tooltip" style="display: none;">
+  <div class="inner_layer_tooltip">도움이 되셨다면 공감 부탁드립니다!</div>
+</div>
+<div id="editEntry" style="position:absolute;width:1px;height:1px;left:-100px;top:-100px"></div>
+
+
+                <!-- DragSearchHandler - START -->
+<script src="./react-query는 어떻게 작동할까 — 하루 기록._files/search_dragselection.min.js"></script>
+
+<!-- DragSearchHandler - END -->
+
+                
+                <div style="margin:0; padding:0; border:none; background:none; float:none; clear:none; z-index:0"></div>
+<script type="text/javascript" src="./react-query는 어떻게 작동할까 — 하루 기록._files/common.js"></script>
+<script type="text/javascript">window.roosevelt_params_queue = window.roosevelt_params_queue || [{channel_id: 'dk', channel_label: '{tistory}'}]</script>
+<script type="text/javascript" src="./react-query는 어떻게 작동할까 — 하루 기록._files/roosevelt_dk_bt.js" async="async"></script>
+
+                
+                <script>window.tiara = {"svcDomain":"user.tistory.com","section":"글뷰","trackPage":"글뷰_보기","page":"글뷰","key":"4927241-42","customProps":{"userId":"0","blogId":"4927241","entryId":"42","role":"guest","trackPage":"글뷰_보기","filterTarget":false},"entry":{"entryId":"42","entryTitle":"react-query는 어떻게 작동할까","entryType":"POST","categoryName":"Front-End/React","categoryId":"504043","serviceCategoryName":null,"serviceCategoryId":null,"author":"3899410","authorNickname":"녘_","blogNmae":"하루 기록.","image":"kage@BVker/btsa9J7BxQL/76VJdqCIFVFUuYsYpURJ90","plink":"/entry/react-query%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%A0%EA%B9%8C","tags":[]},"kakaoAppKey":"3e6ddd834b023f24221217e370daed18","appUserId":"null"}</script>
+<script type="module" src="./react-query는 어떻게 작동할까 — 하루 기록._files/index(1).js"></script>
+<script src="./react-query는 어떻게 작동할까 — 하루 기록._files/polyfills-legacy(1).js" nomodule="true" defer="true"></script>
+<script src="./react-query는 어떻게 작동할까 — 하루 기록._files/index-legacy(1).js" nomodule="true" defer="true"></script>
+
+                
+
+<div id="__phocus__" class="__phocus__" tabindex="-1"></div><div id="shortcutLayer" class="doc_help" style="display: none;"><button class="btn_doc_close">닫기</button>
+  <h2 class="title">단축키</h2>
+  <div class="content mac_platform">
+    <div class="container">
+      <h3 class="item_title">내 블로그</h3>
+      <table class="item">
+        <tbody>
+        
+    <tr>
+      <th>내 블로그 - 관리자 홈 전환</th>
+      <td>
+        <div class="pc">
+          <kbd>Q</kbd>
+        </div>
+        <div class="mac">
+          <kbd>Q</kbd>
+        </div>
+      </td>
+    </tr>
+  
+        
+    <tr>
+      <th>새 글 쓰기</th>
+      <td>
+        <div class="pc">
+          <kbd>W</kbd>
+        </div>
+        <div class="mac">
+          <kbd>W</kbd>
+        </div>
+      </td>
+    </tr>
+  
+        </tbody>
+      </table>
+      <h3 class="item_title">블로그 게시글</h3>
+      <table class="item">
+        <tbody>
+        
+    <tr>
+      <th>글 수정 (권한 있는 경우)</th>
+      <td>
+        <div class="pc">
+          <kbd>E</kbd>
+        </div>
+        <div class="mac">
+          <kbd>E</kbd>
+        </div>
+      </td>
+    </tr>
+  
+        
+    <tr>
+      <th>댓글 영역으로 이동</th>
+      <td>
+        <div class="pc">
+          <kbd>C</kbd>
+        </div>
+        <div class="mac">
+          <kbd>C</kbd>
+        </div>
+      </td>
+    </tr>
+  
+        </tbody>
+      </table>
+    </div>
+    <div class="container">
+      <h3 class="item_title">모든 영역</h3>
+      <table class="item">
+        <tbody>
+        
+    <tr>
+      <th>이 페이지의 URL 복사</th>
+      <td>
+        <div class="pc">
+          <kbd>S</kbd>
+        </div>
+        <div class="mac">
+          <kbd>S</kbd>
+        </div>
+      </td>
+    </tr>
+  
+        
+    <tr>
+      <th>맨 위로 이동</th>
+      <td>
+        <div class="pc">
+          <kbd>T</kbd>
+        </div>
+        <div class="mac">
+          <kbd>T</kbd>
+        </div>
+      </td>
+    </tr>
+  
+        
+    <tr>
+      <th>티스토리 홈 이동</th>
+      <td>
+        <div class="pc">
+          <kbd>H</kbd>
+        </div>
+        <div class="mac">
+          <kbd>H</kbd>
+        </div>
+      </td>
+    </tr>
+  
+        
+    <tr>
+      <th>단축키 안내</th>
+      <td>
+        <div class="pc">
+          <kbd>Shift</kbd> + <kbd>/</kbd>
+        </div>
+        <div class="mac">
+          <kbd>⇧</kbd> + <kbd>/</kbd>
+        </div>
+      </td>
+    </tr>
+  
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <p class="info">* 단축키는 한글/영문 대소문자로 이용 가능하며, 티스토리 기본 도메인에서만 동작합니다.</p>
+  </div></body></html>
