@@ -1,0 +1,15 @@
+._radio {
+  @apply flex items-center gap-2;
+
+  input {
+    @apply hidden;
+
+    &:disabled + img {
+      @apply opacity-30 cursor-not-allowed;
+    }
+  }
+
+  &:has(input:disabled) {
+    @apply opacity-30 cursor-not-allowed;
+  }
+}

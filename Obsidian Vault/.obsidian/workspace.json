@@ -190,7 +190,7 @@
             }
           }
         ],
-        "currentTab": 12
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -330,10 +330,10 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "1291a6305c6bad4a",
+  "active": "7cb1b93315105944",
   "lastOpenFiles": [
-    "koser-standard fetching guideline 8.md",
     "koser-standard fetching guideline.md",
+    "koser-standard fetching guideline 8.md",
     "TODO List 202503.md",
     "koser-standard fetching guideline 7.md",
     "koser-standard fetching guideline 6.md",
